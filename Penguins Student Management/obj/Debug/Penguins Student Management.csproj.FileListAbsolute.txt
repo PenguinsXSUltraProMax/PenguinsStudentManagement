@@ -34,3 +34,4 @@ D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Manage
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Newtonsoft.Json.dll
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Newtonsoft.Json.xml
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.CopyComplete
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.AssemblyReference.cache
