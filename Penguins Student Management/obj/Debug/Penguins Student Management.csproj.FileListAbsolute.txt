@@ -1,0 +1,37 @@
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\bin\Debug\Penguins Student Management.exe.config
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\bin\Debug\Penguins Student Management.exe
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\bin\Debug\Penguins Student Management.pdb
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\bin\Debug\Guna.UI2.dll
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Properties.Resources.resources
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.GenerateResource.cache
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.CoreCompileInputs.cache
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.CopyComplete
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.exe
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.pdb
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\bin\Debug\Guna.UI.dll
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Views.MainView.resources
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.CostomUserControls.SideMenuItem.resources
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Views.SplashView.resources
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Views.FormTest.resources
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.LoginView.resources
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Views.ChangePasswordView.resources
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.CostomUserControls.CourseListItem.resources
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.AssemblyReference.cache
+D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.CostomUserControls.UserListItem.resources
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.AssemblyReference.cache
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Properties.Resources.resources
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Views.SplashView.resources
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.GenerateResource.cache
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.CoreCompileInputs.cache
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.exe
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.pdb
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Penguins Student Management.exe.config
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Penguins Student Management.exe
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Penguins Student Management.pdb
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Guna.UI.dll
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Guna.UI2.dll
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.CopyComplete

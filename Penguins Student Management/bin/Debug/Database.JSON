@@ -1,0 +1,123 @@
+{
+    "LSID": "4",
+    "LTID": "0",
+    "Collections": {
+        "Users": {
+            "119000001": {
+                "Birthday": "20/08/1991",
+                "ClassName": "19TD111",
+                "Ethnic": "Kinh",
+                "Gender": "Nam",
+                "Hometown": "Đồng Nai",
+                "ID": "119000001",
+                "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000001",
+                "Name": "Trần Minh Tuấn",
+                "Nationality": "Việt Nam",
+                "Password": "123",
+                "Type": 0,
+                "Classes": [
+                    "19TD111"
+                ],
+                "Courses": [
+                    "wcbX-pDPxfS6KxC"
+                ],
+                "Messages": []
+            },
+            "119000003": {
+                "Birthday": "28/01/2001",
+                "ClassName": "19KT111",
+                "Ethnic": "Kinh",
+                "Gender": "Nam",
+                "Hometown": "Quảng Trị",
+                "ID": "119000003",
+                "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000003",
+                "Name": "Lê Đình Dương",
+                "Nationality": "Việt Nam",
+                "Password": "123",
+                "Type": 0,
+                "Classes": [
+                    "19KT111"
+                ],
+                "Courses": [
+                    "RwAI3zy80nsX-Vb"
+                ],
+                "Messages": []
+            },
+            "119000004": {
+                "Birthday": "24/05/2000",
+                "Ethnic": "Kinh",
+                "Gender": "Nữ",
+                "Hometown": "Bình Định",
+                "ID": "119000004",
+                "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000004",
+                "Name": "Lê Thị Phương Thảo",
+                "Nationality": "Việt Nam",
+                "Password": "123",
+                "Type": 0,
+                "Classes": [
+                    "19DT111"
+                ],
+                "Courses": [
+                    "wcbX-pDPxfS6KxC",
+                    "RwAI3zy80nsX-Vb"
+                ],
+                "Messages": []
+            },
+            "GVADMIN": {
+                "Birthday": "26/7/1976",
+                "Ethnic": "Kinh",
+                "Gender": "Nam",
+                "Hometown": "Đồng Nai",
+                "ID": "GVADMIN",
+                "ImgUrl": null,
+                "Name": "Nguyễn Gì Đấy",
+                "Nationality": "Việt Nam",
+                "Password": "123",
+                "Type": 2,
+                "Classes": [],
+                "Courses": [
+                    "wcbX-pDPxfS6KxC",
+                    "RwAI3zy80nsX-Vb"
+                ],
+                "Messages": []
+            }
+        },
+        "Courses": {
+            "wcbX-pDPxfS6KxC": {
+                "ID": "wcbX-pDPxfS6KxC",
+                "Name": "Triết học Mác - Lênin",
+                "Categrory": "n9Cg-NEDmh7rfpl",
+                "Owner": "GVADMIN",
+                "Users": {
+                    "Student": [
+                        "119000004"
+                    ],
+                    "Teacher": []
+                },
+                "CourseSections": {}
+            },
+            "RwAI3zy80nsX-Vb": {
+                "ID": "RwAI3zy80nsX-Vb",
+                "Name": "English 1",
+                "Category": "n9Cg-NEDmh7rfpl",
+                "Owner": "GVADMIN",
+                "Users": {
+                    "Student": [
+                        "119000004"
+                    ],
+                    "Teacher": []
+                },
+                "CourseSections": {}
+            }
+        },
+        "CourseCategory": {
+            "n9Cg-NEDmh7rfpl": {
+                "ID": "n9Cg-NEDmh7rfpl",
+                "Name": "Khác",
+                "Courses": [
+                    "wcbX-pDPxfS6KxC"
+                ]
+            }
+        }
+    }
+}
