@@ -57,6 +57,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.cs" />
+    <Compile Include="JsonDatabase\Database.cs" />
+    <Compile Include="JsonDatabase\Entity\Collections.cs" />
+    <Compile Include="JsonDatabase\Entity\Document\Course.cs" />
+    <Compile Include="JsonDatabase\Entity\Document\CourseCategory.cs" />
+    <Compile Include="JsonDatabase\Entity\Document\IDocument.cs" />
+    <Compile Include="JsonDatabase\Entity\Document\User.cs" />
+    <Compile Include="JsonDatabase\Entity\Root.cs" />
+    <Compile Include="JsonDatabase\ExportToJson.cs" />
+    <Compile Include="JsonDatabase\Initialize.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\SplashView.cs">

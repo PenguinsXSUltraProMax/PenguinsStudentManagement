@@ -9,6 +9,7 @@ namespace Penguins_Student_Management.Views
         public SplashView()
         {
             InitializeComponent();
+            Global.Database.Initialize("Database.JSON");
         }
 
         private void Timer_Tick(object sender, EventArgs e)
