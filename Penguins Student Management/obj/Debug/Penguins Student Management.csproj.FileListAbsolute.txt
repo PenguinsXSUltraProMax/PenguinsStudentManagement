@@ -20,7 +20,6 @@ D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\
 D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.CostomUserControls.CourseListItem.resources
 D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.AssemblyReference.cache
 D:\Projects\Learning\C#\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.CostomUserControls.UserListItem.resources
-D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.AssemblyReference.cache
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Properties.Resources.resources
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Views.SplashView.resources
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins Student Management.csproj.GenerateResource.cache
