@@ -1,5 +1,5 @@
 ﻿
-namespace Penguins_Student_Management.CostomUserControls
+namespace Penguins_Student_Management.CustomUserControls
 {
     partial class SideMenuItem
     {

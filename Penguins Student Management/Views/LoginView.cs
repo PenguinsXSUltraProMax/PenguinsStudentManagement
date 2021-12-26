@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using Penguins_Student_Management.Controllers.AuthController;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
+using Penguins_Student_Management.Views;
 
 namespace Penguins_Student_Management
 {
@@ -35,8 +36,11 @@ namespace Penguins_Student_Management
             if(state == AuthState.AUTHENTICATED)
             {
                 River.DisposeObservable(this);
-                Console.WriteLine("logged");
-                //Todo: MainView
+                this.Hide();
+                MainView mainView = new MainView();
+                River.CreateObservable(mainView);
+                mainView.ShowDialog();
+                this.Close();
             }
         }
 
