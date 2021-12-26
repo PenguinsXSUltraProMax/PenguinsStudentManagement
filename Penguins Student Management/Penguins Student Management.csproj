@@ -57,6 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AuthController\AuthController.cs" />
+    <Compile Include="Controllers\AuthController\ChangePassword.cs" />
+    <Compile Include="Controllers\AuthController\SignInWithIDAndPassword.cs" />
+    <Compile Include="Controllers\AuthController\SignOut.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="JsonDatabase\Database.cs" />
     <Compile Include="JsonDatabase\Entity\Collections.cs" />
@@ -69,6 +73,17 @@
     <Compile Include="JsonDatabase\Initialize.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateManagement\Entity\IObserver.cs" />
+    <Compile Include="StateManagement\Entity\IRiverSubject.cs" />
+    <Compile Include="StateManagement\Entity\ISubject.cs" />
+    <Compile Include="StateManagement\Hook.cs" />
+    <Compile Include="StateManagement\TheRiver.cs" />
+    <Compile Include="Views\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SplashView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +100,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SplashView.resx">
       <DependentUpon>SplashView.cs</DependentUpon>
     </EmbeddedResource>
