@@ -13,13 +13,12 @@ namespace Penguins_Student_Management.Views
 
         TheRiver River;
         User user;
-        string ID;
 
-        public EditUserView(string value)
+        public EditUserView(User value)
         {
             InitializeComponent();
             this.FormClosing += EditUserView_FormClosing;
-            ID = value;
+            user = value;
         }
 
         private void EditUserView_Load(object sender, EventArgs e)
@@ -32,7 +31,6 @@ namespace Penguins_Student_Management.Views
         public void SetState(TheRiver value)
         {
             River = value;
-            user = Hook.of<UserController>(River).GetUserById(ID);
             LoadUserData();
         }
 
@@ -79,9 +77,11 @@ namespace Penguins_Student_Management.Views
             user.Type = type;
             user.Password = password;
 
-            Hook.of<UserController>(River).UpdateUserByID(ID, user);
+            Hook.of<UserController>(River).UpdateUserByID(user.ID, user);
 
             MessageBox.Show("Sửa thông tin thành công!");
+            
+            River.Refesh();
 
         }
     }

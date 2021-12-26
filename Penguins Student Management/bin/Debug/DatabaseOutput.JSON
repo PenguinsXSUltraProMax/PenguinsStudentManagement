@@ -3,25 +3,6 @@
   "LTID": "0",
   "Collections": {
     "Users": {
-      "119000001": {
-        "Birthday": "20/8/1991",
-        "Ethnic": "Kinh",
-        "Gender": "Why ru gei?",
-        "Hometown": "Đồng Nai",
-        "ID": "119000001",
-        "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000001",
-        "Name": "Trần Minh Tuấn",
-        "Nationality": "Việt Nam",
-        "Password": "123",
-        "Type": 0,
-        "Classes": [
-          "19TD111"
-        ],
-        "Courses": [
-          "wcbX-pDPxfS6KxC"
-        ],
-        "Messages": []
-      },
       "119000003": {
         "Birthday": "28/01/2001",
         "Ethnic": "Kinh",
