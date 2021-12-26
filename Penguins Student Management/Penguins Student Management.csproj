@@ -75,6 +75,12 @@
     <Compile Include="CustomUserControls\SideMenuItem.Designer.cs">
       <DependentUpon>SideMenuItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomUserControls\UserListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControls\UserListItem.designer.cs">
+      <DependentUpon>UserListItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="JsonDatabase\Database.cs" />
     <Compile Include="JsonDatabase\Entity\Collections.cs" />
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomUserControls\SideMenuItem.resx">
       <DependentUpon>SideMenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControls\UserListItem.resx">
+      <DependentUpon>UserListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

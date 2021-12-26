@@ -69,6 +69,7 @@ namespace Penguins_Student_Management.Views
             });
         }
 
+
         private static Image cropImage(Image img, Rectangle cropArea)
         {
             Bitmap bmpImage = new Bitmap(img);
