@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Penguins_Student_Management.CostomUserControls
+namespace Penguins_Student_Management.CustomUserControls
 {
     public partial class SideMenuItem : UserControl
     {

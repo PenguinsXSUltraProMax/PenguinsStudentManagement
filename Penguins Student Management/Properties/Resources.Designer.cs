@@ -153,6 +153,16 @@ namespace Penguins_Student_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_dashboard_layout_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-dashboard-layout-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_exit_sign_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-exit-sign-48", resourceCulture);
