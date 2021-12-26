@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Penguins_Student_Management.Controllers.CourseController;
+using Penguins_Student_Management.Controllers.StudentController;
 
 namespace Penguins_Student_Management.Views
 {
