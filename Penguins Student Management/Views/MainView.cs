@@ -39,6 +39,7 @@ namespace Penguins_Student_Management.Views
 
             ShowHideMenuItem();
             InitDashboardState();
+            InitStudentState();
         }
 
         private void ShowHideMenuItem()
@@ -69,6 +70,20 @@ namespace Penguins_Student_Management.Views
             });
         }
 
+        private void InitStudentState()
+        {
+            studentPanel.Controls.Clear();
+            List<User> users = Hook.of<StudentController>(River).GetAllStudent();
+
+            users.ForEach(user => {
+                UserListItem userListItem = new UserListItem();
+                userListItem.Image = user.ImgUrl;
+                userListItem.Id = user.ID;
+                userListItem.Username = user.Name;
+                userListItem.Classes = user.Classes[0];
+                studentPanel.Controls.Add(userListItem);
+            });
+        }
 
         private static Image cropImage(Image img, Rectangle cropArea)
         {
