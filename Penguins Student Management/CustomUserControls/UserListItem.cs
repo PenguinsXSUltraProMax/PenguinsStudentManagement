@@ -25,9 +25,28 @@ namespace Penguins_Student_Management.CustomUserControls
         public string Image { get => imageUrl; set { imageUrl = value; image.Load(value); } }
 
         #endregion
+
         public UserListItem()
         {
             InitializeComponent();
+            WireAllControls(this.Controls);
+        }
+
+        private void WireAllControls(ControlCollection controls)
+        {
+            foreach (Control control in controls)
+            {
+                control.Click += Control_Click;
+                if (control.HasChildren)
+                {
+                    WireAllControls(control.Controls);
+                }
+            }
+        }
+
+        private void Control_Click(object sender, EventArgs e)
+        {
+            this.InvokeOnClick(this, EventArgs.Empty);
         }
 
     }

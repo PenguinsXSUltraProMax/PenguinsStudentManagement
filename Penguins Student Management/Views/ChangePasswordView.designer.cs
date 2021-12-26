@@ -203,6 +203,8 @@ namespace Penguins_Student_Management.Views
             this.Controls.Add(this.oldPasswordTextBox);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "ChangePasswordView";
             this.Padding = new System.Windows.Forms.Padding(24, 36, 24, 24);
             this.Text = "Đổi mật khẩu";

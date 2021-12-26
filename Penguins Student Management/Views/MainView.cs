@@ -81,8 +81,16 @@ namespace Penguins_Student_Management.Views
                 userListItem.Id = user.ID;
                 userListItem.Username = user.Name;
                 userListItem.Classes = user.Classes[0];
+
+                userListItem.Click += UserListItemClickHandle;
+
                 studentPanel.Controls.Add(userListItem);
             });
+        }
+
+        private void UserListItemClickHandle(object sender, EventArgs e)
+        {
+            string id = ((UserListItem)sender).Id;
         }
 
         private static Image cropImage(Image img, Rectangle cropArea)
@@ -189,5 +197,6 @@ namespace Penguins_Student_Management.Views
             }
             
         }
+
     }
 }
