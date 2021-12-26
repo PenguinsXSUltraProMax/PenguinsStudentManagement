@@ -10,7 +10,7 @@ namespace Penguins_Student_Management.Controllers.ClassController
     partial class ClassController : IRiverSubject
     {
 
-        public List<String> GetAllClasses()
+        public List<string> GetAllClasses()
         {
             return Global.Database.Collections.Classes;
         }
