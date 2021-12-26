@@ -1,10 +1,18 @@
-﻿using System;
+﻿using Penguins_Student_Management.Controllers.AuthController;
+using Penguins_Student_Management.StateManagement;
+using Penguins_Student_Management.StateManagement.Entity;
+using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views
 {
     public partial class SplashView : Form
     {
+
+        TheRiver River = new TheRiver(subjects: new List<IRiverSubject>() {
+            TheRiver.CreateSubject(new AuthController())
+        });
 
         public SplashView()
         {
@@ -17,6 +25,9 @@ namespace Penguins_Student_Management.Views
             Timer.Enabled = false;
 
             this.Hide();
+            LoginView loginView = new LoginView();
+            River.CreateObservable(loginView);
+            loginView.ShowDialog();
             this.Close();
         }
     }
