@@ -92,9 +92,10 @@ namespace Penguins_Student_Management.Views
         {
             string id = ((UserListItem)sender).Id;
 
-            EditUserView editUserView = new EditUserView(id);
-            River.CreateObservable(editUserView);
-            editUserView.ShowDialog();
+            UserDetailView userDetailView = new UserDetailView(id);
+            River.CreateObservable(userDetailView);
+            userDetailView.ShowDialog();
+
         }
 
         private static Image cropImage(Image img, Rectangle cropArea)
