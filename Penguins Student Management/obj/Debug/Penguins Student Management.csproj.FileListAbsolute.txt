@@ -39,3 +39,4 @@ D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Manage
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.CustomUserControls.SideMenuItem.resources
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Views.MainView.resources
 D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.CustomUserControls.CourseListItem.resources
+D:\Projects\Learning\C#\Push\Penguins Student Management\Penguins Student Management\obj\Debug\Penguins_Student_Management.Views.ChangePasswordView.resources
