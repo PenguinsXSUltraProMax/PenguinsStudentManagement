@@ -9,6 +9,7 @@ namespace Penguins_Student_Management.Controllers.AuthController
             if(string.IsNullOrEmpty(OLD_PASSWORD) || string.IsNullOrEmpty(NEW_PASSWORD) || string.IsNullOrEmpty(RETYPE_PASSWORD) || string.IsNullOrWhiteSpace(OLD_PASSWORD) || string.IsNullOrWhiteSpace(NEW_PASSWORD) || string.IsNullOrWhiteSpace(RETYPE_PASSWORD))
             {
                 MessageBox.Show("Điền hết các ô trước khi xác nhận!");
+                return;
             }
 
             if(GetCurrentUser.Password != OLD_PASSWORD)

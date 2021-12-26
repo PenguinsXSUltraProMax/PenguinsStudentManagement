@@ -91,6 +91,12 @@
     <Compile Include="StateManagement\Entity\ISubject.cs" />
     <Compile Include="StateManagement\Hook.cs" />
     <Compile Include="StateManagement\TheRiver.cs" />
+    <Compile Include="Views\ChangePasswordView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ChangePasswordView.designer.cs">
+      <DependentUpon>ChangePasswordView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\ChangePasswordView.resx">
+      <DependentUpon>ChangePasswordView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>

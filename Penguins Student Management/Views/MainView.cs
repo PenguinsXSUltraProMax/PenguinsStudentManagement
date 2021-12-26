@@ -152,8 +152,25 @@ namespace Penguins_Student_Management.Views
 
         private void sideMenuItemChangePassword_Click(object sender, EventArgs e)
         {
-            
+            ChangePasswordView changePasswordView = new ChangePasswordView();
+            River.CreateObservable(changePasswordView);
+            changePasswordView.ShowDialog();
         }
 
+        private void sideMenuItemSignOut_Click(object sender, EventArgs e)
+        {
+            authController.SignOut();
+
+            if(authController.State == AuthState.NONE)
+            {
+                River.DisposeObservable(this);
+                this.Hide();
+                LoginView loginView = new LoginView();
+                River.CreateObservable(loginView);
+                loginView.ShowDialog();
+                this.Close();
+            }
+            
+        }
     }
 }

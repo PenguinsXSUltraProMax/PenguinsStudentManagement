@@ -36,10 +36,22 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.sideMenuItemDashboard = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemMessages = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemStudent = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemTeacher = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemClass = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemCourse = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.dashboardTab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.sideMenuItemMyUniversity = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemSSchedule = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemTSchedule = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemLogInfo = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemChangePassword = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.sideMenuItemSignOut = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.coursePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -51,28 +63,16 @@ namespace Penguins_Student_Management.Views
             this.usernameLabel = new Guna.UI.WinForms.GunaLabel();
             this.dateTimeLabel = new Guna.UI.WinForms.GunaLabel();
             this.messagesTab = new System.Windows.Forms.TabPage();
-            this.studentTab = new System.Windows.Forms.TabPage();
-            this.teacherTab = new System.Windows.Forms.TabPage();
-            this.courseTab = new System.Windows.Forms.TabPage();
-            this.classTab = new System.Windows.Forms.TabPage();
-            this.searchTab = new System.Windows.Forms.TabPage();
-            this.sideMenuItemDashboard = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemMessages = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemStudent = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemTeacher = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemClass = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemCourse = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemMyUniversity = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemSSchedule = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemTSchedule = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemLogInfo = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemChangePassword = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemSignOut = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.studentTab = new System.Windows.Forms.TabPage();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.teacherTab = new System.Windows.Forms.TabPage();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
+            this.classTab = new System.Windows.Forms.TabPage();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
+            this.courseTab = new System.Windows.Forms.TabPage();
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
+            this.searchTab = new System.Windows.Forms.TabPage();
             this.sideMenuPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.penguinsButton)).BeginInit();
@@ -87,8 +87,8 @@ namespace Penguins_Student_Management.Views
             this.messagesTab.SuspendLayout();
             this.studentTab.SuspendLayout();
             this.teacherTab.SuspendLayout();
-            this.courseTab.SuspendLayout();
             this.classTab.SuspendLayout();
+            this.courseTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // sideMenuPanel
@@ -198,6 +198,84 @@ namespace Penguins_Student_Management.Views
             this.searchTextBox.Size = new System.Drawing.Size(240, 34);
             this.searchTextBox.TabIndex = 9;
             // 
+            // sideMenuItemDashboard
+            // 
+            this.sideMenuItemDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemDashboard.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_dashboard_layout_48;
+            this.sideMenuItemDashboard.IsActive = true;
+            this.sideMenuItemDashboard.Label = "Dashboard";
+            this.sideMenuItemDashboard.Location = new System.Drawing.Point(18, 163);
+            this.sideMenuItemDashboard.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.sideMenuItemDashboard.Name = "sideMenuItemDashboard";
+            this.sideMenuItemDashboard.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemDashboard.TabIndex = 3;
+            this.sideMenuItemDashboard.Click += new System.EventHandler(this.SideMenuItemDashboard_Click);
+            // 
+            // sideMenuItemMessages
+            // 
+            this.sideMenuItemMessages.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemMessages.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_chat_48;
+            this.sideMenuItemMessages.IsActive = false;
+            this.sideMenuItemMessages.Label = "Tin nhắn";
+            this.sideMenuItemMessages.Location = new System.Drawing.Point(18, 211);
+            this.sideMenuItemMessages.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.sideMenuItemMessages.Name = "sideMenuItemMessages";
+            this.sideMenuItemMessages.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemMessages.TabIndex = 11;
+            this.sideMenuItemMessages.Click += new System.EventHandler(this.SideMenuItemMessages_Click);
+            // 
+            // sideMenuItemStudent
+            // 
+            this.sideMenuItemStudent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemStudent.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_student_male_48;
+            this.sideMenuItemStudent.IsActive = false;
+            this.sideMenuItemStudent.Label = "Quản lý sinh viên";
+            this.sideMenuItemStudent.Location = new System.Drawing.Point(18, 259);
+            this.sideMenuItemStudent.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.sideMenuItemStudent.Name = "sideMenuItemStudent";
+            this.sideMenuItemStudent.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemStudent.TabIndex = 6;
+            this.sideMenuItemStudent.Click += new System.EventHandler(this.SideMenuItemStudent_Click);
+            // 
+            // sideMenuItemTeacher
+            // 
+            this.sideMenuItemTeacher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemTeacher.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_school_director_48;
+            this.sideMenuItemTeacher.IsActive = false;
+            this.sideMenuItemTeacher.Label = "Quản lý giáo viên";
+            this.sideMenuItemTeacher.Location = new System.Drawing.Point(18, 307);
+            this.sideMenuItemTeacher.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.sideMenuItemTeacher.Name = "sideMenuItemTeacher";
+            this.sideMenuItemTeacher.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemTeacher.TabIndex = 7;
+            this.sideMenuItemTeacher.Click += new System.EventHandler(this.sideMenuItemTeacher_Click);
+            // 
+            // sideMenuItemClass
+            // 
+            this.sideMenuItemClass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemClass.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_class_48;
+            this.sideMenuItemClass.IsActive = false;
+            this.sideMenuItemClass.Label = "Quản lý lớp học";
+            this.sideMenuItemClass.Location = new System.Drawing.Point(18, 355);
+            this.sideMenuItemClass.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.sideMenuItemClass.Name = "sideMenuItemClass";
+            this.sideMenuItemClass.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemClass.TabIndex = 12;
+            this.sideMenuItemClass.Click += new System.EventHandler(this.sideMenuItemClass_Click);
+            // 
+            // sideMenuItemCourse
+            // 
+            this.sideMenuItemCourse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemCourse.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_read_48;
+            this.sideMenuItemCourse.IsActive = false;
+            this.sideMenuItemCourse.Label = "Quản lý khóa học";
+            this.sideMenuItemCourse.Location = new System.Drawing.Point(18, 403);
+            this.sideMenuItemCourse.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.sideMenuItemCourse.Name = "sideMenuItemCourse";
+            this.sideMenuItemCourse.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemCourse.TabIndex = 10;
+            this.sideMenuItemCourse.Click += new System.EventHandler(this.sideMenuItemCourse_Click);
+            // 
             // tabControl
             // 
             this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -261,6 +339,80 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel5.Size = new System.Drawing.Size(240, 17);
             this.gunaLabel5.TabIndex = 11;
             this.gunaLabel5.Text = "Ứng dụng";
+            // 
+            // sideMenuItemMyUniversity
+            // 
+            this.sideMenuItemMyUniversity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemMyUniversity.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_school_building_48;
+            this.sideMenuItemMyUniversity.IsActive = false;
+            this.sideMenuItemMyUniversity.Label = "Trường tôi";
+            this.sideMenuItemMyUniversity.Location = new System.Drawing.Point(0, 29);
+            this.sideMenuItemMyUniversity.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.sideMenuItemMyUniversity.Name = "sideMenuItemMyUniversity";
+            this.sideMenuItemMyUniversity.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemMyUniversity.TabIndex = 12;
+            // 
+            // sideMenuItemSSchedule
+            // 
+            this.sideMenuItemSSchedule.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemSSchedule.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_curriculum_48;
+            this.sideMenuItemSSchedule.IsActive = false;
+            this.sideMenuItemSSchedule.Label = "Lịch học sinh viên";
+            this.sideMenuItemSSchedule.Location = new System.Drawing.Point(0, 73);
+            this.sideMenuItemSSchedule.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.sideMenuItemSSchedule.Name = "sideMenuItemSSchedule";
+            this.sideMenuItemSSchedule.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemSSchedule.TabIndex = 13;
+            // 
+            // sideMenuItemTSchedule
+            // 
+            this.sideMenuItemTSchedule.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemTSchedule.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_training_48;
+            this.sideMenuItemTSchedule.IsActive = false;
+            this.sideMenuItemTSchedule.Label = "Lịch dạy giáo viên";
+            this.sideMenuItemTSchedule.Location = new System.Drawing.Point(0, 117);
+            this.sideMenuItemTSchedule.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.sideMenuItemTSchedule.Name = "sideMenuItemTSchedule";
+            this.sideMenuItemTSchedule.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemTSchedule.TabIndex = 14;
+            // 
+            // sideMenuItemLogInfo
+            // 
+            this.sideMenuItemLogInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemLogInfo.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_contact_details_48;
+            this.sideMenuItemLogInfo.IsActive = false;
+            this.sideMenuItemLogInfo.Label = "Thông tin đăng nhập";
+            this.sideMenuItemLogInfo.Location = new System.Drawing.Point(0, 161);
+            this.sideMenuItemLogInfo.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.sideMenuItemLogInfo.Name = "sideMenuItemLogInfo";
+            this.sideMenuItemLogInfo.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemLogInfo.TabIndex = 16;
+            // 
+            // sideMenuItemChangePassword
+            // 
+            this.sideMenuItemChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemChangePassword.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_asterisk_48;
+            this.sideMenuItemChangePassword.IsActive = false;
+            this.sideMenuItemChangePassword.Label = "Đổi mật khẩu";
+            this.sideMenuItemChangePassword.Location = new System.Drawing.Point(0, 205);
+            this.sideMenuItemChangePassword.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.sideMenuItemChangePassword.Name = "sideMenuItemChangePassword";
+            this.sideMenuItemChangePassword.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemChangePassword.TabIndex = 17;
+            this.sideMenuItemChangePassword.Click += new System.EventHandler(this.sideMenuItemChangePassword_Click);
+            // 
+            // sideMenuItemSignOut
+            // 
+            this.sideMenuItemSignOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sideMenuItemSignOut.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_exit_sign_48;
+            this.sideMenuItemSignOut.IsActive = false;
+            this.sideMenuItemSignOut.Label = "Đăng xuất";
+            this.sideMenuItemSignOut.Location = new System.Drawing.Point(0, 249);
+            this.sideMenuItemSignOut.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.sideMenuItemSignOut.Name = "sideMenuItemSignOut";
+            this.sideMenuItemSignOut.Size = new System.Drawing.Size(240, 36);
+            this.sideMenuItemSignOut.TabIndex = 18;
+            this.sideMenuItemSignOut.Click += new System.EventHandler(this.sideMenuItemSignOut_Click);
             // 
             // coursePanel
             // 
@@ -409,212 +561,6 @@ namespace Penguins_Student_Management.Views
             this.messagesTab.TabIndex = 2;
             this.messagesTab.Text = "Tin nhắn";
             // 
-            // studentTab
-            // 
-            this.studentTab.BackColor = System.Drawing.Color.Transparent;
-            this.studentTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.studentTab.Controls.Add(this.gunaLabel7);
-            this.studentTab.Location = new System.Drawing.Point(4, 22);
-            this.studentTab.Margin = new System.Windows.Forms.Padding(0);
-            this.studentTab.Name = "studentTab";
-            this.studentTab.Size = new System.Drawing.Size(906, 603);
-            this.studentTab.TabIndex = 1;
-            this.studentTab.Text = "Quản lý sinh viên";
-            // 
-            // teacherTab
-            // 
-            this.teacherTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.teacherTab.Controls.Add(this.gunaLabel8);
-            this.teacherTab.Location = new System.Drawing.Point(4, 22);
-            this.teacherTab.Name = "teacherTab";
-            this.teacherTab.Size = new System.Drawing.Size(906, 603);
-            this.teacherTab.TabIndex = 3;
-            this.teacherTab.Text = "Quản lý giáo viên";
-            this.teacherTab.UseVisualStyleBackColor = true;
-            // 
-            // courseTab
-            // 
-            this.courseTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.courseTab.Controls.Add(this.gunaLabel10);
-            this.courseTab.Location = new System.Drawing.Point(4, 22);
-            this.courseTab.Name = "courseTab";
-            this.courseTab.Size = new System.Drawing.Size(906, 603);
-            this.courseTab.TabIndex = 4;
-            this.courseTab.Text = "Quản lý khóa học";
-            this.courseTab.UseVisualStyleBackColor = true;
-            // 
-            // classTab
-            // 
-            this.classTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.classTab.Controls.Add(this.gunaLabel9);
-            this.classTab.Location = new System.Drawing.Point(4, 22);
-            this.classTab.Name = "classTab";
-            this.classTab.Size = new System.Drawing.Size(906, 603);
-            this.classTab.TabIndex = 5;
-            this.classTab.Text = "Quản lý lớp học ";
-            this.classTab.UseVisualStyleBackColor = true;
-            // 
-            // searchTab
-            // 
-            this.searchTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.searchTab.Location = new System.Drawing.Point(4, 22);
-            this.searchTab.Name = "searchTab";
-            this.searchTab.Size = new System.Drawing.Size(906, 603);
-            this.searchTab.TabIndex = 6;
-            this.searchTab.Text = "Tìm kiếm";
-            this.searchTab.UseVisualStyleBackColor = true;
-            // 
-            // sideMenuItemDashboard
-            // 
-            this.sideMenuItemDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemDashboard.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_dashboard_layout_48;
-            this.sideMenuItemDashboard.IsActive = true;
-            this.sideMenuItemDashboard.Label = "Dashboard";
-            this.sideMenuItemDashboard.Location = new System.Drawing.Point(18, 163);
-            this.sideMenuItemDashboard.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemDashboard.Name = "sideMenuItemDashboard";
-            this.sideMenuItemDashboard.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemDashboard.TabIndex = 3;
-            this.sideMenuItemDashboard.Click += new System.EventHandler(this.SideMenuItemDashboard_Click);
-            // 
-            // sideMenuItemMessages
-            // 
-            this.sideMenuItemMessages.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemMessages.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_chat_48;
-            this.sideMenuItemMessages.IsActive = false;
-            this.sideMenuItemMessages.Label = "Tin nhắn";
-            this.sideMenuItemMessages.Location = new System.Drawing.Point(18, 211);
-            this.sideMenuItemMessages.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemMessages.Name = "sideMenuItemMessages";
-            this.sideMenuItemMessages.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemMessages.TabIndex = 11;
-            this.sideMenuItemMessages.Click += new System.EventHandler(this.SideMenuItemMessages_Click);
-            // 
-            // sideMenuItemStudent
-            // 
-            this.sideMenuItemStudent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemStudent.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_student_male_48;
-            this.sideMenuItemStudent.IsActive = false;
-            this.sideMenuItemStudent.Label = "Quản lý sinh viên";
-            this.sideMenuItemStudent.Location = new System.Drawing.Point(18, 259);
-            this.sideMenuItemStudent.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemStudent.Name = "sideMenuItemStudent";
-            this.sideMenuItemStudent.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemStudent.TabIndex = 6;
-            this.sideMenuItemStudent.Click += new System.EventHandler(this.SideMenuItemStudent_Click);
-            // 
-            // sideMenuItemTeacher
-            // 
-            this.sideMenuItemTeacher.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemTeacher.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_school_director_48;
-            this.sideMenuItemTeacher.IsActive = false;
-            this.sideMenuItemTeacher.Label = "Quản lý giáo viên";
-            this.sideMenuItemTeacher.Location = new System.Drawing.Point(18, 307);
-            this.sideMenuItemTeacher.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemTeacher.Name = "sideMenuItemTeacher";
-            this.sideMenuItemTeacher.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemTeacher.TabIndex = 7;
-            this.sideMenuItemTeacher.Click += new System.EventHandler(this.sideMenuItemTeacher_Click);
-            // 
-            // sideMenuItemClass
-            // 
-            this.sideMenuItemClass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemClass.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_class_48;
-            this.sideMenuItemClass.IsActive = false;
-            this.sideMenuItemClass.Label = "Quản lý lớp học";
-            this.sideMenuItemClass.Location = new System.Drawing.Point(18, 355);
-            this.sideMenuItemClass.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemClass.Name = "sideMenuItemClass";
-            this.sideMenuItemClass.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemClass.TabIndex = 12;
-            this.sideMenuItemClass.Click += new System.EventHandler(this.sideMenuItemClass_Click);
-            // 
-            // sideMenuItemCourse
-            // 
-            this.sideMenuItemCourse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemCourse.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_read_48;
-            this.sideMenuItemCourse.IsActive = false;
-            this.sideMenuItemCourse.Label = "Quản lý khóa học";
-            this.sideMenuItemCourse.Location = new System.Drawing.Point(18, 403);
-            this.sideMenuItemCourse.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemCourse.Name = "sideMenuItemCourse";
-            this.sideMenuItemCourse.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemCourse.TabIndex = 10;
-            this.sideMenuItemCourse.Click += new System.EventHandler(this.sideMenuItemCourse_Click);
-            // 
-            // sideMenuItemMyUniversity
-            // 
-            this.sideMenuItemMyUniversity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemMyUniversity.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_school_building_48;
-            this.sideMenuItemMyUniversity.IsActive = false;
-            this.sideMenuItemMyUniversity.Label = "Trường tôi";
-            this.sideMenuItemMyUniversity.Location = new System.Drawing.Point(0, 29);
-            this.sideMenuItemMyUniversity.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemMyUniversity.Name = "sideMenuItemMyUniversity";
-            this.sideMenuItemMyUniversity.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemMyUniversity.TabIndex = 12;
-            // 
-            // sideMenuItemSSchedule
-            // 
-            this.sideMenuItemSSchedule.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemSSchedule.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_curriculum_48;
-            this.sideMenuItemSSchedule.IsActive = false;
-            this.sideMenuItemSSchedule.Label = "Lịch học sinh viên";
-            this.sideMenuItemSSchedule.Location = new System.Drawing.Point(0, 73);
-            this.sideMenuItemSSchedule.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemSSchedule.Name = "sideMenuItemSSchedule";
-            this.sideMenuItemSSchedule.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemSSchedule.TabIndex = 13;
-            // 
-            // sideMenuItemTSchedule
-            // 
-            this.sideMenuItemTSchedule.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemTSchedule.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_training_48;
-            this.sideMenuItemTSchedule.IsActive = false;
-            this.sideMenuItemTSchedule.Label = "Lịch dạy giáo viên";
-            this.sideMenuItemTSchedule.Location = new System.Drawing.Point(0, 117);
-            this.sideMenuItemTSchedule.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemTSchedule.Name = "sideMenuItemTSchedule";
-            this.sideMenuItemTSchedule.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemTSchedule.TabIndex = 14;
-            // 
-            // sideMenuItemLogInfo
-            // 
-            this.sideMenuItemLogInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemLogInfo.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_contact_details_48;
-            this.sideMenuItemLogInfo.IsActive = false;
-            this.sideMenuItemLogInfo.Label = "Thông tin đăng nhập";
-            this.sideMenuItemLogInfo.Location = new System.Drawing.Point(0, 161);
-            this.sideMenuItemLogInfo.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemLogInfo.Name = "sideMenuItemLogInfo";
-            this.sideMenuItemLogInfo.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemLogInfo.TabIndex = 16;
-            // 
-            // sideMenuItemChangePassword
-            // 
-            this.sideMenuItemChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemChangePassword.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_asterisk_48;
-            this.sideMenuItemChangePassword.IsActive = false;
-            this.sideMenuItemChangePassword.Label = "Đổi mật khẩu";
-            this.sideMenuItemChangePassword.Location = new System.Drawing.Point(0, 205);
-            this.sideMenuItemChangePassword.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemChangePassword.Name = "sideMenuItemChangePassword";
-            this.sideMenuItemChangePassword.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemChangePassword.TabIndex = 17;
-            this.sideMenuItemChangePassword.Click += new System.EventHandler(this.sideMenuItemChangePassword_Click);
-            // 
-            // sideMenuItemSignOut
-            // 
-            this.sideMenuItemSignOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemSignOut.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_exit_sign_48;
-            this.sideMenuItemSignOut.IsActive = false;
-            this.sideMenuItemSignOut.Label = "Đăng xuất";
-            this.sideMenuItemSignOut.Location = new System.Drawing.Point(0, 249);
-            this.sideMenuItemSignOut.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemSignOut.Name = "sideMenuItemSignOut";
-            this.sideMenuItemSignOut.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemSignOut.TabIndex = 18;
-            // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
@@ -627,6 +573,18 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel6.Size = new System.Drawing.Size(85, 24);
             this.gunaLabel6.TabIndex = 6;
             this.gunaLabel6.Text = "Tin nhắn";
+            // 
+            // studentTab
+            // 
+            this.studentTab.BackColor = System.Drawing.Color.Transparent;
+            this.studentTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
+            this.studentTab.Controls.Add(this.gunaLabel7);
+            this.studentTab.Location = new System.Drawing.Point(4, 22);
+            this.studentTab.Margin = new System.Windows.Forms.Padding(0);
+            this.studentTab.Name = "studentTab";
+            this.studentTab.Size = new System.Drawing.Size(906, 603);
+            this.studentTab.TabIndex = 1;
+            this.studentTab.Text = "Quản lý sinh viên";
             // 
             // gunaLabel7
             // 
@@ -641,6 +599,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel7.TabIndex = 7;
             this.gunaLabel7.Text = "Quản lý sinh viên";
             // 
+            // teacherTab
+            // 
+            this.teacherTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
+            this.teacherTab.Controls.Add(this.gunaLabel8);
+            this.teacherTab.Location = new System.Drawing.Point(4, 22);
+            this.teacherTab.Name = "teacherTab";
+            this.teacherTab.Size = new System.Drawing.Size(906, 603);
+            this.teacherTab.TabIndex = 3;
+            this.teacherTab.Text = "Quản lý giáo viên";
+            this.teacherTab.UseVisualStyleBackColor = true;
+            // 
             // gunaLabel8
             // 
             this.gunaLabel8.AutoSize = true;
@@ -653,6 +622,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel8.Size = new System.Drawing.Size(165, 24);
             this.gunaLabel8.TabIndex = 8;
             this.gunaLabel8.Text = "Quản lý giáo viên";
+            // 
+            // classTab
+            // 
+            this.classTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
+            this.classTab.Controls.Add(this.gunaLabel9);
+            this.classTab.Location = new System.Drawing.Point(4, 22);
+            this.classTab.Name = "classTab";
+            this.classTab.Size = new System.Drawing.Size(906, 603);
+            this.classTab.TabIndex = 5;
+            this.classTab.Text = "Quản lý lớp học ";
+            this.classTab.UseVisualStyleBackColor = true;
             // 
             // gunaLabel9
             // 
@@ -667,6 +647,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel9.TabIndex = 9;
             this.gunaLabel9.Text = "Quản lý lớp học";
             // 
+            // courseTab
+            // 
+            this.courseTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
+            this.courseTab.Controls.Add(this.gunaLabel10);
+            this.courseTab.Location = new System.Drawing.Point(4, 22);
+            this.courseTab.Name = "courseTab";
+            this.courseTab.Size = new System.Drawing.Size(906, 603);
+            this.courseTab.TabIndex = 4;
+            this.courseTab.Text = "Quản lý khóa học";
+            this.courseTab.UseVisualStyleBackColor = true;
+            // 
             // gunaLabel10
             // 
             this.gunaLabel10.AutoSize = true;
@@ -679,6 +670,16 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel10.Size = new System.Drawing.Size(166, 24);
             this.gunaLabel10.TabIndex = 10;
             this.gunaLabel10.Text = "Quản lý khóa học";
+            // 
+            // searchTab
+            // 
+            this.searchTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
+            this.searchTab.Location = new System.Drawing.Point(4, 22);
+            this.searchTab.Name = "searchTab";
+            this.searchTab.Size = new System.Drawing.Size(906, 603);
+            this.searchTab.TabIndex = 6;
+            this.searchTab.Text = "Tìm kiếm";
+            this.searchTab.UseVisualStyleBackColor = true;
             // 
             // MainView
             // 
@@ -717,10 +718,10 @@ namespace Penguins_Student_Management.Views
             this.studentTab.PerformLayout();
             this.teacherTab.ResumeLayout(false);
             this.teacherTab.PerformLayout();
-            this.courseTab.ResumeLayout(false);
-            this.courseTab.PerformLayout();
             this.classTab.ResumeLayout(false);
             this.classTab.PerformLayout();
+            this.courseTab.ResumeLayout(false);
+            this.courseTab.PerformLayout();
             this.ResumeLayout(false);
 
         }
