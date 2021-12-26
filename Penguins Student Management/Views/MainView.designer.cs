@@ -64,6 +64,7 @@ namespace Penguins_Student_Management.Views
             this.courseTab = new System.Windows.Forms.TabPage();
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
             this.searchTab = new System.Windows.Forms.TabPage();
+            this.teacherPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.sideMenuItemDashboard = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.sideMenuItemMessages = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.sideMenuItemStudent = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
@@ -488,6 +489,7 @@ namespace Penguins_Student_Management.Views
             // teacherTab
             // 
             this.teacherTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
+            this.teacherTab.Controls.Add(this.teacherPanel);
             this.teacherTab.Controls.Add(this.gunaLabel8);
             this.teacherTab.Location = new System.Drawing.Point(4, 22);
             this.teacherTab.Name = "teacherTab";
@@ -590,6 +592,18 @@ namespace Penguins_Student_Management.Views
             this.searchTab.TabIndex = 6;
             this.searchTab.Text = "Tìm kiếm";
             this.searchTab.UseVisualStyleBackColor = true;
+            // 
+            // teacherPanel
+            // 
+            this.teacherPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.teacherPanel.AutoScroll = true;
+            this.teacherPanel.BackColor = System.Drawing.Color.Transparent;
+            this.teacherPanel.Location = new System.Drawing.Point(26, 86);
+            this.teacherPanel.Name = "teacherPanel";
+            this.teacherPanel.Size = new System.Drawing.Size(880, 514);
+            this.teacherPanel.TabIndex = 14;
             // 
             // sideMenuItemDashboard
             // 
@@ -837,5 +851,6 @@ namespace Penguins_Student_Management.Views
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.FlowLayoutPanel studentPanel;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.FlowLayoutPanel teacherPanel;
     }
 }

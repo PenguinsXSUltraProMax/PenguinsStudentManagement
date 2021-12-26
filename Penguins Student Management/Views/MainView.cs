@@ -40,6 +40,7 @@ namespace Penguins_Student_Management.Views
             ShowHideMenuItem();
             InitDashboardState();
             InitStudentState();
+            InitTeacherState();
         }
 
         private void ShowHideMenuItem()
@@ -85,6 +86,24 @@ namespace Penguins_Student_Management.Views
                 userListItem.Click += UserListItemClickHandle;
 
                 studentPanel.Controls.Add(userListItem);
+            });
+        }
+
+        private void InitTeacherState()
+        {
+            teacherPanel.Controls.Clear();
+            List<User> users = Hook.of<UserController>(River).GetAllTeacher();
+
+            users.ForEach(user => {
+                UserListItem userListItem = new UserListItem();
+                userListItem.Image = user.ImgUrl;
+                userListItem.Id = user.ID;
+                userListItem.Username = user.Name;
+                userListItem.Classes = user.Classes[0];
+
+                userListItem.Click += UserListItemClickHandle;
+
+                teacherPanel.Controls.Add(userListItem);
             });
         }
 
