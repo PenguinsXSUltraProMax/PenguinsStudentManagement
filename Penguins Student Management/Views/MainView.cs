@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Penguins_Student_Management.Controllers.CourseController;
-using Penguins_Student_Management.Controllers.StudentController;
+using Penguins_Student_Management.Controllers.UserController;
 
 namespace Penguins_Student_Management.Views
 {
@@ -73,7 +73,7 @@ namespace Penguins_Student_Management.Views
         private void InitStudentState()
         {
             studentPanel.Controls.Clear();
-            List<User> users = Hook.of<StudentController>(River).GetAllStudent();
+            List<User> users = Hook.of<UserController>(River).GetAllStudent();
 
             users.ForEach(user => {
                 UserListItem userListItem = new UserListItem();
@@ -91,6 +91,10 @@ namespace Penguins_Student_Management.Views
         private void UserListItemClickHandle(object sender, EventArgs e)
         {
             string id = ((UserListItem)sender).Id;
+
+            EditUserView editUserView = new EditUserView(id);
+            River.CreateObservable(editUserView);
+            editUserView.ShowDialog();
         }
 
         private static Image cropImage(Image img, Rectangle cropArea)

@@ -33,20 +33,20 @@ namespace Penguins_Student_Management.Views
             this.nameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ethnicTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nationalityTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.hometownTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.genderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.birthdayDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.classesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.typeComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.passwordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
             this.saveButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
@@ -114,33 +114,33 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel2.TabIndex = 9;
             this.gunaLabel2.Text = "Ngày sinh";
             // 
-            // guna2TextBox2
+            // ethnicTextBox
             // 
-            this.guna2TextBox2.BorderRadius = 3;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.IconLeftOffset = new System.Drawing.Point(8, 0);
-            this.guna2TextBox2.Location = new System.Drawing.Point(334, 198);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(278, 42);
-            this.guna2TextBox2.TabIndex = 14;
-            this.guna2TextBox2.TextOffset = new System.Drawing.Point(5, 0);
+            this.ethnicTextBox.BorderRadius = 3;
+            this.ethnicTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ethnicTextBox.DefaultText = "";
+            this.ethnicTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ethnicTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ethnicTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ethnicTextBox.DisabledState.Parent = this.ethnicTextBox;
+            this.ethnicTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ethnicTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ethnicTextBox.FocusedState.Parent = this.ethnicTextBox;
+            this.ethnicTextBox.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ethnicTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
+            this.ethnicTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ethnicTextBox.HoverState.Parent = this.ethnicTextBox;
+            this.ethnicTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
+            this.ethnicTextBox.Location = new System.Drawing.Point(334, 198);
+            this.ethnicTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
+            this.ethnicTextBox.Name = "ethnicTextBox";
+            this.ethnicTextBox.PasswordChar = '\0';
+            this.ethnicTextBox.PlaceholderText = "";
+            this.ethnicTextBox.SelectedText = "";
+            this.ethnicTextBox.ShadowDecoration.Parent = this.ethnicTextBox;
+            this.ethnicTextBox.Size = new System.Drawing.Size(278, 42);
+            this.ethnicTextBox.TabIndex = 14;
+            this.ethnicTextBox.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // gunaLabel4
             // 
@@ -166,33 +166,33 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel5.TabIndex = 11;
             this.gunaLabel5.Text = "Giới tính";
             // 
-            // guna2TextBox4
+            // nationalityTextBox
             // 
-            this.guna2TextBox4.BorderRadius = 3;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.IconLeftOffset = new System.Drawing.Point(8, 0);
-            this.guna2TextBox4.Location = new System.Drawing.Point(334, 284);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(278, 42);
-            this.guna2TextBox4.TabIndex = 18;
-            this.guna2TextBox4.TextOffset = new System.Drawing.Point(5, 0);
+            this.nationalityTextBox.BorderRadius = 3;
+            this.nationalityTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nationalityTextBox.DefaultText = "";
+            this.nationalityTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.nationalityTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.nationalityTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nationalityTextBox.DisabledState.Parent = this.nationalityTextBox;
+            this.nationalityTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nationalityTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nationalityTextBox.FocusedState.Parent = this.nationalityTextBox;
+            this.nationalityTextBox.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nationalityTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
+            this.nationalityTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nationalityTextBox.HoverState.Parent = this.nationalityTextBox;
+            this.nationalityTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
+            this.nationalityTextBox.Location = new System.Drawing.Point(334, 284);
+            this.nationalityTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
+            this.nationalityTextBox.Name = "nationalityTextBox";
+            this.nationalityTextBox.PasswordChar = '\0';
+            this.nationalityTextBox.PlaceholderText = "";
+            this.nationalityTextBox.SelectedText = "";
+            this.nationalityTextBox.ShadowDecoration.Parent = this.nationalityTextBox;
+            this.nationalityTextBox.Size = new System.Drawing.Size(278, 42);
+            this.nationalityTextBox.TabIndex = 18;
+            this.nationalityTextBox.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // gunaLabel6
             // 
@@ -206,33 +206,33 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel6.TabIndex = 17;
             this.gunaLabel6.Text = "Quốc tịch";
             // 
-            // guna2TextBox5
+            // hometownTextBox
             // 
-            this.guna2TextBox5.BorderRadius = 3;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.IconLeftOffset = new System.Drawing.Point(8, 0);
-            this.guna2TextBox5.Location = new System.Drawing.Point(28, 284);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(278, 42);
-            this.guna2TextBox5.TabIndex = 16;
-            this.guna2TextBox5.TextOffset = new System.Drawing.Point(5, 0);
+            this.hometownTextBox.BorderRadius = 3;
+            this.hometownTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.hometownTextBox.DefaultText = "";
+            this.hometownTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.hometownTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.hometownTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.hometownTextBox.DisabledState.Parent = this.hometownTextBox;
+            this.hometownTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.hometownTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hometownTextBox.FocusedState.Parent = this.hometownTextBox;
+            this.hometownTextBox.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hometownTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
+            this.hometownTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hometownTextBox.HoverState.Parent = this.hometownTextBox;
+            this.hometownTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
+            this.hometownTextBox.Location = new System.Drawing.Point(28, 284);
+            this.hometownTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
+            this.hometownTextBox.Name = "hometownTextBox";
+            this.hometownTextBox.PasswordChar = '\0';
+            this.hometownTextBox.PlaceholderText = "";
+            this.hometownTextBox.SelectedText = "";
+            this.hometownTextBox.ShadowDecoration.Parent = this.hometownTextBox;
+            this.hometownTextBox.Size = new System.Drawing.Size(278, 42);
+            this.hometownTextBox.TabIndex = 16;
+            this.hometownTextBox.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // gunaLabel7
             // 
@@ -290,27 +290,27 @@ namespace Penguins_Student_Management.Views
             this.birthdayDateTimePicker.TabIndex = 20;
             this.birthdayDateTimePicker.Value = new System.DateTime(2021, 12, 26, 16, 40, 15, 318);
             // 
-            // guna2ComboBox1
+            // classesComboBox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2ComboBox1.BorderRadius = 3;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Google Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 35;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(28, 371);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 24);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(278, 41);
-            this.guna2ComboBox1.TabIndex = 22;
+            this.classesComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.classesComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.classesComboBox.BorderRadius = 3;
+            this.classesComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.classesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.classesComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.classesComboBox.FocusedState.Parent = this.classesComboBox;
+            this.classesComboBox.Font = new System.Drawing.Font("Google Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classesComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.classesComboBox.FormattingEnabled = true;
+            this.classesComboBox.HoverState.Parent = this.classesComboBox;
+            this.classesComboBox.ItemHeight = 35;
+            this.classesComboBox.ItemsAppearance.Parent = this.classesComboBox;
+            this.classesComboBox.Location = new System.Drawing.Point(28, 371);
+            this.classesComboBox.Margin = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            this.classesComboBox.Name = "classesComboBox";
+            this.classesComboBox.ShadowDecoration.Parent = this.classesComboBox;
+            this.classesComboBox.Size = new System.Drawing.Size(278, 41);
+            this.classesComboBox.TabIndex = 22;
             // 
             // gunaLabel8
             // 
@@ -324,27 +324,27 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel8.TabIndex = 21;
             this.gunaLabel8.Text = "Lớp";
             // 
-            // guna2ComboBox2
+            // typeComboBox
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2ComboBox2.BorderRadius = 3;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Google Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.FormattingEnabled = true;
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 35;
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(332, 371);
-            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(278, 41);
-            this.guna2ComboBox2.TabIndex = 24;
+            this.typeComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.typeComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.typeComboBox.BorderRadius = 3;
+            this.typeComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.typeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.typeComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.typeComboBox.FocusedState.Parent = this.typeComboBox;
+            this.typeComboBox.Font = new System.Drawing.Font("Google Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.typeComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.typeComboBox.FormattingEnabled = true;
+            this.typeComboBox.HoverState.Parent = this.typeComboBox;
+            this.typeComboBox.ItemHeight = 35;
+            this.typeComboBox.ItemsAppearance.Parent = this.typeComboBox;
+            this.typeComboBox.Location = new System.Drawing.Point(332, 371);
+            this.typeComboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.typeComboBox.Name = "typeComboBox";
+            this.typeComboBox.ShadowDecoration.Parent = this.typeComboBox;
+            this.typeComboBox.Size = new System.Drawing.Size(278, 41);
+            this.typeComboBox.TabIndex = 24;
             // 
             // gunaLabel9
             // 
@@ -358,33 +358,33 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel9.TabIndex = 23;
             this.gunaLabel9.Text = "Loại tài khoản";
             // 
-            // guna2TextBox1
+            // passwordTextBox
             // 
-            this.guna2TextBox1.BorderRadius = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.IconLeftOffset = new System.Drawing.Point(8, 0);
-            this.guna2TextBox1.Location = new System.Drawing.Point(28, 456);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(582, 42);
-            this.guna2TextBox1.TabIndex = 26;
-            this.guna2TextBox1.TextOffset = new System.Drawing.Point(5, 0);
+            this.passwordTextBox.BorderRadius = 3;
+            this.passwordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordTextBox.DefaultText = "";
+            this.passwordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.passwordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.passwordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordTextBox.DisabledState.Parent = this.passwordTextBox;
+            this.passwordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passwordTextBox.FocusedState.Parent = this.passwordTextBox;
+            this.passwordTextBox.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
+            this.passwordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passwordTextBox.HoverState.Parent = this.passwordTextBox;
+            this.passwordTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
+            this.passwordTextBox.Location = new System.Drawing.Point(28, 456);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '\0';
+            this.passwordTextBox.PlaceholderText = "";
+            this.passwordTextBox.SelectedText = "";
+            this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
+            this.passwordTextBox.Size = new System.Drawing.Size(582, 42);
+            this.passwordTextBox.TabIndex = 26;
+            this.passwordTextBox.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // gunaLabel10
             // 
@@ -415,6 +415,7 @@ namespace Penguins_Student_Management.Views
             this.saveButton.Size = new System.Drawing.Size(582, 42);
             this.saveButton.TabIndex = 27;
             this.saveButton.Text = "LƯU THAY ĐỔI";
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // EditUserView
             // 
@@ -423,19 +424,19 @@ namespace Penguins_Student_Management.Views
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(639, 599);
             this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.gunaLabel10);
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.typeComboBox);
             this.Controls.Add(this.gunaLabel9);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.classesComboBox);
             this.Controls.Add(this.gunaLabel8);
             this.Controls.Add(this.birthdayDateTimePicker);
             this.Controls.Add(this.genderComboBox);
-            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.nationalityTextBox);
             this.Controls.Add(this.gunaLabel6);
-            this.Controls.Add(this.guna2TextBox5);
+            this.Controls.Add(this.hometownTextBox);
             this.Controls.Add(this.gunaLabel7);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.ethnicTextBox);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel2);
@@ -447,6 +448,7 @@ namespace Penguins_Student_Management.Views
             this.Name = "EditUserView";
             this.Padding = new System.Windows.Forms.Padding(24, 36, 24, 24);
             this.Text = "EditUserView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditUserView_FormClosing);
             this.Load += new System.EventHandler(this.EditUserView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -459,20 +461,20 @@ namespace Penguins_Student_Management.Views
         private Guna.UI2.WinForms.Guna2TextBox nameTextBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox ethnicTextBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox nationalityTextBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox hometownTextBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
         private Guna.UI2.WinForms.Guna2ComboBox genderComboBox;
         private Guna.UI2.WinForms.Guna2DateTimePicker birthdayDateTimePicker;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox classesComboBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox typeComboBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox passwordTextBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
         private Guna.UI2.WinForms.Guna2GradientButton saveButton;
     }

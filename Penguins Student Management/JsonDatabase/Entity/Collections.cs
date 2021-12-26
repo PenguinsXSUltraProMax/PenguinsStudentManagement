@@ -8,5 +8,6 @@ namespace Penguins_Student_Management.JsonDatabase.Entity
         public Dictionary<string, User> Users { get; set; }
         public Dictionary<string, Course> Courses { get; set; }
         public Dictionary<string, CourseCategory> CourseCategory { get; set; }
+        public List<string> Classes { get; set; }
     }
 }
