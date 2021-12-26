@@ -61,8 +61,12 @@
     <Compile Include="Controllers\AuthController\ChangePassword.cs" />
     <Compile Include="Controllers\AuthController\SignInWithIDAndPassword.cs" />
     <Compile Include="Controllers\AuthController\SignOut.cs" />
+    <Compile Include="Controllers\ClassController\ClassController.cs" />
     <Compile Include="Controllers\CourseController\CourseController.cs" />
-    <Compile Include="Controllers\StudentController\StudentController.cs" />
+    <Compile Include="Controllers\UserController\GetAllUser.cs" />
+    <Compile Include="Controllers\UserController\GetAllTeacher.cs" />
+    <Compile Include="Controllers\UserController\GetAllStudent.cs" />
+    <Compile Include="Controllers\UserController\UserController.cs" />
     <Compile Include="CustomUserControls\CourseListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>

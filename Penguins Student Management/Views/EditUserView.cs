@@ -1,4 +1,5 @@
-﻿using Penguins_Student_Management.StateManagement;
+﻿using Penguins_Student_Management.JsonDatabase.Entity.Document;
+using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
 using System.Collections.Generic;
@@ -16,10 +17,12 @@ namespace Penguins_Student_Management.Views
     {
 
         TheRiver River;
+        User user;
 
-        public EditUserView()
+        public EditUserView(string UID)
         {
             InitializeComponent();
+
         }
 
         private void EditUserView_Load(object sender, EventArgs e)
