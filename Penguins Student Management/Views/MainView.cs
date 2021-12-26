@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Penguins_Student_Management.Controllers.CourseController;
+using Penguins_Student_Management.Controllers.StudentController;
 
 namespace Penguins_Student_Management.Views
 {
@@ -38,6 +39,7 @@ namespace Penguins_Student_Management.Views
 
             ShowHideMenuItem();
             InitDashboardState();
+            InitStudentState();
         }
 
         private void ShowHideMenuItem()
@@ -65,6 +67,21 @@ namespace Penguins_Student_Management.Views
                 courseListItem.CourseLabel = course.Name;
                 coursePanel.Controls.Add(courseListItem);
 
+            });
+        }
+
+        private void InitStudentState()
+        {
+            studentPanel.Controls.Clear();
+            List<User> users = Hook.of<StudentController>(River).GetAllStudent();
+
+            users.ForEach(user => {
+                UserListItem userListItem = new UserListItem();
+                userListItem.Image = user.ImgUrl;
+                userListItem.Id = user.ID;
+                userListItem.Username = user.Name;
+                userListItem.Classes = user.Classes[0];
+                studentPanel.Controls.Add(userListItem);
             });
         }
 

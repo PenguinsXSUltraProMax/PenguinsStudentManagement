@@ -65,14 +65,17 @@ namespace Penguins_Student_Management.Views
             this.messagesTab = new System.Windows.Forms.TabPage();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.studentTab = new System.Windows.Forms.TabPage();
+            this.studentPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.teacherTab = new System.Windows.Forms.TabPage();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.classTab = new System.Windows.Forms.TabPage();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.courseTab = new System.Windows.Forms.TabPage();
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
             this.searchTab = new System.Windows.Forms.TabPage();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.sideMenuPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.penguinsButton)).BeginInit();
@@ -578,6 +581,8 @@ namespace Penguins_Student_Management.Views
             // 
             this.studentTab.BackColor = System.Drawing.Color.Transparent;
             this.studentTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
+            this.studentTab.Controls.Add(this.guna2Button2);
+            this.studentTab.Controls.Add(this.studentPanel);
             this.studentTab.Controls.Add(this.gunaLabel7);
             this.studentTab.Location = new System.Drawing.Point(4, 22);
             this.studentTab.Margin = new System.Windows.Forms.Padding(0);
@@ -585,6 +590,17 @@ namespace Penguins_Student_Management.Views
             this.studentTab.Size = new System.Drawing.Size(906, 603);
             this.studentTab.TabIndex = 1;
             this.studentTab.Text = "Quản lý sinh viên";
+            // 
+            // studentPanel
+            // 
+            this.studentPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.studentPanel.AutoScroll = true;
+            this.studentPanel.Location = new System.Drawing.Point(26, 86);
+            this.studentPanel.Name = "studentPanel";
+            this.studentPanel.Size = new System.Drawing.Size(880, 514);
+            this.studentPanel.TabIndex = 13;
             // 
             // gunaLabel7
             // 
@@ -626,13 +642,37 @@ namespace Penguins_Student_Management.Views
             // classTab
             // 
             this.classTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
+            this.classTab.Controls.Add(this.guna2Button1);
             this.classTab.Controls.Add(this.gunaLabel9);
             this.classTab.Location = new System.Drawing.Point(4, 22);
+            this.classTab.Margin = new System.Windows.Forms.Padding(0);
             this.classTab.Name = "classTab";
             this.classTab.Size = new System.Drawing.Size(906, 603);
             this.classTab.TabIndex = 5;
             this.classTab.Text = "Quản lý lớp học ";
             this.classTab.UseVisualStyleBackColor = true;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderRadius = 3;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
+            this.guna2Button1.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.guna2Button1.ImageSize = new System.Drawing.Size(12, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(711, 36);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(110, 29);
+            this.guna2Button1.TabIndex = 10;
+            this.guna2Button1.Text = "Thêm";
             // 
             // gunaLabel9
             // 
@@ -680,6 +720,28 @@ namespace Penguins_Student_Management.Views
             this.searchTab.TabIndex = 6;
             this.searchTab.Text = "Tìm kiếm";
             this.searchTab.UseVisualStyleBackColor = true;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.BorderRadius = 3;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
+            this.guna2Button2.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.guna2Button2.ImageSize = new System.Drawing.Size(12, 12);
+            this.guna2Button2.Location = new System.Drawing.Point(769, 36);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(110, 29);
+            this.guna2Button2.TabIndex = 14;
+            this.guna2Button2.Text = "Thêm";
             // 
             // MainView
             // 
@@ -772,5 +834,8 @@ namespace Penguins_Student_Management.Views
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.FlowLayoutPanel studentPanel;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

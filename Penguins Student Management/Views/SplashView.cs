@@ -1,5 +1,6 @@
 ﻿using Penguins_Student_Management.Controllers.AuthController;
 using Penguins_Student_Management.Controllers.CourseController;
+using Penguins_Student_Management.Controllers.StudentController;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
@@ -13,7 +14,8 @@ namespace Penguins_Student_Management.Views
 
         TheRiver River = new TheRiver(subjects: new List<IRiverSubject>() {
             TheRiver.CreateSubject(new AuthController()),
-            TheRiver.CreateSubject(new CourseController())
+            TheRiver.CreateSubject(new CourseController()),
+            TheRiver.CreateSubject(new StudentController())
         });
 
         public SplashView()
