@@ -61,6 +61,13 @@
     <Compile Include="Controllers\AuthController\ChangePassword.cs" />
     <Compile Include="Controllers\AuthController\SignInWithIDAndPassword.cs" />
     <Compile Include="Controllers\AuthController\SignOut.cs" />
+    <Compile Include="Controllers\CourseController\CourseController.cs" />
+    <Compile Include="CustomUserControls\CourseListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControls\CourseListItem.designer.cs">
+      <DependentUpon>CourseListItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomUserControls\SideMenuItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +109,9 @@
     <Compile Include="Views\SplashView.Designer.cs">
       <DependentUpon>SplashView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomUserControls\CourseListItem.resx">
+      <DependentUpon>CourseListItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomUserControls\SideMenuItem.resx">
       <DependentUpon>SideMenuItem.cs</DependentUpon>
     </EmbeddedResource>

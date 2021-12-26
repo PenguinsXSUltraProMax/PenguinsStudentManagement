@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using Penguins_Student_Management.Controllers.CourseController;
 
 namespace Penguins_Student_Management.Views
 {
@@ -36,6 +37,7 @@ namespace Penguins_Student_Management.Views
             authController = Hook.of<AuthController>(River);
 
             ShowHideMenuItem();
+            InitDashboardState();
         }
 
         private void ShowHideMenuItem()
@@ -46,6 +48,31 @@ namespace Penguins_Student_Management.Views
             sideMenuItemCourse.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
         }
 
+        private void InitDashboardState()
+        {
+            userAvatar.Load(authController.GetCurrentUser.ImgUrl ?? "https://api.minimalavatars.com/avatar/random/png");
+            userAvatar.Image = cropImage(userAvatar.Image, Rectangle.FromLTRB(0, 0, userAvatar.Image.Width, userAvatar.Image.Width));
+
+            usernameLabel.Text = authController.GetCurrentUser.Name;
+            useridLabel.Text = authController.GetCurrentUser.ID;
+
+            coursePanel.Controls.Clear();
+            List<Course> courses = Hook.of<CourseController>(River).GetCoursesOfUser(authController.GetCurrentUser);
+
+            courses.ForEach(course =>
+            {
+                CourseListItem courseListItem = new CourseListItem();
+                courseListItem.CourseLabel = course.Name;
+                coursePanel.Controls.Add(courseListItem);
+
+            });
+        }
+
+        private static Image cropImage(Image img, Rectangle cropArea)
+        {
+            Bitmap bmpImage = new Bitmap(img);
+            return bmpImage.Clone(cropArea, bmpImage.PixelFormat);
+        }
 
         private void SideMenuItemDashboard_Click(object sender, EventArgs e)
         {
