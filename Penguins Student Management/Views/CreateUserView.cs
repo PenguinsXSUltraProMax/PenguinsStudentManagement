@@ -125,6 +125,7 @@ namespace Penguins_Student_Management.Views
             user.Messages = new List<string>();
 
             Hook.of<UserController>(River).CreateUser(user);
+            River.Refesh();
 
             MessageBox.Show("Tạo thành công!");
 

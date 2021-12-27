@@ -83,32 +83,15 @@
       },
       "100000001": {
         "Birthday": "26/12/2021",
-        "Ethnic": "fdsf",
+        "Ethnic": "sad",
         "Gender": "Nam",
-        "Hometown": "sdfsd",
+        "Hometown": "sad",
         "ID": "100000001",
         "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
-        "Name": "sfd",
-        "Nationality": "sdf",
-        "Password": "dsfs",
-        "Type": 0,
-        "Classes": [
-          "19TD111"
-        ],
-        "Courses": [],
-        "Messages": []
-      },
-      "GV000001": {
-        "Birthday": "26/12/2021",
-        "Ethnic": "sad",
-        "Gender": "Why ru gei?",
-        "Hometown": "sda",
-        "ID": "GV000001",
-        "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
         "Name": "asd",
-        "Nationality": "asda",
+        "Nationality": "asd",
         "Password": "sad",
-        "Type": 1,
+        "Type": 0,
         "Classes": [
           "19TD111"
         ],
