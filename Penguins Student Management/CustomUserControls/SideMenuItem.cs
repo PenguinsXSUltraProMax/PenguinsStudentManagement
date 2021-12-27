@@ -7,6 +7,7 @@ namespace Penguins_Student_Management.CustomUserControls
     public partial class SideMenuItem : UserControl
     {
         #region Properties
+        private int index;
         private string label = "Label";
         private Image iconImage;
         private bool isActive = false;
@@ -15,6 +16,7 @@ namespace Penguins_Student_Management.CustomUserControls
         private readonly Color ACTIVE_BACKGROUND_COLOR = Color.FromArgb(236, 232, 240);
         private readonly Color ACTIVE_BAR_COLOR = Color.FromArgb(0, 103, 192);
 
+        public int Index { get => index; set => index = value; }
         public string Label { get => label; set { label = value; text.Text = value; } }
         public Image IconImage { get => iconImage; set { iconImage = value; Icon.Image = value; } }
         public bool IsActive {

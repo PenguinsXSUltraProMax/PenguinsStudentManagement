@@ -29,7 +29,6 @@ namespace Penguins_Student_Management.Views
 
         private void MainView_Load(object sender, EventArgs e)
         {
-            
         }
 
         public void SetState(TheRiver value)
@@ -123,30 +122,9 @@ namespace Penguins_Student_Management.Views
             return bmpImage.Clone(cropArea, bmpImage.PixelFormat);
         }
 
-        private void SideMenuItemDashboard_Click(object sender, EventArgs e)
-        {
-            tabControl.SelectedIndex = 0;
-        }
-        private void SideMenuItemMessages_Click(object sender, EventArgs e)
-        {
-            tabControl.SelectedIndex = 1;
-        }
-        private void SideMenuItemStudent_Click(object sender, EventArgs e)
-        {
-            tabControl.SelectedIndex = 2;
-        }
 
-        private void sideMenuItemTeacher_Click(object sender, EventArgs e)
-        {
-            tabControl.SelectedIndex = 3;
-        }
-        private void sideMenuItemClass_Click(object sender, EventArgs e)
-        {
-            tabControl.SelectedIndex = 4;
-        }
-        private void sideMenuItemCourse_Click(object sender, EventArgs e)
-        {
-            tabControl.SelectedIndex = 5;
+        private void SideMenuItemClickHandle(object sender, EventArgs e) {
+            tabControl.SelectedIndex = ((SideMenuItem)sender).Index;
         }
 
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
