@@ -81,17 +81,17 @@
         ],
         "Messages": []
       },
-      "100000001": {
+      "GV000001": {
         "Birthday": "26/12/2021",
-        "Ethnic": "sad",
+        "Ethnic": "dfg",
         "Gender": "Nam",
-        "Hometown": "sad",
-        "ID": "100000001",
+        "Hometown": "dfgdfg",
+        "ID": "GV000001",
         "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
-        "Name": "asd",
-        "Nationality": "asd",
-        "Password": "sad",
-        "Type": 0,
+        "Name": "dgdf",
+        "Nationality": "dfg",
+        "Password": "gdf",
+        "Type": 1,
         "Classes": [
           "19TD111"
         ],

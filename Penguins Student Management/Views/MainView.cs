@@ -37,9 +37,9 @@ namespace Penguins_Student_Management.Views
             authController = Hook.of<AuthController>(River);
 
             ShowHideMenuItem();
-            InitDashboardState();
-            InitStudentState();
-            InitTeacherState();
+            if(tabControl.SelectedIndex == 0)InitDashboardState();
+            if(tabControl.SelectedIndex == 2) InitStudentState();
+            if(tabControl.SelectedIndex == 3) InitTeacherState();
         }
 
         private void ShowHideMenuItem()
@@ -130,6 +130,9 @@ namespace Penguins_Student_Management.Views
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
             SideMenuItemActiveHandle(tabControl.SelectedIndex);
+            if (tabControl.SelectedIndex == 0) InitDashboardState();
+            if (tabControl.SelectedIndex == 2) InitStudentState();
+            if (tabControl.SelectedIndex == 3) InitTeacherState();
         }
 
         private void SideMenuItemActiveHandle(int index)
