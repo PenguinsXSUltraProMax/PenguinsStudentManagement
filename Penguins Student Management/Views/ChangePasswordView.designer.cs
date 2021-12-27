@@ -207,6 +207,7 @@ namespace Penguins_Student_Management.Views
             this.MaximizeBox = false;
             this.Name = "ChangePasswordView";
             this.Padding = new System.Windows.Forms.Padding(24, 36, 24, 24);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đổi mật khẩu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChangePasswordView_FormClosing);
             this.Load += new System.EventHandler(this.ChangePasswordView_Load);

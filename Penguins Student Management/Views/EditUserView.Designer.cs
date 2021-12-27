@@ -447,6 +447,7 @@ namespace Penguins_Student_Management.Views
             this.MaximizeBox = false;
             this.Name = "EditUserView";
             this.Padding = new System.Windows.Forms.Padding(24, 36, 24, 24);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sửa thông tin";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditUserView_FormClosing);
             this.Load += new System.EventHandler(this.EditUserView_Load);

@@ -70,7 +70,7 @@
         "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
         "Name": "Nguyễn Gì Đấy",
         "Nationality": "Việt Nam",
-        "Password": "123",
+        "Password": "1234",
         "Type": 2,
         "Classes": [
           "19DT111"
@@ -79,23 +79,6 @@
           "wcbX-pDPxfS6KxC",
           "RwAI3zy80nsX-Vb"
         ],
-        "Messages": []
-      },
-      "GV000001": {
-        "Birthday": "26/12/2021",
-        "Ethnic": "dfg",
-        "Gender": "Nam",
-        "Hometown": "dfgdfg",
-        "ID": "GV000001",
-        "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
-        "Name": "dgdf",
-        "Nationality": "dfg",
-        "Password": "gdf",
-        "Type": 1,
-        "Classes": [
-          "19TD111"
-        ],
-        "Courses": [],
         "Messages": []
       }
     },

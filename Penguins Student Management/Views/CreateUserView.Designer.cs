@@ -440,7 +440,6 @@ namespace Penguins_Student_Management.Views
             this.idTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
             this.idTextBox.Location = new System.Drawing.Point(117, 112);
             this.idTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
-            this.idTextBox.MaxLength = 6;
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.PasswordChar = '\0';
             this.idTextBox.PlaceholderText = "";
@@ -521,6 +520,7 @@ namespace Penguins_Student_Management.Views
             this.MaximizeBox = false;
             this.Name = "CreateUserView";
             this.Padding = new System.Windows.Forms.Padding(24, 36, 24, 24);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm sinh viên";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CreateUserView_FormClosing);
             this.Load += new System.EventHandler(this.CreateUserView_Load);

@@ -52,8 +52,8 @@ namespace Penguins_Student_Management.Views
 
         private void InitDashboardState()
         {
-            userAvatar.Load(authController.GetCurrentUser.ImgUrl ?? "https://api.minimalavatars.com/avatar/random/png");
-            userAvatar.Image = cropImage(userAvatar.Image, Rectangle.FromLTRB(0, 0, userAvatar.Image.Width, userAvatar.Image.Width));
+            userAvatar.Load("https://ui-avatars.com/api/?background=random&size=32&font-size=0.3&color=fff&name=" + authController.GetCurrentUser.Name ?? authController.GetCurrentUser.ImgUrl ?? "https://api.minimalavatars.com/avatar/random/png");
+            //userAvatar.Image = cropImage(userAvatar.Image, Rectangle.FromLTRB(0, 0, userAvatar.Image.Width, userAvatar.Image.Width));
 
             usernameLabel.Text = authController.GetCurrentUser.Name;
             useridLabel.Text = authController.GetCurrentUser.ID;
@@ -77,7 +77,6 @@ namespace Penguins_Student_Management.Views
 
             users.ForEach(user => {
                 UserListItem userListItem = new UserListItem();
-                userListItem.Image = user.ImgUrl;
                 userListItem.Id = user.ID;
                 userListItem.Username = user.Name;
                 userListItem.Classes = user.Classes[0];
@@ -85,6 +84,8 @@ namespace Penguins_Student_Management.Views
                 userListItem.Click += UserListItemClickHandle;
 
                 studentPanel.Controls.Add(userListItem);
+                
+                //userListItem.Image = "https://ui-avatars.com/api/?background=random&size=1&font-size=0.3&color=fff&name= ";
             });
         }
 
@@ -95,7 +96,6 @@ namespace Penguins_Student_Management.Views
 
             users.ForEach(user => {
                 UserListItem userListItem = new UserListItem();
-                userListItem.Image = user.ImgUrl;
                 userListItem.Id = user.ID;
                 userListItem.Username = user.Name;
                 userListItem.Classes = user.Classes[0];
@@ -103,6 +103,8 @@ namespace Penguins_Student_Management.Views
                 userListItem.Click += UserListItemClickHandle;
 
                 teacherPanel.Controls.Add(userListItem);
+                
+                //userListItem.Image = "https://ui-avatars.com/api/?background=random&size=32&font-size=0.3&color=fff&name=" + user.Name;
             });
         }
 
@@ -115,13 +117,6 @@ namespace Penguins_Student_Management.Views
             userDetailView.ShowDialog();
 
         }
-
-        private static Image cropImage(Image img, Rectangle cropArea)
-        {
-            Bitmap bmpImage = new Bitmap(img);
-            return bmpImage.Clone(cropArea, bmpImage.PixelFormat);
-        }
-
 
         private void SideMenuItemClickHandle(object sender, EventArgs e) {
             tabControl.SelectedIndex = ((SideMenuItem)sender).Index;

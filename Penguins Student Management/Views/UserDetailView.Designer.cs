@@ -374,6 +374,7 @@ namespace Penguins_Student_Management.Views
             this.MaximizeBox = false;
             this.Name = "UserDetailView";
             this.Padding = new System.Windows.Forms.Padding(24, 36, 24, 24);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin người dùng";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserDetailView_FormClosing);
             this.Load += new System.EventHandler(this.UserDetailView_Load);
