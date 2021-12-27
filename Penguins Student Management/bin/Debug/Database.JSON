@@ -67,12 +67,12 @@
                 "Gender": "Nam",
                 "Hometown": "Đồng Nai",
                 "ID": "GVADMIN",
-                "ImgUrl": null,
+                "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
                 "Name": "Nguyễn Gì Đấy",
                 "Nationality": "Việt Nam",
                 "Password": "123",
                 "Type": 2,
-                "Classes": [],
+                "Classes": ["19DT111"],
                 "Courses": [
                     "wcbX-pDPxfS6KxC",
                     "RwAI3zy80nsX-Vb"

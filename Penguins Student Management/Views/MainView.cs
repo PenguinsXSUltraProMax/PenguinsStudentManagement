@@ -40,6 +40,7 @@ namespace Penguins_Student_Management.Views
             ShowHideMenuItem();
             InitDashboardState();
             InitStudentState();
+            InitTeacherState();
         }
 
         private void ShowHideMenuItem()
@@ -88,6 +89,24 @@ namespace Penguins_Student_Management.Views
             });
         }
 
+        private void InitTeacherState()
+        {
+            teacherPanel.Controls.Clear();
+            List<User> users = Hook.of<UserController>(River).GetAllTeacher();
+
+            users.ForEach(user => {
+                UserListItem userListItem = new UserListItem();
+                userListItem.Image = user.ImgUrl;
+                userListItem.Id = user.ID;
+                userListItem.Username = user.Name;
+                userListItem.Classes = user.Classes[0];
+
+                userListItem.Click += UserListItemClickHandle;
+
+                teacherPanel.Controls.Add(userListItem);
+            });
+        }
+
         private void UserListItemClickHandle(object sender, EventArgs e)
         {
             string id = ((UserListItem)sender).Id;
@@ -132,40 +151,7 @@ namespace Penguins_Student_Management.Views
 
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            switch (tabControl.SelectedIndex)
-            {
-                case 0:
-                    {
-                        SideMenuItemActiveHandle(0);
-                        break;
-                    }
-                case 1:
-                    {
-                        SideMenuItemActiveHandle(1);
-                        break;
-                    }
-                case 2:
-                    {
-                        SideMenuItemActiveHandle(2);
-                        break;
-                    }
-                case 3:
-                    {
-                        SideMenuItemActiveHandle(3);
-                        break;
-                    }
-                case 4:
-                    {
-                        SideMenuItemActiveHandle(4);
-                        break;
-                    }
-                case 5:
-                    {
-                        SideMenuItemActiveHandle(5);
-                        break;
-                    }
-            }
+            SideMenuItemActiveHandle(tabControl.SelectedIndex);
         }
 
         private void SideMenuItemActiveHandle(int index)
@@ -203,5 +189,9 @@ namespace Penguins_Student_Management.Views
             
         }
 
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
