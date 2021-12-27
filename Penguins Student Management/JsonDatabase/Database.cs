@@ -6,6 +6,5 @@ namespace Penguins_Student_Management.JsonDatabase
     {
         private Root Root { get; set; }
         public Collections Collections { get; set; }
-        
     }
 }

@@ -51,6 +51,7 @@ namespace Penguins_Student_Management.Views
             this.saveButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.idTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
+            this.prefixComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.SuspendLayout();
             // 
             // gunaLabel1
@@ -417,7 +418,7 @@ namespace Penguins_Student_Management.Views
             this.saveButton.ShadowDecoration.Parent = this.saveButton;
             this.saveButton.Size = new System.Drawing.Size(582, 42);
             this.saveButton.TabIndex = 27;
-            this.saveButton.Text = "LƯU THAY ĐỔI";
+            this.saveButton.Text = "TẠO MỚI";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // idTextBox
@@ -430,7 +431,6 @@ namespace Penguins_Student_Management.Views
             this.idTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.idTextBox.DisabledState.Parent = this.idTextBox;
             this.idTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.idTextBox.Enabled = false;
             this.idTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.idTextBox.FocusedState.Parent = this.idTextBox;
             this.idTextBox.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -438,14 +438,15 @@ namespace Penguins_Student_Management.Views
             this.idTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.idTextBox.HoverState.Parent = this.idTextBox;
             this.idTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
-            this.idTextBox.Location = new System.Drawing.Point(30, 112);
+            this.idTextBox.Location = new System.Drawing.Point(117, 112);
             this.idTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 24, 24);
+            this.idTextBox.MaxLength = 6;
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.PasswordChar = '\0';
             this.idTextBox.PlaceholderText = "";
             this.idTextBox.SelectedText = "";
             this.idTextBox.ShadowDecoration.Parent = this.idTextBox;
-            this.idTextBox.Size = new System.Drawing.Size(278, 42);
+            this.idTextBox.Size = new System.Drawing.Size(191, 42);
             this.idTextBox.TabIndex = 29;
             this.idTextBox.TextOffset = new System.Drawing.Point(5, 0);
             // 
@@ -461,12 +462,39 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel11.TabIndex = 28;
             this.gunaLabel11.Text = "ID";
             // 
+            // prefixComboBox
+            // 
+            this.prefixComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.prefixComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.prefixComboBox.BorderRadius = 3;
+            this.prefixComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.prefixComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.prefixComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.prefixComboBox.FocusedState.Parent = this.prefixComboBox;
+            this.prefixComboBox.Font = new System.Drawing.Font("Google Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prefixComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.prefixComboBox.FormattingEnabled = true;
+            this.prefixComboBox.HoverState.Parent = this.prefixComboBox;
+            this.prefixComboBox.ItemHeight = 35;
+            this.prefixComboBox.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Why ru gei?"});
+            this.prefixComboBox.ItemsAppearance.Parent = this.prefixComboBox;
+            this.prefixComboBox.Location = new System.Drawing.Point(32, 113);
+            this.prefixComboBox.Margin = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            this.prefixComboBox.Name = "prefixComboBox";
+            this.prefixComboBox.ShadowDecoration.Parent = this.prefixComboBox;
+            this.prefixComboBox.Size = new System.Drawing.Size(81, 41);
+            this.prefixComboBox.TabIndex = 30;
+            // 
             // CreateUserView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(639, 599);
+            this.Controls.Add(this.prefixComboBox);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.gunaLabel11);
             this.Controls.Add(this.saveButton);
@@ -494,8 +522,8 @@ namespace Penguins_Student_Management.Views
             this.Name = "CreateUserView";
             this.Padding = new System.Windows.Forms.Padding(24, 36, 24, 24);
             this.Text = "Thêm sinh viên";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditUserView_FormClosing);
-            this.Load += new System.EventHandler(this.EditUserView_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CreateUserView_FormClosing);
+            this.Load += new System.EventHandler(this.CreateUserView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -525,5 +553,6 @@ namespace Penguins_Student_Management.Views
         private Guna.UI2.WinForms.Guna2GradientButton saveButton;
         private Guna.UI2.WinForms.Guna2TextBox idTextBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel11;
+        private Guna.UI2.WinForms.Guna2ComboBox prefixComboBox;
     }
 }

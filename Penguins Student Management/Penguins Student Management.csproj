@@ -63,6 +63,8 @@
     <Compile Include="Controllers\AuthController\SignOut.cs" />
     <Compile Include="Controllers\ClassController\ClassController.cs" />
     <Compile Include="Controllers\CourseController\CourseController.cs" />
+    <Compile Include="Controllers\UserController\IsIDExists.cs" />
+    <Compile Include="Controllers\UserController\CreateUser.cs" />
     <Compile Include="Controllers\UserController\DeleteUserByID.cs" />
     <Compile Include="Controllers\UserController\UpdateUserByID.cs" />
     <Compile Include="Controllers\UserController\GetAllUser.cs" />
