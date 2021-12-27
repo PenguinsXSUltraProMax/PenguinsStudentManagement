@@ -65,11 +65,11 @@ namespace Penguins_Student_Management.Views
             this.messagesTab = new System.Windows.Forms.TabPage();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.studentTab = new System.Windows.Forms.TabPage();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.addStudentButton = new Guna.UI2.WinForms.Guna2Button();
             this.studentPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.teacherTab = new System.Windows.Forms.TabPage();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.addTeacherButton = new Guna.UI2.WinForms.Guna2Button();
             this.teacherPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.classTab = new System.Windows.Forms.TabPage();
@@ -595,7 +595,7 @@ namespace Penguins_Student_Management.Views
             // 
             this.studentTab.BackColor = System.Drawing.Color.Transparent;
             this.studentTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.studentTab.Controls.Add(this.guna2Button2);
+            this.studentTab.Controls.Add(this.addStudentButton);
             this.studentTab.Controls.Add(this.studentPanel);
             this.studentTab.Controls.Add(this.gunaLabel7);
             this.studentTab.Location = new System.Drawing.Point(4, 22);
@@ -605,27 +605,28 @@ namespace Penguins_Student_Management.Views
             this.studentTab.TabIndex = 1;
             this.studentTab.Text = "Quản lý sinh viên";
             // 
-            // guna2Button2
+            // addStudentButton
             // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BorderRadius = 3;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
-            this.guna2Button2.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.guna2Button2.ImageSize = new System.Drawing.Size(12, 12);
-            this.guna2Button2.Location = new System.Drawing.Point(771, 36);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(110, 29);
-            this.guna2Button2.TabIndex = 14;
-            this.guna2Button2.Text = "Thêm";
+            this.addStudentButton.Animated = true;
+            this.addStudentButton.BorderRadius = 3;
+            this.addStudentButton.CheckedState.Parent = this.addStudentButton;
+            this.addStudentButton.CustomImages.Parent = this.addStudentButton;
+            this.addStudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.addStudentButton.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addStudentButton.ForeColor = System.Drawing.Color.Black;
+            this.addStudentButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.addStudentButton.HoverState.Parent = this.addStudentButton;
+            this.addStudentButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
+            this.addStudentButton.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.addStudentButton.ImageSize = new System.Drawing.Size(12, 12);
+            this.addStudentButton.Location = new System.Drawing.Point(771, 36);
+            this.addStudentButton.Margin = new System.Windows.Forms.Padding(0);
+            this.addStudentButton.Name = "addStudentButton";
+            this.addStudentButton.ShadowDecoration.Parent = this.addStudentButton;
+            this.addStudentButton.Size = new System.Drawing.Size(110, 29);
+            this.addStudentButton.TabIndex = 14;
+            this.addStudentButton.Text = "Thêm";
+            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
             // 
             // studentPanel
             // 
@@ -654,7 +655,7 @@ namespace Penguins_Student_Management.Views
             // teacherTab
             // 
             this.teacherTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.teacherTab.Controls.Add(this.guna2Button3);
+            this.teacherTab.Controls.Add(this.addTeacherButton);
             this.teacherTab.Controls.Add(this.teacherPanel);
             this.teacherTab.Controls.Add(this.gunaLabel8);
             this.teacherTab.Location = new System.Drawing.Point(4, 22);
@@ -664,28 +665,28 @@ namespace Penguins_Student_Management.Views
             this.teacherTab.Text = "Quản lý giáo viên";
             this.teacherTab.UseVisualStyleBackColor = true;
             // 
-            // guna2Button3
+            // addTeacherButton
             // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.BorderRadius = 3;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
-            this.guna2Button3.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.guna2Button3.ImageSize = new System.Drawing.Size(12, 12);
-            this.guna2Button3.Location = new System.Drawing.Point(771, 36);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(110, 29);
-            this.guna2Button3.TabIndex = 15;
-            this.guna2Button3.Text = "Thêm";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.addTeacherButton.Animated = true;
+            this.addTeacherButton.BorderRadius = 3;
+            this.addTeacherButton.CheckedState.Parent = this.addTeacherButton;
+            this.addTeacherButton.CustomImages.Parent = this.addTeacherButton;
+            this.addTeacherButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.addTeacherButton.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addTeacherButton.ForeColor = System.Drawing.Color.Black;
+            this.addTeacherButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.addTeacherButton.HoverState.Parent = this.addTeacherButton;
+            this.addTeacherButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
+            this.addTeacherButton.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.addTeacherButton.ImageSize = new System.Drawing.Size(12, 12);
+            this.addTeacherButton.Location = new System.Drawing.Point(771, 36);
+            this.addTeacherButton.Margin = new System.Windows.Forms.Padding(0);
+            this.addTeacherButton.Name = "addTeacherButton";
+            this.addTeacherButton.ShadowDecoration.Parent = this.addTeacherButton;
+            this.addTeacherButton.Size = new System.Drawing.Size(110, 29);
+            this.addTeacherButton.TabIndex = 15;
+            this.addTeacherButton.Text = "Thêm";
+            this.addTeacherButton.Click += new System.EventHandler(this.addTeacherButton_Click);
             // 
             // teacherPanel
             // 
@@ -887,8 +888,8 @@ namespace Penguins_Student_Management.Views
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.FlowLayoutPanel studentPanel;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button addStudentButton;
         private System.Windows.Forms.FlowLayoutPanel teacherPanel;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button addTeacherButton;
     }
 }

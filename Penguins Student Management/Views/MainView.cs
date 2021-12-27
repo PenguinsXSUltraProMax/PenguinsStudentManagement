@@ -171,5 +171,19 @@ namespace Penguins_Student_Management.Views
         {
 
         }
+
+        private void addStudentButton_Click(object sender, EventArgs e)
+        {
+            CreateUserView createUserView = new CreateUserView(User.AccountType.Student);
+            River.CreateObservable(createUserView);
+            createUserView.ShowDialog();
+        }
+
+        private void addTeacherButton_Click(object sender, EventArgs e)
+        {
+            CreateUserView createUserView = new CreateUserView(User.AccountType.Teacher);
+            River.CreateObservable(createUserView);
+            createUserView.ShowDialog();
+        }
     }
 }

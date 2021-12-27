@@ -3,6 +3,25 @@
   "LTID": "0",
   "Collections": {
     "Users": {
+      "119000001": {
+        "Birthday": "20/08/1991",
+        "Ethnic": "Kinh",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "119000001",
+        "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000001",
+        "Name": "Trần Minh Tuấn",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Type": 0,
+        "Classes": [
+          "19TD111"
+        ],
+        "Courses": [
+          "wcbX-pDPxfS6KxC"
+        ],
+        "Messages": []
+      },
       "119000003": {
         "Birthday": "28/01/2001",
         "Ethnic": "Kinh",
@@ -48,16 +67,35 @@
         "Gender": "Nam",
         "Hometown": "Đồng Nai",
         "ID": "GVADMIN",
-        "ImgUrl": null,
+        "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
         "Name": "Nguyễn Gì Đấy",
         "Nationality": "Việt Nam",
         "Password": "123",
         "Type": 2,
-        "Classes": [],
+        "Classes": [
+          "19DT111"
+        ],
         "Courses": [
           "wcbX-pDPxfS6KxC",
           "RwAI3zy80nsX-Vb"
         ],
+        "Messages": []
+      },
+      "100000001": {
+        "Birthday": "26/12/2021",
+        "Ethnic": "sad",
+        "Gender": "Nam",
+        "Hometown": "sad",
+        "ID": "100000001",
+        "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
+        "Name": "asd",
+        "Nationality": "asd",
+        "Password": "sad",
+        "Type": 0,
+        "Classes": [
+          "19TD111"
+        ],
+        "Courses": [],
         "Messages": []
       }
     },
