@@ -45,7 +45,7 @@ namespace Penguins_Student_Management.Views
             ethnicLabel.Text = user.Ethnic;
             hometownLabel.Text = user.Hometown;
             nationalityLabel.Text = user.Nationality;
-            classLabel.Text = user.Classes[0];
+            classLabel.Text = user.Class;
             typeLabel.Text = user.Type.ToString();
             passwordLabel.Text = user.Password;
         }
@@ -63,7 +63,7 @@ namespace Penguins_Student_Management.Views
 
             if(result == DialogResult.Yes)
             {
-                Hook.of<UserController>(River).DeleteUserByID(id);
+                Hook.of<UserController>(River).DeleteUser(user);
                 this.Close();
                 River.Refesh();
             }

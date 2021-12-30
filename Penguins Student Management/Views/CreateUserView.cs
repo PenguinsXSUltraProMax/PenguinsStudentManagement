@@ -38,7 +38,9 @@ namespace Penguins_Student_Management.Views
         private void InitData()
         {
             genderComboBox.SelectedIndex = 0;
-            classesComboBox.DataSource = Hook.of<ClassController>(River).GetAllClasses();
+            classComboBox.DataSource = Hook.of<ClassController>(River).GetAllClasses();
+            classComboBox.DisplayMember = "Name";
+            classComboBox.SelectedIndex = 0;
             typeComboBox.DataSource = Enum.GetValues(typeof(User.AccountType));
             idTextBox.Text = "000001";
             
@@ -85,24 +87,24 @@ namespace Penguins_Student_Management.Views
                 return;
             }
 
-            string id = prefixComboBox.SelectedItem.ToString() + idTextBox.Text;
-            string name = nameTextBox.Text;
-            string birthday = birthdayDateTimePicker.Value.Day + "/" + birthdayDateTimePicker.Value.Month + "/" + birthdayDateTimePicker.Value.Year;
-            string gender = genderComboBox.SelectedItem.ToString();
-            string ethnic = ethnicTextBox.Text;
-            string hometown = hometownTextBox.Text;
-            string nationality = nationalityTextBox.Text;
-            string classes = classesComboBox.SelectedItem.ToString();
-            User.AccountType type = (User.AccountType)typeComboBox.SelectedItem;
-            string password = passwordTextBox.Text;
+            string ID = prefixComboBox.SelectedItem.ToString() + idTextBox.Text;
+            string Name = nameTextBox.Text;
+            string Birthday = birthdayDateTimePicker.Value.Day + "/" + birthdayDateTimePicker.Value.Month + "/" + birthdayDateTimePicker.Value.Year;
+            string Gender = genderComboBox.SelectedItem.ToString();
+            string Ethnic = ethnicTextBox.Text;
+            string Hometown = hometownTextBox.Text;
+            string Nationality = nationalityTextBox.Text;
+            string Class = ((Class)classComboBox.SelectedItem).ID;
+            User.AccountType Type = (User.AccountType)typeComboBox.SelectedItem;
+            string Password = passwordTextBox.Text;
 
-            if(Hook.of<UserController>(River).IsIDExists(id))
+            if(Hook.of<UserController>(River).IsIDExists(ID))
             {
                 MessageBox.Show("ID này đã được dùng. Vui lòng sử dụng ID khác!");
                 return;
             }
 
-            if(string.IsNullOrEmpty(name) || string.IsNullOrEmpty(ethnic) || string.IsNullOrEmpty(gender) || string.IsNullOrEmpty(hometown) || string.IsNullOrEmpty(nationality) || string.IsNullOrEmpty(password))
+            if(string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(Ethnic) || string.IsNullOrEmpty(Gender) || string.IsNullOrEmpty(Hometown) || string.IsNullOrEmpty(Nationality) || string.IsNullOrEmpty(Password))
             {
                 MessageBox.Show("Điền hết tất cả thông tin để tiếp tục!");
                 return;
@@ -110,19 +112,17 @@ namespace Penguins_Student_Management.Views
 
             User user = new User();
 
-            user.ID = id;
-            user.Name = name;
-            user.Birthday = birthday;
-            user.Gender = gender;
-            user.Ethnic = ethnic;
-            user.Hometown = hometown;
-            user.Nationality = nationality;
-            user.Classes = new List<string>(){classes};
-            user.Type = type;
-            user.Password = password;
-            user.ImgUrl = "https://api.minimalavatars.com/avatar/random/png";
+            user.ID = ID;
+            user.Name = Name;
+            user.Birthday = Birthday;
+            user.Gender = Gender;
+            user.Ethnic = Ethnic;
+            user.Hometown = Hometown;
+            user.Nationality = Nationality;
+            user.Class = Class;
+            user.Type = Type;
+            user.Password = Password;
             user.Courses = new List<string>();
-            user.Messages = new List<string>();
 
             Hook.of<UserController>(River).CreateUser(user);
             River.Refesh();

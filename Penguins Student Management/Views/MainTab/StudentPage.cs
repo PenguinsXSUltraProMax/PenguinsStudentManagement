@@ -5,20 +5,14 @@ using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
 {
-    public partial class Student : Form, IObserver
+    public partial class StudentPage : Form, IObserver
     {
         TheRiver River;
-        public Student()
+        public StudentPage()
         {
             InitializeComponent();
             this.TopLevel = false;
@@ -46,7 +40,7 @@ namespace Penguins_Student_Management.Views.MainTab
                 {
                     Id = user.ID,
                     Username = user.Name,
-                    Classes = user.Classes[0]
+                    Class = user.Class
                 };
 
                 userListItem.Click += UserListItemClickHandle;

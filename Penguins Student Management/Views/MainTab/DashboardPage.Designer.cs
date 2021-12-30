@@ -1,7 +1,7 @@
 ﻿
 namespace Penguins_Student_Management.Views.MainTab
 {
-    partial class Dashboard
+    partial class DashboardPage
     {
         /// <summary>
         /// Required designer variable.
@@ -172,7 +172,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.coursePanel.Location = new System.Drawing.Point(27, 135);
             this.coursePanel.Margin = new System.Windows.Forms.Padding(0);
             this.coursePanel.Name = "coursePanel";
-            this.coursePanel.Size = new System.Drawing.Size(604, 467);
+            this.coursePanel.Size = new System.Drawing.Size(604, 491);
             this.coursePanel.TabIndex = 16;
             // 
             // gunaLabel4
@@ -310,7 +310,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
-            this.Padding = new System.Windows.Forms.Padding(24);
+            this.Padding = new System.Windows.Forms.Padding(24, 24, 24, 0);
             this.Text = "Dashboard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dashboard_FormClosing);
             this.flowLayoutPanel3.ResumeLayout(false);

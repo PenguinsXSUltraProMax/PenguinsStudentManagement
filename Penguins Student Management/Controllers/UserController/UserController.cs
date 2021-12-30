@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Penguins_Student_Management.Controllers.UserController
 {
-    partial class UserController :IRiverSubject {}
+    partial class UserController : IRiverSubject {}
 }

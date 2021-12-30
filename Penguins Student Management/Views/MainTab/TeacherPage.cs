@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
 {
-    public partial class Teacher : Form, IObserver
+    public partial class TeacherPage : Form, IObserver
     {
         TheRiver River;
-        public Teacher()
+        public TeacherPage()
         {
             InitializeComponent();
             this.TopLevel = false;
@@ -39,7 +39,7 @@ namespace Penguins_Student_Management.Views.MainTab
                 {
                     Id = user.ID,
                     Username = user.Name,
-                    Classes = user.Classes[0]
+                    Class = user.Class
                 };
 
                 userListItem.Click += UserListItemClickHandle;

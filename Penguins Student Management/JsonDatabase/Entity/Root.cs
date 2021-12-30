@@ -2,8 +2,6 @@
 {
     class Root
     {
-        public string LSID { get; set; }
-        public string LTID { get; set; }
         public Collections Collections { get; set; }
     }
 }

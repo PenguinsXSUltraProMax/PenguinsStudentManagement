@@ -14,7 +14,23 @@ namespace Penguins_Student_Management.Controllers.UserController
         {
             User user;
             Global.Database.Collections.Users.TryGetValue(id, out user);
-            return user;
+
+            User clone = new User()
+            {
+                ID = user.ID,
+                Name = user.Name,
+                Gender = user.Gender,
+                Birthday = user.Birthday,
+                Ethnic = user.Ethnic,
+                Hometown = user.Hometown,
+                Nationality = user.Nationality,
+                Class = Global.Database.Collections.Classes[user.Class].Name,
+                Password = user.Password,
+                Courses = user.Courses,
+                Type = user.Type
+            };
+
+            return clone;
         }
 
     }

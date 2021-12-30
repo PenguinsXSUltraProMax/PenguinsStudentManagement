@@ -16,11 +16,11 @@ using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
 {
-    public partial class Dashboard : Form, IObserver
+    public partial class DashboardPage : Form, IObserver
     {
         public MainView OwnerForm;
         TheRiver River;
-        public Dashboard()
+        public DashboardPage()
         {
             InitializeComponent();
             this.TopLevel = false;

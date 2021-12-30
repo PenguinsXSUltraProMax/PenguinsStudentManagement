@@ -8,5 +8,12 @@ using System.Threading.Tasks;
 
 namespace Penguins_Student_Management.Controllers.ClassController
 {
-    partial class ClassController : IRiverSubject { }
+    partial class ClassController
+    {
+        public bool IsClassExists(string ID)
+        {
+            return Global.Database.Collections.Classes.ContainsKey(ID);
+        }
+
+    }
 }
