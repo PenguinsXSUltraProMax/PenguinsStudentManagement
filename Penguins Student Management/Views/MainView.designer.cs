@@ -160,6 +160,7 @@ namespace Penguins_Student_Management.Views
             this.searchTextBox.ShadowDecoration.Parent = this.searchTextBox;
             this.searchTextBox.Size = new System.Drawing.Size(240, 34);
             this.searchTextBox.TabIndex = 9;
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
             // sideMenuItemDashboard
             // 

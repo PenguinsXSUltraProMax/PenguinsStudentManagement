@@ -42,8 +42,10 @@ namespace Penguins_Student_Management.Views
             ethnicTextBox.Text = user.Ethnic;
             hometownTextBox.Text = user.Hometown;
             nationalityTextBox.Text = user.Nationality;
-            classesComboBox.DataSource = Hook.of<ClassController>(River).GetAllClasses();
-            classesComboBox.SelectedItem = user.Classes[0];
+            classComboBox.DataSource = Hook.of<ClassController>(River).GetAllClasses();
+            classComboBox.DisplayMember = "Name";
+            classComboBox.ValueMember = "ID";
+            classComboBox.SelectedValue = user.Class;
             typeComboBox.DataSource = Enum.GetValues(typeof(User.AccountType));
             typeComboBox.SelectedItem = user.Type;
             passwordTextBox.Text = user.Password;
@@ -51,33 +53,33 @@ namespace Penguins_Student_Management.Views
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            string name = nameTextBox.Text;
-            string birthday = birthdayDateTimePicker.Value.Day + "/" + birthdayDateTimePicker.Value.Month + "/" + birthdayDateTimePicker.Value.Year;
-            string gender = genderComboBox.SelectedItem.ToString();
-            string ethnic = ethnicTextBox.Text;
-            string hometown = hometownTextBox.Text;
-            string nationality = nationalityTextBox.Text;
-            string classes = classesComboBox.SelectedItem.ToString();
-            User.AccountType type = (User.AccountType)typeComboBox.SelectedItem;
-            string password = passwordTextBox.Text;
+            string Name = nameTextBox.Text;
+            string Birthday = birthdayDateTimePicker.Value.Day + "/" + birthdayDateTimePicker.Value.Month + "/" + birthdayDateTimePicker.Value.Year;
+            string Gender = genderComboBox.SelectedItem.ToString();
+            string Ethnic = ethnicTextBox.Text;
+            string Hometown = hometownTextBox.Text;
+            string Nationality = nationalityTextBox.Text;
+            string Class = classComboBox.SelectedValue.ToString();
+            User.AccountType Type = (User.AccountType)typeComboBox.SelectedItem;
+            string Password = passwordTextBox.Text;
 
-            if(string.IsNullOrEmpty(name) || string.IsNullOrEmpty(ethnic) || string.IsNullOrEmpty(hometown) || string.IsNullOrEmpty(nationality) || string.IsNullOrEmpty(password))
+            if(string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(Ethnic) || string.IsNullOrEmpty(Hometown) || string.IsNullOrEmpty(Nationality) || string.IsNullOrEmpty(Password))
             {
                 MessageBox.Show("Điền hết tất cả thông tin để tiếp tục!");
                 return;
             }
 
-            user.Name = name;
-            user.Birthday = birthday;
-            user.Gender = gender;
-            user.Ethnic = ethnic;
-            user.Hometown = hometown;
-            user.Nationality = nationality;
-            user.Classes[0] = classes;
-            user.Type = type;
-            user.Password = password;
+            user.Name = Name;
+            user.Birthday = Birthday;
+            user.Gender = Gender;
+            user.Ethnic = Ethnic;
+            user.Hometown = Hometown;
+            user.Nationality = Nationality;
+            user.Class = Class;
+            user.Type = Type;
+            user.Password = Password;
 
-            Hook.of<UserController>(River).UpdateUserByID(user.ID, user);
+            Hook.of<UserController>(River).UpdateUser(user);
 
             MessageBox.Show("Sửa thông tin thành công!");
             

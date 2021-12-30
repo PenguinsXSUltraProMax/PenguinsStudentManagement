@@ -39,7 +39,7 @@ namespace Penguins_Student_Management.Views.MainTab
                 {
                     Id = user.ID,
                     Username = user.Name,
-                    Classes = user.Classes[0]
+                    Class = user.Class
                 };
 
                 userListItem.Click += UserListItemClickHandle;

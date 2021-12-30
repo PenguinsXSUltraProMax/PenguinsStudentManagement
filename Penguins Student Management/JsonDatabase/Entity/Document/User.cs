@@ -9,14 +9,12 @@ namespace Penguins_Student_Management.JsonDatabase.Entity.Document
         public string Gender { get; set; }
         public string Hometown { get; set; }
         public string ID { get; set; }
-        public string ImgUrl { get; set; }
         public string Name { get; set; }
         public string Nationality { get; set; }
         public string Password { get; set; }
-        public AccountType Type { get; set; }
-        public List<string> Classes { get; set; }
+        public string Class { get; set; }
         public List<string> Courses { get; set; }
-        public List<string> Messages { get; set; }
+        public AccountType Type { get; set; }
 
         public enum AccountType
         {

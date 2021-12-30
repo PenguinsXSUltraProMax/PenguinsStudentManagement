@@ -1,65 +1,83 @@
 {
-    "LSID": "4",
-    "LTID": "0",
     "Collections": {
         "Users": {
             "119000001": {
-                "Birthday": "20/08/1991",
-                "Ethnic": "Kinh",
+                "Birthday": "13/1/2001",
+                "Ethnic": "King",
                 "Gender": "Nam",
                 "Hometown": "Đồng Nai",
                 "ID": "119000001",
-                "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000001",
-                "Name": "Trần Minh Tuấn",
+                "Name": "Lê Xuân Visual Studio",
                 "Nationality": "Việt Nam",
                 "Password": "123",
                 "Type": 0,
-                "Classes": [
-                    "19TD111"
-                ],
+                "Class": "1",
                 "Courses": [
                     "wcbX-pDPxfS6KxC"
-                ],
-                "Messages": []
+                ]
             },
-            "119000003": {
+            "119000002": {
                 "Birthday": "28/01/2001",
-                "Ethnic": "Kinh",
+                "Ethnic": "King",
                 "Gender": "Nam",
-                "Hometown": "Quảng Trị",
-                "ID": "119000003",
-                "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000003",
-                "Name": "Lê Đình Dương",
+                "Hometown": "Đồng Nai",
+                "ID": "119000002",
+                "Name": "Đoàn Nguyên HTML",
                 "Nationality": "Việt Nam",
                 "Password": "123",
                 "Type": 0,
-                "Classes": [
-                    "19KT111"
-                ],
+                "Class": "1",
                 "Courses": [
                     "RwAI3zy80nsX-Vb"
-                ],
-                "Messages": []
+                ]
             },
-            "119000004": {
-                "Birthday": "24/05/2000",
+            "119000003": {
+                "Birthday": "22/05/2001",
                 "Ethnic": "Kinh",
-                "Gender": "Nữ",
-                "Hometown": "Bình Định",
-                "ID": "119000004",
-                "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000004",
-                "Name": "Lê Thị Phương Thảo",
+                "Gender": "Nam",
+                "Hometown": "Đồng Nai",
+                "ID": "119000003",
+                "Name": "Nguyễn Ngọc MongoDB",
                 "Nationality": "Việt Nam",
                 "Password": "123",
                 "Type": 0,
-                "Classes": [
-                    "19DT111"
-                ],
+                "Class": "1",
                 "Courses": [
                     "wcbX-pDPxfS6KxC",
                     "RwAI3zy80nsX-Vb"
-                ],
-                "Messages": []
+                ]
+            },
+            "119000004": {
+                "Birthday": "2/09/2001",
+                "Ethnic": "Kinh",
+                "Gender": "Nam",
+                "Hometown": "Đồng Nai",
+                "ID": "119000004",
+                "Name": "Nguyễn Thanh HTTP",
+                "Nationality": "Việt Nam",
+                "Password": "123",
+                "Type": 0,
+                "Class": "1",
+                "Courses": [
+                    "wcbX-pDPxfS6KxC",
+                    "RwAI3zy80nsX-Vb"
+                ]
+            },
+            "119000005": {
+                "Birthday": "19/03/2001",
+                "Ethnic": "Kinh",
+                "Gender": "Nam",
+                "Hometown": "Đồng Nai",
+                "ID": "119000005",
+                "Name": "Nguyễn Trọng NativeScript",
+                "Nationality": "Việt Nam",
+                "Password": "123",
+                "Type": 0,
+                "Class": "1",
+                "Courses": [
+                    "wcbX-pDPxfS6KxC",
+                    "RwAI3zy80nsX-Vb"
+                ]
             },
             "GVADMIN": {
                 "Birthday": "26/7/1976",
@@ -67,17 +85,30 @@
                 "Gender": "Nam",
                 "Hometown": "Đồng Nai",
                 "ID": "GVADMIN",
-                "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
-                "Name": "Nguyễn Gì Đấy",
+                "Name": "Nguyễn Văn C#",
                 "Nationality": "Việt Nam",
                 "Password": "123",
                 "Type": 2,
-                "Classes": ["19DT111"],
+                "Class": "1",
                 "Courses": [
                     "wcbX-pDPxfS6KxC",
                     "RwAI3zy80nsX-Vb"
-                ],
-                "Messages": []
+                ]
+            }
+        },
+        "Classes": {
+            "1": {
+                "ID": "1",
+                "Name": "19CT113",
+                "Faculty": "Công nghệ thông tin",
+                "Users": ["GVADMIN", "119000001", "119000002", "119000003", "119000004", "119000005"]
+            },
+            "2": {
+                "ID": "2",
+                "Name": "19CT112",
+                "Faculty": "Công nghệ thông tin",
+                "Users": [
+                ]
             }
         },
         "Courses": {
@@ -116,7 +147,6 @@
                     "wcbX-pDPxfS6KxC"
                 ]
             }
-        },
-        "Classes": ["19TD111", "19KT111", "19DT111"]
+        }
     }
 }

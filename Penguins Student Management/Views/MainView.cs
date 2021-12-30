@@ -50,13 +50,13 @@ namespace Penguins_Student_Management.Views
             teacherTab.Controls.Add(TabPages[2]);
 
             River.CreateObservable((IObserver)TabPages[3]);
-            teacherTab.Controls.Add(TabPages[3]);
+            classTab.Controls.Add(TabPages[3]);
 
             River.CreateObservable((IObserver)TabPages[4]);
-            teacherTab.Controls.Add(TabPages[4]);
+            courseTab.Controls.Add(TabPages[4]);
 
             River.CreateObservable((IObserver)TabPages[5]);
-            teacherTab.Controls.Add(TabPages[5]);
+            searchTab.Controls.Add(TabPages[5]);
         }
 
         private void MainView_FormClosing(object sender, FormClosingEventArgs e)
@@ -102,5 +102,16 @@ namespace Penguins_Student_Management.Views
             }
         }
 
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if(searchTextBox.Text.Length != 0)
+            {
+                tabControl.SelectedIndex = 5;
+                searchTextBox.Focus();
+            } else
+            {
+                tabControl.SelectedIndex = 0;
+            }
+        }
     }
 }

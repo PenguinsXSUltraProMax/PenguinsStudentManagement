@@ -20,7 +20,7 @@ namespace Penguins_Student_Management.CustomUserControls
 
         public string Id { get => id; set { id = value; idLabel.Text = value; } }
         public string Username { get => name; set { name = value; nameLabel.Text = value; } }
-        public string Classes { get => classes; set { classes = value; classLabel.Text = value; } }
+        public string Class { get => classes; set { classes = value; classLabel.Text = value; } }
 
         public string Image { get => imageUrl; set { imageUrl = value; image.Load(value); } }
 

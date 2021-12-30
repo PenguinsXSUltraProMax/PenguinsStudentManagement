@@ -42,7 +42,7 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.genderComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.birthdayDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.classesComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.classComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.typeComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
@@ -290,27 +290,27 @@ namespace Penguins_Student_Management.Views
             this.birthdayDateTimePicker.TabIndex = 20;
             this.birthdayDateTimePicker.Value = new System.DateTime(2021, 12, 26, 16, 40, 15, 318);
             // 
-            // classesComboBox
+            // classComboBox
             // 
-            this.classesComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.classesComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.classesComboBox.BorderRadius = 3;
-            this.classesComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.classesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.classesComboBox.FocusedColor = System.Drawing.Color.Empty;
-            this.classesComboBox.FocusedState.Parent = this.classesComboBox;
-            this.classesComboBox.Font = new System.Drawing.Font("Google Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classesComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.classesComboBox.FormattingEnabled = true;
-            this.classesComboBox.HoverState.Parent = this.classesComboBox;
-            this.classesComboBox.ItemHeight = 35;
-            this.classesComboBox.ItemsAppearance.Parent = this.classesComboBox;
-            this.classesComboBox.Location = new System.Drawing.Point(28, 371);
-            this.classesComboBox.Margin = new System.Windows.Forms.Padding(0, 0, 0, 24);
-            this.classesComboBox.Name = "classesComboBox";
-            this.classesComboBox.ShadowDecoration.Parent = this.classesComboBox;
-            this.classesComboBox.Size = new System.Drawing.Size(278, 41);
-            this.classesComboBox.TabIndex = 22;
+            this.classComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.classComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.classComboBox.BorderRadius = 3;
+            this.classComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.classComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.classComboBox.FocusedColor = System.Drawing.Color.Empty;
+            this.classComboBox.FocusedState.Parent = this.classComboBox;
+            this.classComboBox.Font = new System.Drawing.Font("Google Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.classComboBox.FormattingEnabled = true;
+            this.classComboBox.HoverState.Parent = this.classComboBox;
+            this.classComboBox.ItemHeight = 35;
+            this.classComboBox.ItemsAppearance.Parent = this.classComboBox;
+            this.classComboBox.Location = new System.Drawing.Point(28, 371);
+            this.classComboBox.Margin = new System.Windows.Forms.Padding(0, 0, 0, 24);
+            this.classComboBox.Name = "classComboBox";
+            this.classComboBox.ShadowDecoration.Parent = this.classComboBox;
+            this.classComboBox.Size = new System.Drawing.Size(278, 41);
+            this.classComboBox.TabIndex = 22;
             // 
             // gunaLabel8
             // 
@@ -428,7 +428,7 @@ namespace Penguins_Student_Management.Views
             this.Controls.Add(this.gunaLabel10);
             this.Controls.Add(this.typeComboBox);
             this.Controls.Add(this.gunaLabel9);
-            this.Controls.Add(this.classesComboBox);
+            this.Controls.Add(this.classComboBox);
             this.Controls.Add(this.gunaLabel8);
             this.Controls.Add(this.birthdayDateTimePicker);
             this.Controls.Add(this.genderComboBox);
@@ -471,7 +471,7 @@ namespace Penguins_Student_Management.Views
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
         private Guna.UI2.WinForms.Guna2ComboBox genderComboBox;
         private Guna.UI2.WinForms.Guna2DateTimePicker birthdayDateTimePicker;
-        private Guna.UI2.WinForms.Guna2ComboBox classesComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox classComboBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
         private Guna.UI2.WinForms.Guna2ComboBox typeComboBox;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
