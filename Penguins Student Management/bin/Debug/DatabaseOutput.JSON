@@ -22,25 +22,6 @@
         ],
         "Messages": []
       },
-      "119000003": {
-        "Birthday": "28/01/2001",
-        "Ethnic": "Kinh",
-        "Gender": "Nam",
-        "Hometown": "Quảng Trị",
-        "ID": "119000003",
-        "ImgUrl": "https://xettotnghiep.lhu.edu.vn/LoadImage.ashx?StudentID=119000003",
-        "Name": "Lê Đình Dương",
-        "Nationality": "Việt Nam",
-        "Password": "123",
-        "Type": 0,
-        "Classes": [
-          "19KT111"
-        ],
-        "Courses": [
-          "RwAI3zy80nsX-Vb"
-        ],
-        "Messages": []
-      },
       "119000004": {
         "Birthday": "24/05/2000",
         "Ethnic": "Kinh",
@@ -70,7 +51,7 @@
         "ImgUrl": "https://api.minimalavatars.com/avatar/random/png",
         "Name": "Nguyễn Gì Đấy",
         "Nationality": "Việt Nam",
-        "Password": "1234",
+        "Password": "123",
         "Type": 2,
         "Classes": [
           "19DT111"

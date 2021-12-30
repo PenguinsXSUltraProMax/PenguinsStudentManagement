@@ -7,8 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Penguins_Student_Management.Controllers.CourseController;
-using Penguins_Student_Management.Controllers.UserController;
+using Penguins_Student_Management.Views.MainTab;
 
 namespace Penguins_Student_Management.Views
 {
@@ -18,9 +17,17 @@ namespace Penguins_Student_Management.Views
         TheRiver River;
         AuthController authController;
 
+        // TabControl
+        public List<Form> TabPages = new List<Form>() {
+            new Dashboard(),
+            new Student(),
+            new Teacher(),
+        };
+
         public MainView()
         {
             InitializeComponent();
+            this.FormClosing += MainView_FormClosing;
 
             tabControl.Appearance = TabAppearance.FlatButtons;
             tabControl.ItemSize = new Size(0, 1);
@@ -29,6 +36,20 @@ namespace Penguins_Student_Management.Views
 
         private void MainView_Load(object sender, EventArgs e)
         {
+            ((Dashboard)TabPages[0]).OwnerForm = this;
+            River.CreateObservable((IObserver)TabPages[0]);
+            dashboardTab.Controls.Add(TabPages[0]);
+
+            River.CreateObservable((IObserver)TabPages[1]);
+            studentTab.Controls.Add(TabPages[1]);
+
+            River.CreateObservable((IObserver)TabPages[2]);
+            teacherTab.Controls.Add(TabPages[2]);
+        }
+
+        private void MainView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            River.DisposeObservable(this);
         }
 
         public void SetState(TheRiver value)
@@ -37,9 +58,6 @@ namespace Penguins_Student_Management.Views
             authController = Hook.of<AuthController>(River);
 
             ShowHideMenuItem();
-            if(tabControl.SelectedIndex == 0)InitDashboardState();
-            if(tabControl.SelectedIndex == 2) InitStudentState();
-            if(tabControl.SelectedIndex == 3) InitTeacherState();
         }
 
         private void ShowHideMenuItem()
@@ -50,73 +68,6 @@ namespace Penguins_Student_Management.Views
             sideMenuItemCourse.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
         }
 
-        private void InitDashboardState()
-        {
-            userAvatar.Load("https://ui-avatars.com/api/?background=random&size=32&font-size=0.3&color=fff&name=" + authController.GetCurrentUser.Name ?? authController.GetCurrentUser.ImgUrl ?? "https://api.minimalavatars.com/avatar/random/png");
-            //userAvatar.Image = cropImage(userAvatar.Image, Rectangle.FromLTRB(0, 0, userAvatar.Image.Width, userAvatar.Image.Width));
-
-            usernameLabel.Text = authController.GetCurrentUser.Name;
-            useridLabel.Text = authController.GetCurrentUser.ID;
-
-            coursePanel.Controls.Clear();
-            List<Course> courses = Hook.of<CourseController>(River).GetCoursesOfUser(authController.GetCurrentUser);
-
-            courses.ForEach(course =>
-            {
-                CourseListItem courseListItem = new CourseListItem();
-                courseListItem.CourseLabel = course.Name;
-                coursePanel.Controls.Add(courseListItem);
-
-            });
-        }
-
-        private void InitStudentState()
-        {
-            studentPanel.Controls.Clear();
-            List<User> users = Hook.of<UserController>(River).GetAllStudent();
-
-            users.ForEach(user => {
-                UserListItem userListItem = new UserListItem();
-                userListItem.Id = user.ID;
-                userListItem.Username = user.Name;
-                userListItem.Classes = user.Classes[0];
-
-                userListItem.Click += UserListItemClickHandle;
-
-                studentPanel.Controls.Add(userListItem);
-                
-                //userListItem.Image = "https://ui-avatars.com/api/?background=random&size=1&font-size=0.3&color=fff&name= ";
-            });
-        }
-
-        private void InitTeacherState()
-        {
-            teacherPanel.Controls.Clear();
-            List<User> users = Hook.of<UserController>(River).GetAllTeacher();
-
-            users.ForEach(user => {
-                UserListItem userListItem = new UserListItem();
-                userListItem.Id = user.ID;
-                userListItem.Username = user.Name;
-                userListItem.Classes = user.Classes[0];
-
-                userListItem.Click += UserListItemClickHandle;
-
-                teacherPanel.Controls.Add(userListItem);
-                
-                //userListItem.Image = "https://ui-avatars.com/api/?background=random&size=32&font-size=0.3&color=fff&name=" + user.Name;
-            });
-        }
-
-        private void UserListItemClickHandle(object sender, EventArgs e)
-        {
-            string id = ((UserListItem)sender).Id;
-
-            UserDetailView userDetailView = new UserDetailView(id);
-            River.CreateObservable(userDetailView);
-            userDetailView.ShowDialog();
-
-        }
 
         private void SideMenuItemClickHandle(object sender, EventArgs e) {
             tabControl.SelectedIndex = ((SideMenuItem)sender).Index;
@@ -125,9 +76,6 @@ namespace Penguins_Student_Management.Views
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
             SideMenuItemActiveHandle(tabControl.SelectedIndex);
-            if (tabControl.SelectedIndex == 0) InitDashboardState();
-            if (tabControl.SelectedIndex == 2) InitStudentState();
-            if (tabControl.SelectedIndex == 3) InitTeacherState();
         }
 
         private void SideMenuItemActiveHandle(int index)
@@ -138,50 +86,9 @@ namespace Penguins_Student_Management.Views
 
             for(int i = 0; i < sideMenuItems.Count; i++)
             {
-                sideMenuItems[i].IsActive = i == index ? true : false;
+                sideMenuItems[i].IsActive = i == index;
             }
         }
 
-        private void sideMenuItemChangePassword_Click(object sender, EventArgs e)
-        {
-            ChangePasswordView changePasswordView = new ChangePasswordView();
-            River.CreateObservable(changePasswordView);
-            changePasswordView.ShowDialog();
-        }
-
-        private void sideMenuItemSignOut_Click(object sender, EventArgs e)
-        {
-            authController.SignOut();
-
-            if(authController.State == AuthState.NONE)
-            {
-                River.DisposeObservable(this);
-                this.Hide();
-                LoginView loginView = new LoginView();
-                River.CreateObservable(loginView);
-                loginView.ShowDialog();
-                this.Close();
-            }
-            
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addStudentButton_Click(object sender, EventArgs e)
-        {
-            CreateUserView createUserView = new CreateUserView(User.AccountType.Student);
-            River.CreateObservable(createUserView);
-            createUserView.ShowDialog();
-        }
-
-        private void addTeacherButton_Click(object sender, EventArgs e)
-        {
-            CreateUserView createUserView = new CreateUserView(User.AccountType.Teacher);
-            River.CreateObservable(createUserView);
-            createUserView.ShowDialog();
-        }
     }
 }

@@ -44,34 +44,10 @@ namespace Penguins_Student_Management.Views
             this.sideMenuItemCourse = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.dashboardTab = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.sideMenuItemMyUniversity = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemSSchedule = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemTSchedule = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemLogInfo = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemChangePassword = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemSignOut = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.coursePanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.userAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.useridLabel = new Guna.UI.WinForms.GunaLabel();
-            this.usernameLabel = new Guna.UI.WinForms.GunaLabel();
-            this.dateTimeLabel = new Guna.UI.WinForms.GunaLabel();
             this.messagesTab = new System.Windows.Forms.TabPage();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.studentTab = new System.Windows.Forms.TabPage();
-            this.addStudentButton = new Guna.UI2.WinForms.Guna2Button();
-            this.studentPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.teacherTab = new System.Windows.Forms.TabPage();
-            this.addTeacherButton = new Guna.UI2.WinForms.Guna2Button();
-            this.teacherPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.classTab = new System.Windows.Forms.TabPage();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
@@ -83,15 +59,7 @@ namespace Penguins_Student_Management.Views
             ((System.ComponentModel.ISupportInitialize)(this.penguinsButton)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.tabControl.SuspendLayout();
-            this.dashboardTab.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userAvatar)).BeginInit();
-            this.guna2Panel2.SuspendLayout();
             this.messagesTab.SuspendLayout();
-            this.studentTab.SuspendLayout();
-            this.teacherTab.SuspendLayout();
             this.classTab.SuspendLayout();
             this.courseTab.SuspendLayout();
             this.SuspendLayout();
@@ -112,7 +80,7 @@ namespace Penguins_Student_Management.Views
             this.sideMenuPanel.Location = new System.Drawing.Point(0, 0);
             this.sideMenuPanel.Margin = new System.Windows.Forms.Padding(0);
             this.sideMenuPanel.Name = "sideMenuPanel";
-            this.sideMenuPanel.Padding = new System.Windows.Forms.Padding(18, 36, 18, 18);
+            this.sideMenuPanel.Padding = new System.Windows.Forms.Padding(18, 24, 18, 18);
             this.sideMenuPanel.Size = new System.Drawing.Size(280, 611);
             this.sideMenuPanel.TabIndex = 0;
             // 
@@ -121,7 +89,7 @@ namespace Penguins_Student_Management.Views
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.penguinsButton);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(18, 36);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(18, 24);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 32);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(238, 42);
@@ -193,7 +161,7 @@ namespace Penguins_Student_Management.Views
             this.searchTextBox.ForeColor = System.Drawing.Color.Black;
             this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextBox.HoverState.Parent = this.searchTextBox;
-            this.searchTextBox.Location = new System.Drawing.Point(18, 110);
+            this.searchTextBox.Location = new System.Drawing.Point(18, 98);
             this.searchTextBox.Margin = new System.Windows.Forms.Padding(0, 0, 0, 19);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.PasswordChar = '\0';
@@ -210,7 +178,7 @@ namespace Penguins_Student_Management.Views
             this.sideMenuItemDashboard.Index = 0;
             this.sideMenuItemDashboard.IsActive = true;
             this.sideMenuItemDashboard.Label = "Dashboard";
-            this.sideMenuItemDashboard.Location = new System.Drawing.Point(18, 163);
+            this.sideMenuItemDashboard.Location = new System.Drawing.Point(18, 151);
             this.sideMenuItemDashboard.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemDashboard.Name = "sideMenuItemDashboard";
             this.sideMenuItemDashboard.Size = new System.Drawing.Size(240, 36);
@@ -224,7 +192,7 @@ namespace Penguins_Student_Management.Views
             this.sideMenuItemMessages.Index = 1;
             this.sideMenuItemMessages.IsActive = false;
             this.sideMenuItemMessages.Label = "Tin nhắn";
-            this.sideMenuItemMessages.Location = new System.Drawing.Point(18, 211);
+            this.sideMenuItemMessages.Location = new System.Drawing.Point(18, 199);
             this.sideMenuItemMessages.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemMessages.Name = "sideMenuItemMessages";
             this.sideMenuItemMessages.Size = new System.Drawing.Size(240, 36);
@@ -238,7 +206,7 @@ namespace Penguins_Student_Management.Views
             this.sideMenuItemStudent.Index = 2;
             this.sideMenuItemStudent.IsActive = false;
             this.sideMenuItemStudent.Label = "Quản lý sinh viên";
-            this.sideMenuItemStudent.Location = new System.Drawing.Point(18, 259);
+            this.sideMenuItemStudent.Location = new System.Drawing.Point(18, 247);
             this.sideMenuItemStudent.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemStudent.Name = "sideMenuItemStudent";
             this.sideMenuItemStudent.Size = new System.Drawing.Size(240, 36);
@@ -252,7 +220,7 @@ namespace Penguins_Student_Management.Views
             this.sideMenuItemTeacher.Index = 3;
             this.sideMenuItemTeacher.IsActive = false;
             this.sideMenuItemTeacher.Label = "Quản lý giáo viên";
-            this.sideMenuItemTeacher.Location = new System.Drawing.Point(18, 307);
+            this.sideMenuItemTeacher.Location = new System.Drawing.Point(18, 295);
             this.sideMenuItemTeacher.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemTeacher.Name = "sideMenuItemTeacher";
             this.sideMenuItemTeacher.Size = new System.Drawing.Size(240, 36);
@@ -266,7 +234,7 @@ namespace Penguins_Student_Management.Views
             this.sideMenuItemClass.Index = 4;
             this.sideMenuItemClass.IsActive = false;
             this.sideMenuItemClass.Label = "Quản lý lớp học";
-            this.sideMenuItemClass.Location = new System.Drawing.Point(18, 355);
+            this.sideMenuItemClass.Location = new System.Drawing.Point(18, 343);
             this.sideMenuItemClass.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemClass.Name = "sideMenuItemClass";
             this.sideMenuItemClass.Size = new System.Drawing.Size(240, 36);
@@ -280,7 +248,7 @@ namespace Penguins_Student_Management.Views
             this.sideMenuItemCourse.Index = 5;
             this.sideMenuItemCourse.IsActive = false;
             this.sideMenuItemCourse.Label = "Quản lý khóa học";
-            this.sideMenuItemCourse.Location = new System.Drawing.Point(18, 403);
+            this.sideMenuItemCourse.Location = new System.Drawing.Point(18, 391);
             this.sideMenuItemCourse.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemCourse.Name = "sideMenuItemCourse";
             this.sideMenuItemCourse.Size = new System.Drawing.Size(240, 36);
@@ -311,259 +279,12 @@ namespace Penguins_Student_Management.Views
             // dashboardTab
             // 
             this.dashboardTab.BackColor = System.Drawing.Color.Transparent;
-            this.dashboardTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.dashboardTab.Controls.Add(this.flowLayoutPanel3);
-            this.dashboardTab.Controls.Add(this.coursePanel);
-            this.dashboardTab.Controls.Add(this.gunaLabel4);
-            this.dashboardTab.Controls.Add(this.guna2Panel1);
             this.dashboardTab.Location = new System.Drawing.Point(4, 22);
             this.dashboardTab.Margin = new System.Windows.Forms.Padding(0);
             this.dashboardTab.Name = "dashboardTab";
             this.dashboardTab.Size = new System.Drawing.Size(906, 603);
             this.dashboardTab.TabIndex = 0;
             this.dashboardTab.Text = "Dashboard";
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel3.Controls.Add(this.gunaLabel5);
-            this.flowLayoutPanel3.Controls.Add(this.sideMenuItemMyUniversity);
-            this.flowLayoutPanel3.Controls.Add(this.sideMenuItemSSchedule);
-            this.flowLayoutPanel3.Controls.Add(this.sideMenuItemTSchedule);
-            this.flowLayoutPanel3.Controls.Add(this.sideMenuItemLogInfo);
-            this.flowLayoutPanel3.Controls.Add(this.sideMenuItemChangePassword);
-            this.flowLayoutPanel3.Controls.Add(this.sideMenuItemSignOut);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(642, 112);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(240, 462);
-            this.flowLayoutPanel3.TabIndex = 13;
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel5.Font = new System.Drawing.Font("Google Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(0, 0);
-            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(240, 17);
-            this.gunaLabel5.TabIndex = 11;
-            this.gunaLabel5.Text = "Ứng dụng";
-            // 
-            // sideMenuItemMyUniversity
-            // 
-            this.sideMenuItemMyUniversity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemMyUniversity.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_school_building_48;
-            this.sideMenuItemMyUniversity.Index = 0;
-            this.sideMenuItemMyUniversity.IsActive = false;
-            this.sideMenuItemMyUniversity.Label = "Trường tôi";
-            this.sideMenuItemMyUniversity.Location = new System.Drawing.Point(0, 29);
-            this.sideMenuItemMyUniversity.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemMyUniversity.Name = "sideMenuItemMyUniversity";
-            this.sideMenuItemMyUniversity.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemMyUniversity.TabIndex = 12;
-            // 
-            // sideMenuItemSSchedule
-            // 
-            this.sideMenuItemSSchedule.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemSSchedule.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_curriculum_48;
-            this.sideMenuItemSSchedule.Index = 0;
-            this.sideMenuItemSSchedule.IsActive = false;
-            this.sideMenuItemSSchedule.Label = "Lịch học sinh viên";
-            this.sideMenuItemSSchedule.Location = new System.Drawing.Point(0, 73);
-            this.sideMenuItemSSchedule.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemSSchedule.Name = "sideMenuItemSSchedule";
-            this.sideMenuItemSSchedule.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemSSchedule.TabIndex = 13;
-            // 
-            // sideMenuItemTSchedule
-            // 
-            this.sideMenuItemTSchedule.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemTSchedule.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_training_48;
-            this.sideMenuItemTSchedule.Index = 0;
-            this.sideMenuItemTSchedule.IsActive = false;
-            this.sideMenuItemTSchedule.Label = "Lịch dạy giáo viên";
-            this.sideMenuItemTSchedule.Location = new System.Drawing.Point(0, 117);
-            this.sideMenuItemTSchedule.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemTSchedule.Name = "sideMenuItemTSchedule";
-            this.sideMenuItemTSchedule.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemTSchedule.TabIndex = 14;
-            // 
-            // sideMenuItemLogInfo
-            // 
-            this.sideMenuItemLogInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemLogInfo.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_contact_details_48;
-            this.sideMenuItemLogInfo.Index = 0;
-            this.sideMenuItemLogInfo.IsActive = false;
-            this.sideMenuItemLogInfo.Label = "Thông tin đăng nhập";
-            this.sideMenuItemLogInfo.Location = new System.Drawing.Point(0, 161);
-            this.sideMenuItemLogInfo.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemLogInfo.Name = "sideMenuItemLogInfo";
-            this.sideMenuItemLogInfo.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemLogInfo.TabIndex = 16;
-            // 
-            // sideMenuItemChangePassword
-            // 
-            this.sideMenuItemChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemChangePassword.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_asterisk_48;
-            this.sideMenuItemChangePassword.Index = 0;
-            this.sideMenuItemChangePassword.IsActive = false;
-            this.sideMenuItemChangePassword.Label = "Đổi mật khẩu";
-            this.sideMenuItemChangePassword.Location = new System.Drawing.Point(0, 205);
-            this.sideMenuItemChangePassword.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemChangePassword.Name = "sideMenuItemChangePassword";
-            this.sideMenuItemChangePassword.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemChangePassword.TabIndex = 17;
-            this.sideMenuItemChangePassword.Click += new System.EventHandler(this.sideMenuItemChangePassword_Click);
-            // 
-            // sideMenuItemSignOut
-            // 
-            this.sideMenuItemSignOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemSignOut.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_exit_sign_48;
-            this.sideMenuItemSignOut.Index = 0;
-            this.sideMenuItemSignOut.IsActive = false;
-            this.sideMenuItemSignOut.Label = "Đăng xuất";
-            this.sideMenuItemSignOut.Location = new System.Drawing.Point(0, 249);
-            this.sideMenuItemSignOut.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.sideMenuItemSignOut.Name = "sideMenuItemSignOut";
-            this.sideMenuItemSignOut.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemSignOut.TabIndex = 18;
-            this.sideMenuItemSignOut.Click += new System.EventHandler(this.sideMenuItemSignOut_Click);
-            // 
-            // coursePanel
-            // 
-            this.coursePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.coursePanel.AutoScroll = true;
-            this.coursePanel.BackColor = System.Drawing.Color.Transparent;
-            this.coursePanel.Location = new System.Drawing.Point(26, 146);
-            this.coursePanel.Margin = new System.Windows.Forms.Padding(0);
-            this.coursePanel.Name = "coursePanel";
-            this.coursePanel.Size = new System.Drawing.Size(597, 452);
-            this.coursePanel.TabIndex = 12;
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel4.Font = new System.Drawing.Font("Google Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(22, 112);
-            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(111, 17);
-            this.gunaLabel4.TabIndex = 11;
-            this.gunaLabel4.Text = "Khóa học của tôi";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.gunaLabel3);
-            this.guna2Panel1.Controls.Add(this.flowLayoutPanel6);
-            this.guna2Panel1.Controls.Add(this.dateTimeLabel);
-            this.guna2Panel1.Location = new System.Drawing.Point(26, 36);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(24, 28, 24, 36);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(856, 40);
-            this.guna2Panel1.TabIndex = 10;
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel3.Font = new System.Drawing.Font("Google Sans", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(-5, 0);
-            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(110, 24);
-            this.gunaLabel3.TabIndex = 5;
-            this.gunaLabel3.Text = "Dashboard";
-            // 
-            // flowLayoutPanel6
-            // 
-            this.flowLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel6.Controls.Add(this.userAvatar);
-            this.flowLayoutPanel6.Controls.Add(this.guna2Panel2);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(608, 2);
-            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(248, 36);
-            this.flowLayoutPanel6.TabIndex = 6;
-            // 
-            // userAvatar
-            // 
-            this.userAvatar.Image = global::Penguins_Student_Management.Properties.Resources._510e8fab3226f978a037;
-            this.userAvatar.Location = new System.Drawing.Point(0, 0);
-            this.userAvatar.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
-            this.userAvatar.Name = "userAvatar";
-            this.userAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.userAvatar.ShadowDecoration.Parent = this.userAvatar;
-            this.userAvatar.Size = new System.Drawing.Size(36, 36);
-            this.userAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userAvatar.TabIndex = 1;
-            this.userAvatar.TabStop = false;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel2.Controls.Add(this.useridLabel);
-            this.guna2Panel2.Controls.Add(this.usernameLabel);
-            this.guna2Panel2.Location = new System.Drawing.Point(44, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(190, 36);
-            this.guna2Panel2.TabIndex = 2;
-            // 
-            // useridLabel
-            // 
-            this.useridLabel.AutoSize = true;
-            this.useridLabel.BackColor = System.Drawing.Color.Transparent;
-            this.useridLabel.Font = new System.Drawing.Font("Google Sans", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.useridLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.useridLabel.Location = new System.Drawing.Point(3, 20);
-            this.useridLabel.Margin = new System.Windows.Forms.Padding(0, 9, 0, 10);
-            this.useridLabel.Name = "useridLabel";
-            this.useridLabel.Size = new System.Drawing.Size(12, 12);
-            this.useridLabel.TabIndex = 5;
-            this.useridLabel.Text = "id";
-            this.useridLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // usernameLabel
-            // 
-            this.usernameLabel.AutoSize = true;
-            this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Font = new System.Drawing.Font("Google Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.usernameLabel.Location = new System.Drawing.Point(2, 3);
-            this.usernameLabel.Margin = new System.Windows.Forms.Padding(0, 9, 0, 10);
-            this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(66, 17);
-            this.usernameLabel.TabIndex = 4;
-            this.usernameLabel.Text = "Username";
-            this.usernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dateTimeLabel
-            // 
-            this.dateTimeLabel.AutoSize = true;
-            this.dateTimeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.dateTimeLabel.Font = new System.Drawing.Font("Google Sans", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.dateTimeLabel.Location = new System.Drawing.Point(-2, 26);
-            this.dateTimeLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 56);
-            this.dateTimeLabel.Name = "dateTimeLabel";
-            this.dateTimeLabel.Size = new System.Drawing.Size(77, 12);
-            this.dateTimeLabel.TabIndex = 6;
-            this.dateTimeLabel.Text = "THỨ 3, 04/12/2021";
             // 
             // messagesTab
             // 
@@ -594,10 +315,6 @@ namespace Penguins_Student_Management.Views
             // studentTab
             // 
             this.studentTab.BackColor = System.Drawing.Color.Transparent;
-            this.studentTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.studentTab.Controls.Add(this.addStudentButton);
-            this.studentTab.Controls.Add(this.studentPanel);
-            this.studentTab.Controls.Add(this.gunaLabel7);
             this.studentTab.Location = new System.Drawing.Point(4, 22);
             this.studentTab.Margin = new System.Windows.Forms.Padding(0);
             this.studentTab.Name = "studentTab";
@@ -605,113 +322,15 @@ namespace Penguins_Student_Management.Views
             this.studentTab.TabIndex = 1;
             this.studentTab.Text = "Quản lý sinh viên";
             // 
-            // addStudentButton
-            // 
-            this.addStudentButton.Animated = true;
-            this.addStudentButton.BorderRadius = 3;
-            this.addStudentButton.CheckedState.Parent = this.addStudentButton;
-            this.addStudentButton.CustomImages.Parent = this.addStudentButton;
-            this.addStudentButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
-            this.addStudentButton.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addStudentButton.ForeColor = System.Drawing.Color.Black;
-            this.addStudentButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.addStudentButton.HoverState.Parent = this.addStudentButton;
-            this.addStudentButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
-            this.addStudentButton.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.addStudentButton.ImageSize = new System.Drawing.Size(12, 12);
-            this.addStudentButton.Location = new System.Drawing.Point(771, 36);
-            this.addStudentButton.Margin = new System.Windows.Forms.Padding(0);
-            this.addStudentButton.Name = "addStudentButton";
-            this.addStudentButton.ShadowDecoration.Parent = this.addStudentButton;
-            this.addStudentButton.Size = new System.Drawing.Size(110, 29);
-            this.addStudentButton.TabIndex = 14;
-            this.addStudentButton.Text = "Thêm";
-            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
-            // 
-            // studentPanel
-            // 
-            this.studentPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.studentPanel.AutoScroll = true;
-            this.studentPanel.Location = new System.Drawing.Point(26, 86);
-            this.studentPanel.Name = "studentPanel";
-            this.studentPanel.Size = new System.Drawing.Size(880, 514);
-            this.studentPanel.TabIndex = 13;
-            // 
-            // gunaLabel7
-            // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel7.Font = new System.Drawing.Font("Google Sans", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.gunaLabel7.Location = new System.Drawing.Point(21, 36);
-            this.gunaLabel7.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(162, 24);
-            this.gunaLabel7.TabIndex = 7;
-            this.gunaLabel7.Text = "Quản lý sinh viên";
-            // 
             // teacherTab
             // 
             this.teacherTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.teacherTab.Controls.Add(this.addTeacherButton);
-            this.teacherTab.Controls.Add(this.teacherPanel);
-            this.teacherTab.Controls.Add(this.gunaLabel8);
             this.teacherTab.Location = new System.Drawing.Point(4, 22);
             this.teacherTab.Name = "teacherTab";
             this.teacherTab.Size = new System.Drawing.Size(906, 603);
             this.teacherTab.TabIndex = 3;
             this.teacherTab.Text = "Quản lý giáo viên";
             this.teacherTab.UseVisualStyleBackColor = true;
-            // 
-            // addTeacherButton
-            // 
-            this.addTeacherButton.Animated = true;
-            this.addTeacherButton.BorderRadius = 3;
-            this.addTeacherButton.CheckedState.Parent = this.addTeacherButton;
-            this.addTeacherButton.CustomImages.Parent = this.addTeacherButton;
-            this.addTeacherButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
-            this.addTeacherButton.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addTeacherButton.ForeColor = System.Drawing.Color.Black;
-            this.addTeacherButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.addTeacherButton.HoverState.Parent = this.addTeacherButton;
-            this.addTeacherButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
-            this.addTeacherButton.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.addTeacherButton.ImageSize = new System.Drawing.Size(12, 12);
-            this.addTeacherButton.Location = new System.Drawing.Point(771, 36);
-            this.addTeacherButton.Margin = new System.Windows.Forms.Padding(0);
-            this.addTeacherButton.Name = "addTeacherButton";
-            this.addTeacherButton.ShadowDecoration.Parent = this.addTeacherButton;
-            this.addTeacherButton.Size = new System.Drawing.Size(110, 29);
-            this.addTeacherButton.TabIndex = 15;
-            this.addTeacherButton.Text = "Thêm";
-            this.addTeacherButton.Click += new System.EventHandler(this.addTeacherButton_Click);
-            // 
-            // teacherPanel
-            // 
-            this.teacherPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.teacherPanel.AutoScroll = true;
-            this.teacherPanel.BackColor = System.Drawing.Color.Transparent;
-            this.teacherPanel.Location = new System.Drawing.Point(26, 86);
-            this.teacherPanel.Name = "teacherPanel";
-            this.teacherPanel.Size = new System.Drawing.Size(880, 514);
-            this.teacherPanel.TabIndex = 14;
-            // 
-            // gunaLabel8
-            // 
-            this.gunaLabel8.AutoSize = true;
-            this.gunaLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel8.Font = new System.Drawing.Font("Google Sans", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.gunaLabel8.Location = new System.Drawing.Point(21, 36);
-            this.gunaLabel8.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(165, 24);
-            this.gunaLabel8.TabIndex = 8;
-            this.gunaLabel8.Text = "Quản lý giáo viên";
             // 
             // classTab
             // 
@@ -810,6 +429,7 @@ namespace Penguins_Student_Management.Views
             this.Name = "MainView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Penguins Student Management";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainView_FormClosing);
             this.Load += new System.EventHandler(this.MainView_Load);
             this.sideMenuPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -817,21 +437,8 @@ namespace Penguins_Student_Management.Views
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.tabControl.ResumeLayout(false);
-            this.dashboardTab.ResumeLayout(false);
-            this.dashboardTab.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
-            this.flowLayoutPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.userAvatar)).EndInit();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.messagesTab.ResumeLayout(false);
             this.messagesTab.PerformLayout();
-            this.studentTab.ResumeLayout(false);
-            this.studentTab.PerformLayout();
-            this.teacherTab.ResumeLayout(false);
-            this.teacherTab.PerformLayout();
             this.classTab.ResumeLayout(false);
             this.classTab.PerformLayout();
             this.courseTab.ResumeLayout(false);
@@ -858,38 +465,14 @@ namespace Penguins_Student_Management.Views
         private CustomUserControls.SideMenuItem sideMenuItemCourse;
         private CustomUserControls.SideMenuItem sideMenuItemMessages;
         private System.Windows.Forms.TabPage messagesTab;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox userAvatar;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI.WinForms.GunaLabel useridLabel;
-        private Guna.UI.WinForms.GunaLabel usernameLabel;
-        private Guna.UI.WinForms.GunaLabel dateTimeLabel;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private System.Windows.Forms.FlowLayoutPanel coursePanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private CustomUserControls.SideMenuItem sideMenuItemMyUniversity;
-        private CustomUserControls.SideMenuItem sideMenuItemSSchedule;
-        private CustomUserControls.SideMenuItem sideMenuItemTSchedule;
-        private CustomUserControls.SideMenuItem sideMenuItemLogInfo;
-        private CustomUserControls.SideMenuItem sideMenuItemChangePassword;
-        private CustomUserControls.SideMenuItem sideMenuItemSignOut;
         private CustomUserControls.SideMenuItem sideMenuItemClass;
         private System.Windows.Forms.TabPage teacherTab;
         private System.Windows.Forms.TabPage classTab;
         private System.Windows.Forms.TabPage courseTab;
         private System.Windows.Forms.TabPage searchTab;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI.WinForms.GunaLabel gunaLabel8;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.FlowLayoutPanel studentPanel;
-        private Guna.UI2.WinForms.Guna2Button addStudentButton;
-        private System.Windows.Forms.FlowLayoutPanel teacherPanel;
-        private Guna.UI2.WinForms.Guna2Button addTeacherButton;
     }
 }
