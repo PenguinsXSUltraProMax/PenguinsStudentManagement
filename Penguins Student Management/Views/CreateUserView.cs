@@ -37,7 +37,7 @@ namespace Penguins_Student_Management.Views
 
         private void InitData()
         {
-
+            genderComboBox.SelectedIndex = 0;
             classesComboBox.DataSource = Hook.of<ClassController>(River).GetAllClasses();
             typeComboBox.DataSource = Enum.GetValues(typeof(User.AccountType));
             idTextBox.Text = "000001";
