@@ -37,31 +37,22 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.sideMenuItemDashboard = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemMessages = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.sideMenuItemStudent = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.sideMenuItemTeacher = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.sideMenuItemClass = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.sideMenuItemCourse = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.dashboardTab = new System.Windows.Forms.TabPage();
-            this.messagesTab = new System.Windows.Forms.TabPage();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.studentTab = new System.Windows.Forms.TabPage();
             this.teacherTab = new System.Windows.Forms.TabPage();
             this.classTab = new System.Windows.Forms.TabPage();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.courseTab = new System.Windows.Forms.TabPage();
-            this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
             this.searchTab = new System.Windows.Forms.TabPage();
             this.sideMenuPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.penguinsButton)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.tabControl.SuspendLayout();
-            this.messagesTab.SuspendLayout();
-            this.classTab.SuspendLayout();
-            this.courseTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // sideMenuPanel
@@ -70,7 +61,6 @@ namespace Penguins_Student_Management.Views
             this.sideMenuPanel.Controls.Add(this.flowLayoutPanel1);
             this.sideMenuPanel.Controls.Add(this.searchTextBox);
             this.sideMenuPanel.Controls.Add(this.sideMenuItemDashboard);
-            this.sideMenuPanel.Controls.Add(this.sideMenuItemMessages);
             this.sideMenuPanel.Controls.Add(this.sideMenuItemStudent);
             this.sideMenuPanel.Controls.Add(this.sideMenuItemTeacher);
             this.sideMenuPanel.Controls.Add(this.sideMenuItemClass);
@@ -185,28 +175,14 @@ namespace Penguins_Student_Management.Views
             this.sideMenuItemDashboard.TabIndex = 3;
             this.sideMenuItemDashboard.Click += new System.EventHandler(this.SideMenuItemClickHandle);
             // 
-            // sideMenuItemMessages
-            // 
-            this.sideMenuItemMessages.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemMessages.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_chat_48;
-            this.sideMenuItemMessages.Index = 1;
-            this.sideMenuItemMessages.IsActive = false;
-            this.sideMenuItemMessages.Label = "Tin nhắn";
-            this.sideMenuItemMessages.Location = new System.Drawing.Point(18, 199);
-            this.sideMenuItemMessages.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemMessages.Name = "sideMenuItemMessages";
-            this.sideMenuItemMessages.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemMessages.TabIndex = 11;
-            this.sideMenuItemMessages.Click += new System.EventHandler(this.SideMenuItemClickHandle);
-            // 
             // sideMenuItemStudent
             // 
             this.sideMenuItemStudent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sideMenuItemStudent.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_student_male_48;
-            this.sideMenuItemStudent.Index = 2;
+            this.sideMenuItemStudent.Index = 1;
             this.sideMenuItemStudent.IsActive = false;
             this.sideMenuItemStudent.Label = "Quản lý sinh viên";
-            this.sideMenuItemStudent.Location = new System.Drawing.Point(18, 247);
+            this.sideMenuItemStudent.Location = new System.Drawing.Point(18, 199);
             this.sideMenuItemStudent.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemStudent.Name = "sideMenuItemStudent";
             this.sideMenuItemStudent.Size = new System.Drawing.Size(240, 36);
@@ -217,10 +193,10 @@ namespace Penguins_Student_Management.Views
             // 
             this.sideMenuItemTeacher.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sideMenuItemTeacher.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_school_director_48;
-            this.sideMenuItemTeacher.Index = 3;
+            this.sideMenuItemTeacher.Index = 2;
             this.sideMenuItemTeacher.IsActive = false;
             this.sideMenuItemTeacher.Label = "Quản lý giáo viên";
-            this.sideMenuItemTeacher.Location = new System.Drawing.Point(18, 295);
+            this.sideMenuItemTeacher.Location = new System.Drawing.Point(18, 247);
             this.sideMenuItemTeacher.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemTeacher.Name = "sideMenuItemTeacher";
             this.sideMenuItemTeacher.Size = new System.Drawing.Size(240, 36);
@@ -231,10 +207,10 @@ namespace Penguins_Student_Management.Views
             // 
             this.sideMenuItemClass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sideMenuItemClass.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_class_48;
-            this.sideMenuItemClass.Index = 4;
+            this.sideMenuItemClass.Index = 3;
             this.sideMenuItemClass.IsActive = false;
             this.sideMenuItemClass.Label = "Quản lý lớp học";
-            this.sideMenuItemClass.Location = new System.Drawing.Point(18, 343);
+            this.sideMenuItemClass.Location = new System.Drawing.Point(18, 295);
             this.sideMenuItemClass.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemClass.Name = "sideMenuItemClass";
             this.sideMenuItemClass.Size = new System.Drawing.Size(240, 36);
@@ -245,10 +221,10 @@ namespace Penguins_Student_Management.Views
             // 
             this.sideMenuItemCourse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sideMenuItemCourse.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_read_48;
-            this.sideMenuItemCourse.Index = 5;
+            this.sideMenuItemCourse.Index = 4;
             this.sideMenuItemCourse.IsActive = false;
             this.sideMenuItemCourse.Label = "Quản lý khóa học";
-            this.sideMenuItemCourse.Location = new System.Drawing.Point(18, 391);
+            this.sideMenuItemCourse.Location = new System.Drawing.Point(18, 343);
             this.sideMenuItemCourse.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.sideMenuItemCourse.Name = "sideMenuItemCourse";
             this.sideMenuItemCourse.Size = new System.Drawing.Size(240, 36);
@@ -261,7 +237,6 @@ namespace Penguins_Student_Management.Views
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.dashboardTab);
-            this.tabControl.Controls.Add(this.messagesTab);
             this.tabControl.Controls.Add(this.studentTab);
             this.tabControl.Controls.Add(this.teacherTab);
             this.tabControl.Controls.Add(this.classTab);
@@ -286,32 +261,6 @@ namespace Penguins_Student_Management.Views
             this.dashboardTab.TabIndex = 0;
             this.dashboardTab.Text = "Dashboard";
             // 
-            // messagesTab
-            // 
-            this.messagesTab.BackColor = System.Drawing.Color.Transparent;
-            this.messagesTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.messagesTab.Controls.Add(this.gunaLabel6);
-            this.messagesTab.Location = new System.Drawing.Point(4, 22);
-            this.messagesTab.Margin = new System.Windows.Forms.Padding(0);
-            this.messagesTab.Name = "messagesTab";
-            this.messagesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.messagesTab.Size = new System.Drawing.Size(906, 603);
-            this.messagesTab.TabIndex = 2;
-            this.messagesTab.Text = "Tin nhắn";
-            // 
-            // gunaLabel6
-            // 
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel6.Font = new System.Drawing.Font("Google Sans", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.gunaLabel6.Location = new System.Drawing.Point(21, 36);
-            this.gunaLabel6.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(85, 24);
-            this.gunaLabel6.TabIndex = 6;
-            this.gunaLabel6.Text = "Tin nhắn";
-            // 
             // studentTab
             // 
             this.studentTab.BackColor = System.Drawing.Color.Transparent;
@@ -324,7 +273,6 @@ namespace Penguins_Student_Management.Views
             // 
             // teacherTab
             // 
-            this.teacherTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
             this.teacherTab.Location = new System.Drawing.Point(4, 22);
             this.teacherTab.Name = "teacherTab";
             this.teacherTab.Size = new System.Drawing.Size(906, 603);
@@ -334,9 +282,6 @@ namespace Penguins_Student_Management.Views
             // 
             // classTab
             // 
-            this.classTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.classTab.Controls.Add(this.guna2Button1);
-            this.classTab.Controls.Add(this.gunaLabel9);
             this.classTab.Location = new System.Drawing.Point(4, 22);
             this.classTab.Margin = new System.Windows.Forms.Padding(0);
             this.classTab.Name = "classTab";
@@ -345,45 +290,8 @@ namespace Penguins_Student_Management.Views
             this.classTab.Text = "Quản lý lớp học ";
             this.classTab.UseVisualStyleBackColor = true;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BorderRadius = 3;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = global::Penguins_Student_Management.Properties.Resources.icons8_plus___24;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.guna2Button1.ImageSize = new System.Drawing.Size(12, 12);
-            this.guna2Button1.Location = new System.Drawing.Point(711, 36);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(110, 29);
-            this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "Thêm";
-            // 
-            // gunaLabel9
-            // 
-            this.gunaLabel9.AutoSize = true;
-            this.gunaLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel9.Font = new System.Drawing.Font("Google Sans", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.gunaLabel9.Location = new System.Drawing.Point(21, 36);
-            this.gunaLabel9.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(150, 24);
-            this.gunaLabel9.TabIndex = 9;
-            this.gunaLabel9.Text = "Quản lý lớp học";
-            // 
             // courseTab
             // 
-            this.courseTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
-            this.courseTab.Controls.Add(this.gunaLabel10);
             this.courseTab.Location = new System.Drawing.Point(4, 22);
             this.courseTab.Name = "courseTab";
             this.courseTab.Size = new System.Drawing.Size(906, 603);
@@ -391,22 +299,8 @@ namespace Penguins_Student_Management.Views
             this.courseTab.Text = "Quản lý khóa học";
             this.courseTab.UseVisualStyleBackColor = true;
             // 
-            // gunaLabel10
-            // 
-            this.gunaLabel10.AutoSize = true;
-            this.gunaLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel10.Font = new System.Drawing.Font("Google Sans", 13.74545F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.gunaLabel10.Location = new System.Drawing.Point(21, 36);
-            this.gunaLabel10.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(166, 24);
-            this.gunaLabel10.TabIndex = 10;
-            this.gunaLabel10.Text = "Quản lý khóa học";
-            // 
             // searchTab
             // 
-            this.searchTab.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
             this.searchTab.Location = new System.Drawing.Point(4, 22);
             this.searchTab.Name = "searchTab";
             this.searchTab.Size = new System.Drawing.Size(906, 603);
@@ -437,12 +331,6 @@ namespace Penguins_Student_Management.Views
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.tabControl.ResumeLayout(false);
-            this.messagesTab.ResumeLayout(false);
-            this.messagesTab.PerformLayout();
-            this.classTab.ResumeLayout(false);
-            this.classTab.PerformLayout();
-            this.courseTab.ResumeLayout(false);
-            this.courseTab.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -463,16 +351,10 @@ namespace Penguins_Student_Management.Views
         private System.Windows.Forms.TabPage studentTab;
         private Guna.UI2.WinForms.Guna2TextBox searchTextBox;
         private CustomUserControls.SideMenuItem sideMenuItemCourse;
-        private CustomUserControls.SideMenuItem sideMenuItemMessages;
-        private System.Windows.Forms.TabPage messagesTab;
         private CustomUserControls.SideMenuItem sideMenuItemClass;
         private System.Windows.Forms.TabPage teacherTab;
         private System.Windows.Forms.TabPage classTab;
         private System.Windows.Forms.TabPage courseTab;
         private System.Windows.Forms.TabPage searchTab;
-        private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI.WinForms.GunaLabel gunaLabel9;
-        private Guna.UI.WinForms.GunaLabel gunaLabel10;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -5,14 +5,20 @@ using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
 {
-    public partial class Teacher : Form, IObserver
+    public partial class StudentPage : Form, IObserver
     {
         TheRiver River;
-        public Teacher()
+        public StudentPage()
         {
             InitializeComponent();
             this.TopLevel = false;
@@ -23,18 +29,19 @@ namespace Penguins_Student_Management.Views.MainTab
         public void SetState(TheRiver value)
         {
             River = value;
-            InitTeacherState();
+            InitStudentState();
         }
 
-        private void InitTeacherState()
+        private void InitStudentState()
         {
 
-            Global.DisposeControls(teacherPanel.Controls);
-            teacherPanel.Controls.Clear();
+            Global.DisposeControls(studentPanel.Controls);
+            studentPanel.Controls.Clear();
 
-            List<User> users = Hook.of<UserController>(River).GetAllTeacher();
+            List<User> users = Hook.of<UserController>(River).GetAllStudent();
 
             users.ForEach(user => {
+
                 UserListItem userListItem = new UserListItem
                 {
                     Id = user.ID,
@@ -43,8 +50,9 @@ namespace Penguins_Student_Management.Views.MainTab
                 };
 
                 userListItem.Click += UserListItemClickHandle;
-                
-                teacherPanel.Controls.Add(userListItem);
+
+                studentPanel.Controls.Add(userListItem);
+
             });
         }
 
@@ -60,7 +68,7 @@ namespace Penguins_Student_Management.Views.MainTab
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            CreateUserView createUserView = new CreateUserView(User.AccountType.Teacher);
+            CreateUserView createUserView = new CreateUserView(User.AccountType.Student);
             River.CreateObservable(createUserView);
             createUserView.ShowDialog();
         }

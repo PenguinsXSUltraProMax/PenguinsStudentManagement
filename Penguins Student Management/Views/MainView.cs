@@ -19,9 +19,12 @@ namespace Penguins_Student_Management.Views
 
         // TabControl
         public List<Form> TabPages = new List<Form>() {
-            new Dashboard(),
-            new Student(),
-            new Teacher(),
+            new DashboardPage(),
+            new StudentPage(),
+            new TeacherPage(),
+            new ClassPage(),
+            new CoursePage(),
+            new SearchPage()
         };
 
         public MainView()
@@ -36,7 +39,7 @@ namespace Penguins_Student_Management.Views
 
         private void MainView_Load(object sender, EventArgs e)
         {
-            ((Dashboard)TabPages[0]).OwnerForm = this;
+            ((DashboardPage)TabPages[0]).OwnerForm = this;
             River.CreateObservable((IObserver)TabPages[0]);
             dashboardTab.Controls.Add(TabPages[0]);
 
@@ -45,6 +48,15 @@ namespace Penguins_Student_Management.Views
 
             River.CreateObservable((IObserver)TabPages[2]);
             teacherTab.Controls.Add(TabPages[2]);
+
+            River.CreateObservable((IObserver)TabPages[3]);
+            teacherTab.Controls.Add(TabPages[3]);
+
+            River.CreateObservable((IObserver)TabPages[4]);
+            teacherTab.Controls.Add(TabPages[4]);
+
+            River.CreateObservable((IObserver)TabPages[5]);
+            teacherTab.Controls.Add(TabPages[5]);
         }
 
         private void MainView_FormClosing(object sender, FormClosingEventArgs e)
@@ -81,7 +93,7 @@ namespace Penguins_Student_Management.Views
         private void SideMenuItemActiveHandle(int index)
         {
             List<SideMenuItem> sideMenuItems = new List<SideMenuItem>() {
-                sideMenuItemDashboard, sideMenuItemMessages, sideMenuItemStudent, sideMenuItemTeacher, sideMenuItemClass, sideMenuItemCourse
+                sideMenuItemDashboard, sideMenuItemStudent, sideMenuItemTeacher, sideMenuItemClass, sideMenuItemCourse
             };
 
             for(int i = 0; i < sideMenuItems.Count; i++)

@@ -131,23 +131,41 @@
     <Compile Include="Views\LoginView.designer.cs">
       <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\Dashboard.cs">
+    <Compile Include="Views\MainTab\SearchPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="Views\MainTab\SearchPage.Designer.cs">
+      <DependentUpon>SearchPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\Teacher.cs">
+    <Compile Include="Views\MainTab\DashboardPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\Teacher.Designer.cs">
-      <DependentUpon>Teacher.cs</DependentUpon>
+    <Compile Include="Views\MainTab\DashboardPage.Designer.cs">
+      <DependentUpon>DashboardPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\Student.cs">
+    <Compile Include="Views\MainTab\ClassPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\Student.Designer.cs">
-      <DependentUpon>Student.cs</DependentUpon>
+    <Compile Include="Views\MainTab\ClassPage.Designer.cs">
+      <DependentUpon>ClassPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainTab\CoursePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainTab\CoursePage.Designer.cs">
+      <DependentUpon>CoursePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainTab\TeacherPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainTab\TeacherPage.Designer.cs">
+      <DependentUpon>TeacherPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainTab\StudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainTab\StudentPage.Designer.cs">
+      <DependentUpon>StudentPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MainView.cs">
       <SubType>Form</SubType>
@@ -198,14 +216,23 @@
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Views\MainTab\SearchPage.resx">
+      <DependentUpon>SearchPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\Teacher.resx">
-      <DependentUpon>Teacher.cs</DependentUpon>
+    <EmbeddedResource Include="Views\MainTab\DashboardPage.resx">
+      <DependentUpon>DashboardPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\Student.resx">
-      <DependentUpon>Student.cs</DependentUpon>
+    <EmbeddedResource Include="Views\MainTab\ClassPage.resx">
+      <DependentUpon>ClassPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainTab\CoursePage.resx">
+      <DependentUpon>CoursePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainTab\TeacherPage.resx">
+      <DependentUpon>TeacherPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainTab\StudentPage.resx">
+      <DependentUpon>StudentPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
