@@ -18,7 +18,7 @@ namespace Penguins_Student_Management.Views.MainTab
 {
     public partial class Dashboard : Form, IObserver
     {
-        public Form OwnerForm;
+        public MainView OwnerForm;
         TheRiver River;
         public Dashboard()
         {
@@ -47,7 +47,10 @@ namespace Penguins_Student_Management.Views.MainTab
             usernameLabel.Text = Hook.of<AuthController>(River).GetCurrentUser.Name;
             useridLabel.Text = Hook.of<AuthController>(River).GetCurrentUser.ID;
 
+
+            Global.DisposeControls(coursePanel.Controls);
             coursePanel.Controls.Clear();
+
             List<Course> courses = Hook.of<CourseController>(River).GetCoursesOfUser(Hook.of<AuthController>(River).GetCurrentUser);
 
             courses.ForEach(course =>
@@ -75,6 +78,14 @@ namespace Penguins_Student_Management.Views.MainTab
             if (Hook.of<AuthController>(River).State == AuthState.NONE)
             {
                 OwnerForm.Hide();
+
+                OwnerForm.TabPages.ForEach(page =>
+                {
+                    River.DisposeObservable((IObserver)page);
+                });
+
+                River.DisposeObservable(OwnerForm);
+
                 LoginView loginView = new LoginView();
                 River.CreateObservable(loginView);
                 loginView.ShowDialog();

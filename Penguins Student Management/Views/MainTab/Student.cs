@@ -34,7 +34,10 @@ namespace Penguins_Student_Management.Views.MainTab
 
         private void InitStudentState()
         {
+
+            Global.DisposeControls(studentPanel.Controls);
             studentPanel.Controls.Clear();
+
             List<User> users = Hook.of<UserController>(River).GetAllStudent();
 
             users.ForEach(user => {

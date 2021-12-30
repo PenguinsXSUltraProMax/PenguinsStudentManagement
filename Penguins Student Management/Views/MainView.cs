@@ -18,7 +18,7 @@ namespace Penguins_Student_Management.Views
         AuthController authController;
 
         // TabControl
-        List<Form> TabPages = new List<Form>() {
+        public List<Form> TabPages = new List<Form>() {
             new Dashboard(),
             new Student(),
             new Teacher(),
@@ -50,10 +50,6 @@ namespace Penguins_Student_Management.Views
         private void MainView_FormClosing(object sender, FormClosingEventArgs e)
         {
             River.DisposeObservable(this);
-            TabPages.ForEach(page =>
-            {
-                River.DisposeObservable((IObserver)page);
-            });
         }
 
         public void SetState(TheRiver value)

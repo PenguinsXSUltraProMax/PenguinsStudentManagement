@@ -5,12 +5,6 @@ using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
@@ -34,7 +28,10 @@ namespace Penguins_Student_Management.Views.MainTab
 
         private void InitTeacherState()
         {
+
+            Global.DisposeControls(teacherPanel.Controls);
             teacherPanel.Controls.Clear();
+
             List<User> users = Hook.of<UserController>(River).GetAllTeacher();
 
             users.ForEach(user => {
@@ -63,7 +60,7 @@ namespace Penguins_Student_Management.Views.MainTab
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            CreateUserView createUserView = new CreateUserView(User.AccountType.Student);
+            CreateUserView createUserView = new CreateUserView(User.AccountType.Teacher);
             River.CreateObservable(createUserView);
             createUserView.ShowDialog();
         }
