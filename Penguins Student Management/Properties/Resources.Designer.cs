@@ -83,26 +83,6 @@ namespace Penguins_Student_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_chat_48 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-chat-48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_chat_room_48 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-chat-room-48", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_class_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-class-48", resourceCulture);
@@ -306,6 +286,16 @@ namespace Penguins_Student_Management.Properties {
         internal static System.Drawing.Bitmap icons8_user_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_shield_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-user-shield-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

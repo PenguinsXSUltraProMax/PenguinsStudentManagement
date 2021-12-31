@@ -75,23 +75,17 @@
     <Compile Include="Controllers\UserController\GetAllStudent.cs" />
     <Compile Include="Controllers\UserController\GetUserByID.cs" />
     <Compile Include="Controllers\UserController\UserController.cs" />
-    <Compile Include="CustomUserControls\CourseListItem.cs">
+    <Compile Include="CustomUserControls\ListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CustomUserControls\CourseListItem.designer.cs">
-      <DependentUpon>CourseListItem.cs</DependentUpon>
+    <Compile Include="CustomUserControls\ListItem.designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomUserControls\SideMenuItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CustomUserControls\SideMenuItem.Designer.cs">
       <DependentUpon>SideMenuItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CustomUserControls\UserListItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CustomUserControls\UserListItem.designer.cs">
-      <DependentUpon>UserListItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="JsonDatabase\Database.cs" />
@@ -189,14 +183,11 @@
     <Compile Include="Views\UserDetailView.Designer.cs">
       <DependentUpon>UserDetailView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CustomUserControls\CourseListItem.resx">
-      <DependentUpon>CourseListItem.cs</DependentUpon>
+    <EmbeddedResource Include="CustomUserControls\ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomUserControls\SideMenuItem.resx">
       <DependentUpon>SideMenuItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomUserControls\UserListItem.resx">
-      <DependentUpon>UserListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

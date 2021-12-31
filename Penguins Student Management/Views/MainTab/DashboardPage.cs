@@ -48,18 +48,20 @@ namespace Penguins_Student_Management.Views.MainTab
             useridLabel.Text = Hook.of<AuthController>(River).GetCurrentUser.ID;
 
 
-            Global.DisposeControls(coursePanel.Controls);
-            coursePanel.Controls.Clear();
+            Global.DisposeControls(Panel.Controls);
+            Panel.Controls.Clear();
 
-            List<Course> courses = Hook.of<CourseController>(River).GetCoursesOfUser(Hook.of<AuthController>(River).GetCurrentUser);
-
-            courses.ForEach(course =>
+            Hook.of<CourseController>(River).GetCoursesOfUser(Hook.of<AuthController>(River).GetCurrentUser).ForEach(course =>
             {
-                CourseListItem courseListItem = new CourseListItem
+                ListItem item = new ListItem
                 {
-                    CourseLabel = course.Name
+                    PrefixIcon = Properties.Resources.icons8_read_48,
+                    IconRadius = 0,
+                    Title = course.Name,
+                    Size = new Size(575, 72)
                 };
-                coursePanel.Controls.Add(courseListItem);
+
+                Panel.Controls.Add(item);
 
             });
         }

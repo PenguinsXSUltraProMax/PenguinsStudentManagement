@@ -30,6 +30,7 @@ namespace Penguins_Student_Management.Views.MainTab
         private void InitializeComponent()
         {
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // gunaLabel7
@@ -45,6 +46,18 @@ namespace Penguins_Student_Management.Views.MainTab
             this.gunaLabel7.TabIndex = 16;
             this.gunaLabel7.Text = "Quản lý lớp học";
             // 
+            // Panel
+            // 
+            this.Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Panel.AutoScroll = true;
+            this.Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Panel.Location = new System.Drawing.Point(28, 76);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(878, 527);
+            this.Panel.TabIndex = 17;
+            // 
             // ClassPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -52,6 +65,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(906, 603);
+            this.Controls.Add(this.Panel);
             this.Controls.Add(this.gunaLabel7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClassPage";
@@ -65,5 +79,6 @@ namespace Penguins_Student_Management.Views.MainTab
         #endregion
 
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
+        private System.Windows.Forms.FlowLayoutPanel Panel;
     }
 }

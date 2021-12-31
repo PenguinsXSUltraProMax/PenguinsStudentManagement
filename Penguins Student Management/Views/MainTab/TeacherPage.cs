@@ -29,28 +29,30 @@ namespace Penguins_Student_Management.Views.MainTab
         private void InitTeacherState()
         {
 
-            Global.DisposeControls(teacherPanel.Controls);
-            teacherPanel.Controls.Clear();
+            Global.DisposeControls(Panel.Controls);
+            Panel.Controls.Clear();
 
-            List<User> users = Hook.of<UserController>(River).GetAllTeacher();
+            Hook.of<UserController>(River).GetAllTeacher().ForEach(user => {
 
-            users.ForEach(user => {
-                UserListItem userListItem = new UserListItem
+                ListItem item = new ListItem
                 {
-                    Id = user.ID,
-                    Username = user.Name,
-                    Class = user.Class
+                    ID = user.ID,
+                    PrefixIcon = user.Type == User.AccountType.Teacher ? Properties.Resources.icons8_school_director_48 : Properties.Resources.icons8_user_shield_48,
+                    IconRadius = 0,
+                    Title = user.Name,
+                    Size = new System.Drawing.Size(855, 72)
                 };
 
-                userListItem.Click += UserListItemClickHandle;
+
+                item.Click += ListItemClickHandle;
                 
-                teacherPanel.Controls.Add(userListItem);
+                Panel.Controls.Add(item);
             });
         }
 
-        private void UserListItemClickHandle(object sender, EventArgs e)
+        private void ListItemClickHandle(object sender, EventArgs e)
         {
-            string id = ((UserListItem)sender).Id;
+            string id = ((ListItem)sender).ID;
 
             UserDetailView userDetailView = new UserDetailView(id);
             River.CreateObservable(userDetailView);
