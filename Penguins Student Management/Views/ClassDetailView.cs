@@ -5,6 +5,7 @@ using Penguins_Student_Management.JsonDatabase.Entity.Document;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views
@@ -14,6 +15,8 @@ namespace Penguins_Student_Management.Views
         TheRiver River;
         Class @class;
         string id;
+
+        List<User> users;
 
         public ClassDetailView(string value)
         {
@@ -46,7 +49,9 @@ namespace Penguins_Student_Management.Views
             Global.DisposeControls(Panel.Controls);
             Panel.Controls.Clear();
 
-            Hook.of<ClassController>(River).GetAllUserOfClass(@class.Users).ForEach(user => {
+            users = Hook.of<ClassController>(River).GetAllUserOfClass(@class.Users);
+            
+            users.ForEach(user => {
 
                 ListItem item = new ListItem
                 {
@@ -71,6 +76,19 @@ namespace Penguins_Student_Management.Views
             view.ShowDialog();
         }
 
+        private void printGradientButton_Click(object sender, EventArgs e)
+        {
+            if(users.Count == 0)
+            {
+                MessageBox.Show("Danh sách lớp trống! Không thể xuất file.");
+                return;
+            }
+
+            Hook.of<ClassController>(River).ExportUser(@class, users);
+
+            MessageBox.Show("Xuất file thành công!");
+        }
+
         private void deleteGradientButton_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa lớp học này không?", "", MessageBoxButtons.YesNo);
@@ -84,5 +102,6 @@ namespace Penguins_Student_Management.Views
                 }
             }
         }
+
     }
 }

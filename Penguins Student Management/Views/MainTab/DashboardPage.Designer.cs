@@ -133,6 +133,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.sideMenuItemLogInfo.Name = "sideMenuItemLogInfo";
             this.sideMenuItemLogInfo.Size = new System.Drawing.Size(240, 36);
             this.sideMenuItemLogInfo.TabIndex = 16;
+            this.sideMenuItemLogInfo.Click += new System.EventHandler(this.sideMenuItemLogInfo_Click);
             // 
             // sideMenuItemChangePassword
             // 

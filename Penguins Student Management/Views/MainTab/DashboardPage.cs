@@ -91,5 +91,12 @@ namespace Penguins_Student_Management.Views.MainTab
             }
 
         }
+
+        private void sideMenuItemLogInfo_Click(object sender, EventArgs e)
+        {
+            LoginDetailView view = new LoginDetailView(Auth.GetCurrentUser.ID);
+            view.SetState(River);
+            view.ShowDialog();
+        }
     }
 }
