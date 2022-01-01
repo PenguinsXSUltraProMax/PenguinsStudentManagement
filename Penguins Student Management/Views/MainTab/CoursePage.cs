@@ -14,6 +14,7 @@ namespace Penguins_Student_Management.Views.MainTab
 {
     public partial class CoursePage : Form, IObserver
     {
+        TheRiver River;
         public CoursePage()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace Penguins_Student_Management.Views.MainTab
 
         public void SetState(TheRiver value)
         {
-            
+            River = value;
         }
     }
 }
