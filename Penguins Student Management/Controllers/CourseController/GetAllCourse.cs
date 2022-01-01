@@ -23,7 +23,7 @@ namespace Penguins_Student_Management.Controllers.CourseController
                     Category = Global.Database.Collections.CourseCategory[course.Category].Name,
                     Owner = course.Owner,
                     Users = course.Users,
-                    CourseSections = course.CourseSections
+                    Sections = course.Sections
                 };
 
                 courses.Add(clone);

@@ -118,26 +118,16 @@
                 "Name": "Triết học Mác - Lênin",
                 "Category": "n9Cg-NEDmh7rfpl",
                 "Owner": "GVADMIN",
-                "Users": {
-                    "Student": [
-                        "119000004"
-                    ],
-                    "Teacher": []
-                },
-                "CourseSections": {}
+                "Users": ["119000001", "119000003", "119000004", "119000005"],
+                "Sections": {}
             },
             "RwAI3zy80nsX-Vb": {
                 "ID": "RwAI3zy80nsX-Vb",
                 "Name": "English 1",
                 "Category": "n9Cg-NEDmh7rfpl",
                 "Owner": "GVADMIN",
-                "Users": {
-                    "Student": [
-                        "119000004"
-                    ],
-                    "Teacher": []
-                },
-                "CourseSections": {}
+                "Users": ["119000002", "119000003", "119000004", "119000005"],
+                "Sections": {}
             }
         },
         "CourseCategory": {
