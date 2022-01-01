@@ -5,13 +5,7 @@ using Penguins_Student_Management.JsonDatabase.Entity.Document;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
@@ -20,6 +14,8 @@ namespace Penguins_Student_Management.Views.MainTab
     {
         public MainView OwnerForm;
         TheRiver River;
+        AuthController Auth;
+
         public DashboardPage()
         {
             InitializeComponent();
@@ -42,8 +38,8 @@ namespace Penguins_Student_Management.Views.MainTab
 
         private void InitDashboardState()
         {
-            userAvatar.Load("https://ui-avatars.com/api/?background=random&size=32&font-size=0.3&color=fff&name=" + Hook.of<AuthController>(River).GetCurrentUser.Name ?? "https://api.minimalavatars.com/avatar/random/png");
-
+            Auth = Hook.of<AuthController>(River);
+            userAvatar.Image = Auth.GetCurrentUser.Type == User.AccountType.Student ? Properties.Resources.icons8_student_male_48 : Auth.GetCurrentUser.Type == User.AccountType.Teacher ? Properties.Resources.icons8_school_director_48 : Properties.Resources.icons8_user_shield_48;
             usernameLabel.Text = Hook.of<AuthController>(River).GetCurrentUser.Name;
             useridLabel.Text = Hook.of<AuthController>(River).GetCurrentUser.ID;
 

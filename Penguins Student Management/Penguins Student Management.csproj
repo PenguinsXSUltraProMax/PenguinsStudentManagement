@@ -61,6 +61,7 @@
     <Compile Include="Controllers\AuthController\ChangePassword.cs" />
     <Compile Include="Controllers\AuthController\SignInWithIDAndPassword.cs" />
     <Compile Include="Controllers\AuthController\SignOut.cs" />
+    <Compile Include="Controllers\ClassController\DeleteClass.cs" />
     <Compile Include="Controllers\ClassController\UpdateClass.cs" />
     <Compile Include="Controllers\ClassController\GetAllUserOfClass.cs" />
     <Compile Include="Controllers\ClassController\IsClassExists.cs" />

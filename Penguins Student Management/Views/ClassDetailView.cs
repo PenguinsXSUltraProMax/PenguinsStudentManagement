@@ -71,15 +71,17 @@ namespace Penguins_Student_Management.Views
             view.ShowDialog();
         }
 
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        private void deleteGradientButton_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa lớp học này không?", "", MessageBoxButtons.YesNo);
 
             if(result == DialogResult.Yes)
             {
-                //Hook.of<UserController>(River).DeleteUser(user);
-                //this.Close();
-                //River.Refesh();
+                if(Hook.of<ClassController>(River).DeleteClass(@class))
+                {
+                    this.Close();
+                    River.Refesh();
+                }
             }
         }
     }
