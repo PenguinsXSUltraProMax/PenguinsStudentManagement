@@ -12,6 +12,7 @@ namespace Penguins_Student_Management.Views
     public partial class ClassDetailView : Form, IObserver
     {
         TheRiver River;
+        Class @class;
         string id;
 
         public ClassDetailView(string value)
@@ -38,7 +39,7 @@ namespace Penguins_Student_Management.Views
 
         private void InitState()
         {
-            Class @class = Hook.of<ClassController>(River).GetClassByID(id);
+            @class = Hook.of<ClassController>(River).GetClassByID(id);
             ClassNameLabel.Text = @class.Name;
             FacultyLabel.Text = @class.Faculty;
 
@@ -65,7 +66,9 @@ namespace Penguins_Student_Management.Views
 
         private void editGradientButton_Click(object sender, EventArgs e)
         {
-           
+            EditClassView view = new EditClassView(@class);
+            River.CreateObservable(view);
+            view.ShowDialog();
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)

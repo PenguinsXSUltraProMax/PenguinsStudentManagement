@@ -97,6 +97,7 @@ namespace Penguins_Student_Management.Views
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Size = new System.Drawing.Size(36, 32);
             this.guna2GradientButton1.TabIndex = 34;
+            this.guna2GradientButton1.Click += new System.EventHandler(this.editGradientButton_Click);
             // 
             // guna2GradientButton2
             // 

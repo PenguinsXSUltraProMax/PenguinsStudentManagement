@@ -2,6 +2,7 @@
 {
     class Root
     {
+        public int LastClassID { get; set; }
         public Collections Collections { get; set; }
     }
 }
