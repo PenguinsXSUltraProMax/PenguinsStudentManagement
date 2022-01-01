@@ -33,9 +33,9 @@ namespace Penguins_Student_Management.Views
             this.FacultyLabel = new Guna.UI.WinForms.GunaLabel();
             this.Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.deleteGradientButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.editGradientButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.deleteGradientButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.printGradientButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // ClassNameLabel
@@ -81,23 +81,23 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel1.TabIndex = 33;
             this.gunaLabel1.Text = "Danh sách người dùng";
             // 
-            // guna2GradientButton1
+            // editGradientButton
             // 
-            this.guna2GradientButton1.BorderRadius = 3;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Image = global::Penguins_Student_Management.Properties.Resources.icons8_edit_48;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(358, 39);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(36, 32);
-            this.guna2GradientButton1.TabIndex = 34;
-            this.guna2GradientButton1.Click += new System.EventHandler(this.editGradientButton_Click);
+            this.editGradientButton.BorderRadius = 3;
+            this.editGradientButton.CheckedState.Parent = this.editGradientButton;
+            this.editGradientButton.CustomImages.Parent = this.editGradientButton;
+            this.editGradientButton.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.editGradientButton.FillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.editGradientButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.editGradientButton.ForeColor = System.Drawing.Color.White;
+            this.editGradientButton.HoverState.Parent = this.editGradientButton;
+            this.editGradientButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_edit_48;
+            this.editGradientButton.Location = new System.Drawing.Point(358, 39);
+            this.editGradientButton.Name = "editGradientButton";
+            this.editGradientButton.ShadowDecoration.Parent = this.editGradientButton;
+            this.editGradientButton.Size = new System.Drawing.Size(36, 32);
+            this.editGradientButton.TabIndex = 34;
+            this.editGradientButton.Click += new System.EventHandler(this.editGradientButton_Click);
             // 
             // deleteGradientButton
             // 
@@ -117,23 +117,24 @@ namespace Penguins_Student_Management.Views
             this.deleteGradientButton.TabIndex = 26;
             this.deleteGradientButton.Click += new System.EventHandler(this.deleteGradientButton_Click);
             // 
-            // editGradientButton
+            // printGradientButton
             // 
-            this.editGradientButton.BorderRadius = 3;
-            this.editGradientButton.CheckedState.Parent = this.editGradientButton;
-            this.editGradientButton.CustomImages.Parent = this.editGradientButton;
-            this.editGradientButton.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.editGradientButton.FillColor2 = System.Drawing.Color.WhiteSmoke;
-            this.editGradientButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.editGradientButton.ForeColor = System.Drawing.Color.White;
-            this.editGradientButton.HoverState.Parent = this.editGradientButton;
-            this.editGradientButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_print_24__1_;
-            this.editGradientButton.ImageSize = new System.Drawing.Size(18, 18);
-            this.editGradientButton.Location = new System.Drawing.Point(406, 39);
-            this.editGradientButton.Name = "editGradientButton";
-            this.editGradientButton.ShadowDecoration.Parent = this.editGradientButton;
-            this.editGradientButton.Size = new System.Drawing.Size(36, 32);
-            this.editGradientButton.TabIndex = 25;
+            this.printGradientButton.BorderRadius = 3;
+            this.printGradientButton.CheckedState.Parent = this.printGradientButton;
+            this.printGradientButton.CustomImages.Parent = this.printGradientButton;
+            this.printGradientButton.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.printGradientButton.FillColor2 = System.Drawing.Color.WhiteSmoke;
+            this.printGradientButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.printGradientButton.ForeColor = System.Drawing.Color.White;
+            this.printGradientButton.HoverState.Parent = this.printGradientButton;
+            this.printGradientButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_print_24__1_;
+            this.printGradientButton.ImageSize = new System.Drawing.Size(18, 18);
+            this.printGradientButton.Location = new System.Drawing.Point(406, 39);
+            this.printGradientButton.Name = "printGradientButton";
+            this.printGradientButton.ShadowDecoration.Parent = this.printGradientButton;
+            this.printGradientButton.Size = new System.Drawing.Size(36, 32);
+            this.printGradientButton.TabIndex = 25;
+            this.printGradientButton.Click += new System.EventHandler(this.printGradientButton_Click);
             // 
             // ClassDetailView
             // 
@@ -141,12 +142,12 @@ namespace Penguins_Student_Management.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(517, 553);
-            this.Controls.Add(this.guna2GradientButton1);
+            this.Controls.Add(this.editGradientButton);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.Panel);
             this.Controls.Add(this.FacultyLabel);
             this.Controls.Add(this.deleteGradientButton);
-            this.Controls.Add(this.editGradientButton);
+            this.Controls.Add(this.printGradientButton);
             this.Controls.Add(this.ClassNameLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -164,11 +165,11 @@ namespace Penguins_Student_Management.Views
         #endregion
 
         private Guna.UI.WinForms.GunaLabel ClassNameLabel;
-        private Guna.UI2.WinForms.Guna2GradientButton editGradientButton;
+        private Guna.UI2.WinForms.Guna2GradientButton printGradientButton;
         private Guna.UI2.WinForms.Guna2GradientButton deleteGradientButton;
         private Guna.UI.WinForms.GunaLabel FacultyLabel;
         private System.Windows.Forms.FlowLayoutPanel Panel;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton editGradientButton;
     }
 }
