@@ -4,7 +4,6 @@ using Penguins_Student_Management.JsonDatabase.Entity.Document;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
@@ -38,8 +37,9 @@ namespace Penguins_Student_Management.Views.MainTab
                 {
                     ID = user.ID,
                     PrefixIcon = user.Type == User.AccountType.Teacher ? Properties.Resources.icons8_school_director_48 : Properties.Resources.icons8_user_shield_48,
-                    IconRadius = 0,
                     Title = user.Name,
+                    Description = user.Type.ToString(),
+                    RightTitle = user.ID,
                     Size = new System.Drawing.Size(855, 72)
                 };
 

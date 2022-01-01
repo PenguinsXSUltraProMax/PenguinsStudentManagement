@@ -19,6 +19,8 @@ namespace Penguins_Student_Management.CustomUserControls
         public Image PrefixIcon { get => prefixIcon.Image; set => prefixIcon.Image = value; }
         public int IconRadius { get => prefixIcon.Radius; set => prefixIcon.Radius = value; }
         public string Title { get => title.Text; set => title.Text = value; }
+        public string Description { get => description.Text; set => description.Text = value; }
+        public string RightTitle { get => rightText.Text; set => rightText.Text = value; }
 
         #endregion
 

@@ -43,8 +43,9 @@ namespace Penguins_Student_Management.Views.MainTab
                 {
                     ID = @class.ID,
                     PrefixIcon = Properties.Resources.icons8_class_48,
-                    IconRadius = 0,
                     Title = @class.Name,
+                    Description = @class.Faculty,
+                    RightTitle = @class.Users.Count + " 🐧",
                     Size = new Size(855, 72)
                 };
 

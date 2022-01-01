@@ -39,8 +39,9 @@ namespace Penguins_Student_Management.Views.MainTab
                 {
                     ID = user.ID,
                     PrefixIcon = Properties.Resources.icons8_student_male_48,
-                    IconRadius = 0,
                     Title = user.Name,
+                    Description = user.Class,
+                    RightTitle = user.ID,
                     Size = new Size(855, 72)
                 };
 

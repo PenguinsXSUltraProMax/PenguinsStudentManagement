@@ -58,7 +58,7 @@ namespace Penguins_Student_Management.Views.MainTab
                     PrefixIcon = Properties.Resources.icons8_read_48,
                     IconRadius = 0,
                     Title = course.Name,
-                    Size = new Size(575, 72)
+                    Size = new Size(572, 72)
                 };
 
                 Panel.Controls.Add(item);
