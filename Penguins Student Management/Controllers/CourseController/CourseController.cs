@@ -8,22 +8,5 @@ using System.Threading.Tasks;
 
 namespace Penguins_Student_Management.Controllers.CourseController
 {
-    class CourseController : IRiverSubject
-    {
-
-        public List<Course> GetCoursesOfUser(User user) {
-            List<Course> courses = new List<Course>();
-
-            user.Courses.ForEach(courseKey =>
-            {
-                Course course;
-                Global.Database.Collections.Courses.TryGetValue(courseKey, out course);
-
-                if (course != null) courses.Add(course);
-            });
-
-            return courses;
-        }
-
-    }
+    partial class CourseController : IRiverSubject { }
 }

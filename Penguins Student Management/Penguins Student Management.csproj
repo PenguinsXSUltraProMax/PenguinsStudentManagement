@@ -75,6 +75,8 @@
     <Compile Include="Controllers\ClassController\GetAllClasses.cs" />
     <Compile Include="Controllers\ClassController\GetClassByID.cs" />
     <Compile Include="Controllers\ClassController\ClassController.cs" />
+    <Compile Include="Controllers\CourseController\GetAllCourse.cs" />
+    <Compile Include="Controllers\CourseController\GetCourseOfUser.cs" />
     <Compile Include="Controllers\CourseController\CourseController.cs" />
     <Compile Include="Controllers\UserController\IsIDExists.cs" />
     <Compile Include="Controllers\UserController\CreateUser.cs" />

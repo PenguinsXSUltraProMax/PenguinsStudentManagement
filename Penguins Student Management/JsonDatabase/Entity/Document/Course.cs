@@ -8,7 +8,7 @@ namespace Penguins_Student_Management.JsonDatabase.Entity.Document
         public string Name { get; set; }
         public string Category { get; set; }
         public string Owner { get; set; }
-        public Dictionary<string, List<string>> Users { get; set; }
-        public Dictionary<string, string> CourseSections { get; set; }
+        public List<string> Users { get; set; }
+        public Dictionary<string, string> Sections { get; set; }
     }
 }

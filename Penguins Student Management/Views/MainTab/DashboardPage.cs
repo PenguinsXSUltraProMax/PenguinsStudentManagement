@@ -47,7 +47,7 @@ namespace Penguins_Student_Management.Views.MainTab
             Global.DisposeControls(Panel.Controls);
             Panel.Controls.Clear();
 
-            Hook.of<CourseController>(River).GetCoursesOfUser(Hook.of<AuthController>(River).GetCurrentUser).ForEach(course =>
+            Hook.of<CourseController>(River).GetCourseOfUser(Hook.of<AuthController>(River).GetCurrentUser).ForEach(course =>
             {
                 ListItem item = new ListItem
                 {
