@@ -134,7 +134,6 @@ namespace Penguins_Student_Management.Views
             this.editGradientButton.ShadowDecoration.Parent = this.editGradientButton;
             this.editGradientButton.Size = new System.Drawing.Size(36, 32);
             this.editGradientButton.TabIndex = 25;
-            this.editGradientButton.Click += new System.EventHandler(this.editGradientButton_Click);
             // 
             // ClassDetailView
             // 

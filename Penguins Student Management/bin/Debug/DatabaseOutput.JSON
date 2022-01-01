@@ -110,6 +110,18 @@
           "119000004",
           "119000005"
         ]
+      },
+      "2": {
+        "ID": "2",
+        "Name": "19CT112",
+        "Faculty": "Công nghệ thông tin",
+        "Users": []
+      },
+      "3": {
+        "ID": "3",
+        "Name": "19CT111",
+        "Faculty": "Công nghệ thông tin",
+        "Users": []
       }
     },
     "Courses": {

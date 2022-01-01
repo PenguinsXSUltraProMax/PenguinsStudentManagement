@@ -61,6 +61,8 @@
     <Compile Include="Controllers\AuthController\ChangePassword.cs" />
     <Compile Include="Controllers\AuthController\SignInWithIDAndPassword.cs" />
     <Compile Include="Controllers\AuthController\SignOut.cs" />
+    <Compile Include="Controllers\ClassController\CreateClass.cs" />
+    <Compile Include="Controllers\ClassController\GetLastClassID.cs" />
     <Compile Include="Controllers\ClassController\DeleteClass.cs" />
     <Compile Include="Controllers\ClassController\UpdateClass.cs" />
     <Compile Include="Controllers\ClassController\GetAllUserOfClass.cs" />
@@ -119,6 +121,12 @@
     </Compile>
     <Compile Include="Views\CreateUserView.Designer.cs">
       <DependentUpon>CreateUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateClassView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CreateClassView.Designer.cs">
+      <DependentUpon>CreateClassView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\EditClassView.cs">
       <SubType>Form</SubType>
@@ -219,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CreateUserView.resx">
       <DependentUpon>CreateUserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CreateClassView.resx">
+      <DependentUpon>CreateClassView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EditClassView.resx">
       <DependentUpon>EditClassView.cs</DependentUpon>

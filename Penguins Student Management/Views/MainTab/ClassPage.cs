@@ -64,5 +64,12 @@ namespace Penguins_Student_Management.Views.MainTab
             view.ShowDialog();
 
         }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            CreateClassView view = new CreateClassView();
+            River.CreateObservable(view);
+            view.ShowDialog();
+        }
     }
 }
