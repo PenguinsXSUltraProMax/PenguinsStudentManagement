@@ -37,7 +37,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.sideMenuItemLogInfo = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.sideMenuItemChangePassword = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
             this.sideMenuItemSignOut = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.coursePanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
@@ -162,18 +162,18 @@ namespace Penguins_Student_Management.Views.MainTab
             this.sideMenuItemSignOut.TabIndex = 18;
             this.sideMenuItemSignOut.Click += new System.EventHandler(this.sideMenuItemSignOut_Cick);
             // 
-            // coursePanel
+            // Panel
             // 
-            this.coursePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.coursePanel.AutoScroll = true;
-            this.coursePanel.BackColor = System.Drawing.Color.Transparent;
-            this.coursePanel.Location = new System.Drawing.Point(27, 135);
-            this.coursePanel.Margin = new System.Windows.Forms.Padding(0);
-            this.coursePanel.Name = "coursePanel";
-            this.coursePanel.Size = new System.Drawing.Size(604, 491);
-            this.coursePanel.TabIndex = 16;
+            this.Panel.AutoScroll = true;
+            this.Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Panel.Location = new System.Drawing.Point(27, 135);
+            this.Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(604, 467);
+            this.Panel.TabIndex = 16;
             // 
             // gunaLabel4
             // 
@@ -296,7 +296,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.dateTimeLabel.TabIndex = 6;
             this.dateTimeLabel.Text = "THỨ 3, 04/12/2021";
             // 
-            // Dashboard
+            // DashboardPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -304,12 +304,12 @@ namespace Penguins_Student_Management.Views.MainTab
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(906, 603);
             this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.coursePanel);
+            this.Controls.Add(this.Panel);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.guna2Panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Dashboard";
+            this.Name = "DashboardPage";
             this.Padding = new System.Windows.Forms.Padding(24, 24, 24, 0);
             this.Text = "Dashboard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dashboard_FormClosing);
@@ -335,7 +335,7 @@ namespace Penguins_Student_Management.Views.MainTab
         private CustomUserControls.SideMenuItem sideMenuItemLogInfo;
         private CustomUserControls.SideMenuItem sideMenuItemChangePassword;
         private CustomUserControls.SideMenuItem sideMenuItemSignOut;
-        private System.Windows.Forms.FlowLayoutPanel coursePanel;
+        private System.Windows.Forms.FlowLayoutPanel Panel;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;

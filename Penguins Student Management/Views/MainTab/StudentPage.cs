@@ -5,6 +5,7 @@ using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
@@ -29,30 +30,31 @@ namespace Penguins_Student_Management.Views.MainTab
         private void InitStudentState()
         {
 
-            Global.DisposeControls(studentPanel.Controls);
-            studentPanel.Controls.Clear();
+            Global.DisposeControls(Panel.Controls);
+            Panel.Controls.Clear();
 
-            List<User> users = Hook.of<UserController>(River).GetAllStudent();
+            Hook.of<UserController>(River).GetAllStudent().ForEach(user => {
 
-            users.ForEach(user => {
-
-                UserListItem userListItem = new UserListItem
+                ListItem item = new ListItem
                 {
-                    Id = user.ID,
-                    Username = user.Name,
-                    Class = user.Class
+                    ID = user.ID,
+                    PrefixIcon = Properties.Resources.icons8_student_male_48,
+                    Title = user.Name,
+                    Description = user.Class,
+                    RightTitle = user.ID,
+                    Size = new Size(855, 72)
                 };
 
-                userListItem.Click += UserListItemClickHandle;
+                item.Click += ListItemClickHandle;
 
-                studentPanel.Controls.Add(userListItem);
+                Panel.Controls.Add(item);
 
             });
         }
 
-        private void UserListItemClickHandle(object sender, EventArgs e)
+        private void ListItemClickHandle(object sender, EventArgs e)
         {
-            string id = ((UserListItem)sender).Id;
+            string id = ((ListItem)sender).ID;
 
             UserDetailView userDetailView = new UserDetailView(id);
             River.CreateObservable(userDetailView);

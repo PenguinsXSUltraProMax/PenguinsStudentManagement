@@ -1,6 +1,36 @@
 {
   "Collections": {
     "Users": {
+      "119000001": {
+        "Birthday": "13/1/2001",
+        "Ethnic": "King",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "119000001",
+        "Name": "Lê Xuân Visual Studio",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Class": "1",
+        "Courses": [
+          "wcbX-pDPxfS6KxC"
+        ],
+        "Type": 0
+      },
+      "119000002": {
+        "Birthday": "28/01/2001",
+        "Ethnic": "King",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "119000002",
+        "Name": "Đoàn Nguyên HTML",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Class": "1",
+        "Courses": [
+          "RwAI3zy80nsX-Vb"
+        ],
+        "Type": 0
+      },
       "119000003": {
         "Birthday": "22/05/2001",
         "Ethnic": "Kinh",
@@ -64,6 +94,19 @@
           "RwAI3zy80nsX-Vb"
         ],
         "Type": 2
+      },
+      "GV000001": {
+        "Birthday": "13/7/2021",
+        "Ethnic": "king",
+        "Gender": "Nam",
+        "Hometown": "asd",
+        "ID": "GV000001",
+        "Name": "Lee sPRING Vinh",
+        "Nationality": "asfd",
+        "Password": "123",
+        "Class": "2",
+        "Courses": [],
+        "Type": 1
       }
     },
     "Classes": {
@@ -73,6 +116,8 @@
         "Faculty": "Công nghệ thông tin",
         "Users": [
           "GVADMIN",
+          "119000001",
+          "119000002",
           "119000003",
           "119000004",
           "119000005"
@@ -82,7 +127,9 @@
         "ID": "2",
         "Name": "19CT112",
         "Faculty": "Công nghệ thông tin",
-        "Users": []
+        "Users": [
+          "GV000001"
+        ]
       }
     },
     "Courses": {

@@ -30,7 +30,7 @@ namespace Penguins_Student_Management.Views.MainTab
         private void InitializeComponent()
         {
             this.addButton = new Guna.UI2.WinForms.Guna2Button();
-            this.teacherPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
@@ -57,17 +57,17 @@ namespace Penguins_Student_Management.Views.MainTab
             this.addButton.Text = "Thêm";
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // teacherPanel
+            // Panel
             // 
-            this.teacherPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.teacherPanel.AutoScroll = true;
-            this.teacherPanel.BackColor = System.Drawing.Color.Transparent;
-            this.teacherPanel.Location = new System.Drawing.Point(28, 76);
-            this.teacherPanel.Name = "teacherPanel";
-            this.teacherPanel.Size = new System.Drawing.Size(878, 527);
-            this.teacherPanel.TabIndex = 16;
+            this.Panel.AutoScroll = true;
+            this.Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Panel.Location = new System.Drawing.Point(28, 76);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(878, 527);
+            this.Panel.TabIndex = 16;
             // 
             // gunaLabel7
             // 
@@ -82,7 +82,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.gunaLabel7.TabIndex = 15;
             this.gunaLabel7.Text = "Quản lý giáo viên";
             // 
-            // Teacher
+            // TeacherPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,10 +90,10 @@ namespace Penguins_Student_Management.Views.MainTab
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(906, 603);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.teacherPanel);
+            this.Controls.Add(this.Panel);
             this.Controls.Add(this.gunaLabel7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Teacher";
+            this.Name = "TeacherPage";
             this.Padding = new System.Windows.Forms.Padding(24);
             this.Text = "Student";
             this.ResumeLayout(false);
@@ -104,7 +104,7 @@ namespace Penguins_Student_Management.Views.MainTab
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button addButton;
-        private System.Windows.Forms.FlowLayoutPanel teacherPanel;
+        private System.Windows.Forms.FlowLayoutPanel Panel;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
     }
 }

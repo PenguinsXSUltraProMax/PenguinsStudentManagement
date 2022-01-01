@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace Penguins_Student_Management.CustomUserControls
 {
-    public partial class UserListItem : UserControl
+    public partial class ListItem : UserControl
     {
+
         #region Properties
-        private string id;
-        private string name;
-        private string classes;
-        private string imageUrl;
 
-        public string Id { get => id; set { id = value; idLabel.Text = value; } }
-        public string Username { get => name; set { name = value; nameLabel.Text = value; } }
-        public string Class { get => classes; set { classes = value; classLabel.Text = value; } }
-
-        public string Image { get => imageUrl; set { imageUrl = value; image.Load(value); } }
+        public string ID { get; set; }
+        public Image PrefixIcon { get => prefixIcon.Image; set => prefixIcon.Image = value; }
+        public int IconRadius { get => prefixIcon.Radius; set => prefixIcon.Radius = value; }
+        public string Title { get => title.Text; set => title.Text = value; }
+        public string Description { get => description.Text; set => description.Text = value; }
+        public string RightTitle { get => rightText.Text; set => rightText.Text = value; }
 
         #endregion
 
-        public UserListItem()
+        public ListItem()
         {
             InitializeComponent();
             WireAllControls(this.Controls);
