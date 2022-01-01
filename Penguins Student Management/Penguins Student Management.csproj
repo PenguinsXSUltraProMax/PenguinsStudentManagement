@@ -61,6 +61,11 @@
     <Compile Include="Controllers\AuthController\ChangePassword.cs" />
     <Compile Include="Controllers\AuthController\SignInWithIDAndPassword.cs" />
     <Compile Include="Controllers\AuthController\SignOut.cs" />
+    <Compile Include="Controllers\ClassController\CreateClass.cs" />
+    <Compile Include="Controllers\ClassController\GetLastClassID.cs" />
+    <Compile Include="Controllers\ClassController\DeleteClass.cs" />
+    <Compile Include="Controllers\ClassController\UpdateClass.cs" />
+    <Compile Include="Controllers\ClassController\GetAllUserOfClass.cs" />
     <Compile Include="Controllers\ClassController\IsClassExists.cs" />
     <Compile Include="Controllers\ClassController\GetAllClasses.cs" />
     <Compile Include="Controllers\ClassController\GetClassByID.cs" />
@@ -116,6 +121,18 @@
     </Compile>
     <Compile Include="Views\CreateUserView.Designer.cs">
       <DependentUpon>CreateUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateClassView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CreateClassView.Designer.cs">
+      <DependentUpon>CreateClassView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditClassView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EditClassView.Designer.cs">
+      <DependentUpon>EditClassView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\EditUserView.cs">
       <SubType>Form</SubType>
@@ -177,6 +194,12 @@
     <Compile Include="Views\SplashView.Designer.cs">
       <DependentUpon>SplashView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ClassDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ClassDetailView.Designer.cs">
+      <DependentUpon>ClassDetailView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserDetailView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +227,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CreateUserView.resx">
       <DependentUpon>CreateUserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CreateClassView.resx">
+      <DependentUpon>CreateClassView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EditClassView.resx">
+      <DependentUpon>EditClassView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EditUserView.resx">
       <DependentUpon>EditUserView.cs</DependentUpon>
@@ -234,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SplashView.resx">
       <DependentUpon>SplashView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ClassDetailView.resx">
+      <DependentUpon>ClassDetailView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserDetailView.resx">
       <DependentUpon>UserDetailView.cs</DependentUpon>
@@ -341,6 +373,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-trash-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-24 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

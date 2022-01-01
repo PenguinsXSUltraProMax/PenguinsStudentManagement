@@ -30,21 +30,20 @@ namespace Penguins_Student_Management.CustomUserControls
         private void InitializeComponent()
         {
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.prefixIcon = new Guna.UI.WinForms.GunaPictureBox();
             this.title = new Guna.UI.WinForms.GunaLabel();
             this.rightText = new Guna.UI.WinForms.GunaLabel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.description = new Guna.UI.WinForms.GunaLabel();
+            this.prefixIcon = new Guna.UI.WinForms.GunaPictureBox();
             this.guna2GradientPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prefixIcon)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prefixIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientPanel8.AutoSize = true;
             this.guna2GradientPanel8.BorderColor = System.Drawing.Color.Gainsboro;
             this.guna2GradientPanel8.BorderRadius = 3;
             this.guna2GradientPanel8.BorderThickness = 1;
@@ -59,21 +58,8 @@ namespace Penguins_Student_Management.CustomUserControls
             this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
             this.guna2GradientPanel8.ShadowDecoration.Parent = this.guna2GradientPanel8;
-            this.guna2GradientPanel8.Size = new System.Drawing.Size(580, 60);
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(375, 60);
             this.guna2GradientPanel8.TabIndex = 9;
-            // 
-            // prefixIcon
-            // 
-            this.prefixIcon.BackColor = System.Drawing.Color.Transparent;
-            this.prefixIcon.BaseColor = System.Drawing.Color.White;
-            this.prefixIcon.Image = global::Penguins_Student_Management.Properties.Resources.icons8_student_male_48;
-            this.prefixIcon.Location = new System.Drawing.Point(15, 14);
-            this.prefixIcon.Margin = new System.Windows.Forms.Padding(15, 14, 15, 14);
-            this.prefixIcon.Name = "prefixIcon";
-            this.prefixIcon.Size = new System.Drawing.Size(32, 32);
-            this.prefixIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.prefixIcon.TabIndex = 2;
-            this.prefixIcon.TabStop = false;
             // 
             // title
             // 
@@ -91,7 +77,7 @@ namespace Penguins_Student_Management.CustomUserControls
             this.rightText.Dock = System.Windows.Forms.DockStyle.Right;
             this.rightText.Font = new System.Drawing.Font("Google Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rightText.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.rightText.Location = new System.Drawing.Point(455, 0);
+            this.rightText.Location = new System.Drawing.Point(250, 0);
             this.rightText.Margin = new System.Windows.Forms.Padding(0);
             this.rightText.Name = "rightText";
             this.rightText.Padding = new System.Windows.Forms.Padding(0, 0, 18, 0);
@@ -109,7 +95,7 @@ namespace Penguins_Student_Management.CustomUserControls
             this.flowLayoutPanel1.Controls.Add(this.description);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(65, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(387, 60);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(182, 60);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // description
@@ -123,6 +109,19 @@ namespace Penguins_Student_Management.CustomUserControls
             this.description.Size = new System.Drawing.Size(0, 17);
             this.description.TabIndex = 2;
             // 
+            // prefixIcon
+            // 
+            this.prefixIcon.BackColor = System.Drawing.Color.Transparent;
+            this.prefixIcon.BaseColor = System.Drawing.Color.White;
+            this.prefixIcon.Image = global::Penguins_Student_Management.Properties.Resources.icons8_student_male_48;
+            this.prefixIcon.Location = new System.Drawing.Point(15, 14);
+            this.prefixIcon.Margin = new System.Windows.Forms.Padding(15, 14, 15, 14);
+            this.prefixIcon.Name = "prefixIcon";
+            this.prefixIcon.Size = new System.Drawing.Size(32, 32);
+            this.prefixIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.prefixIcon.TabIndex = 2;
+            this.prefixIcon.TabStop = false;
+            // 
             // ListItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,13 +131,12 @@ namespace Penguins_Student_Management.CustomUserControls
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "ListItem";
-            this.Size = new System.Drawing.Size(580, 72);
+            this.Size = new System.Drawing.Size(375, 72);
             this.guna2GradientPanel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.prefixIcon)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prefixIcon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

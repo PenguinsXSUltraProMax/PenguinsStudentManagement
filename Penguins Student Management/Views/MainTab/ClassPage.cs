@@ -59,10 +59,17 @@ namespace Penguins_Student_Management.Views.MainTab
         {
             string id = ((ListItem)sender).ID;
 
-            //UserDetailView userDetailView = new UserDetailView(id);
-            //River.CreateObservable(userDetailView);
-            //userDetailView.ShowDialog();
+            ClassDetailView view = new ClassDetailView(id);
+            River.CreateObservable(view);
+            view.ShowDialog();
 
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            CreateClassView view = new CreateClassView();
+            River.CreateObservable(view);
+            view.ShowDialog();
         }
     }
 }

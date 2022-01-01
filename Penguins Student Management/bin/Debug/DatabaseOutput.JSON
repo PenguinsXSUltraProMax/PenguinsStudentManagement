@@ -1,4 +1,5 @@
 {
+  "LastClassID": 2,
   "Collections": {
     "Users": {
       "119000001": {
@@ -94,19 +95,6 @@
           "RwAI3zy80nsX-Vb"
         ],
         "Type": 2
-      },
-      "GV000001": {
-        "Birthday": "13/7/2021",
-        "Ethnic": "king",
-        "Gender": "Nam",
-        "Hometown": "asd",
-        "ID": "GV000001",
-        "Name": "Lee sPRING Vinh",
-        "Nationality": "asfd",
-        "Password": "123",
-        "Class": "2",
-        "Courses": [],
-        "Type": 1
       }
     },
     "Classes": {
@@ -127,9 +115,13 @@
         "ID": "2",
         "Name": "19CT112",
         "Faculty": "Công nghệ thông tin",
-        "Users": [
-          "GV000001"
-        ]
+        "Users": []
+      },
+      "3": {
+        "ID": "3",
+        "Name": "19CT111",
+        "Faculty": "Công nghệ thông tin",
+        "Users": []
       }
     },
     "Courses": {
