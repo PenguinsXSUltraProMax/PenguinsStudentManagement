@@ -105,6 +105,7 @@
     <Compile Include="JsonDatabase\Database.cs" />
     <Compile Include="JsonDatabase\Entity\Collections.cs" />
     <Compile Include="JsonDatabase\Entity\Document\Class.cs" />
+    <Compile Include="JsonDatabase\Entity\Document\Section.cs" />
     <Compile Include="JsonDatabase\Entity\Document\Course.cs" />
     <Compile Include="JsonDatabase\Entity\Document\CourseCategory.cs" />
     <Compile Include="JsonDatabase\Entity\Document\IDocument.cs" />
@@ -406,6 +407,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-print-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-documents-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -47,8 +47,26 @@ namespace Penguins_Student_Management.Views
             CourseNameLabel.Text = course.Name;
             CategoryLabel.Text = course.Category;
 
-            Global.DisposeControls(Panel.Controls);
-            Panel.Controls.Clear();
+            Global.DisposeControls(MainPanel.Controls);
+            MainPanel.Controls.Clear();
+
+            course.Sections.ForEach(section => {
+
+                ListItem item = new ListItem
+                {
+                
+                    ID = section.ID,
+                    PrefixIcon = Properties.Resources.icons8_documents_48,
+                    Title = section.Name,
+                    Size = new System.Drawing.Size(560, 72)
+                };
+
+                MainPanel.Controls.Add(item);
+            
+            });
+
+            Global.DisposeControls(UserPanel.Controls);
+            UserPanel.Controls.Clear();
 
             users = Hook.of<CourseController>(River).GetAllUserOfCourse(course.Users);
 
@@ -62,10 +80,10 @@ namespace Penguins_Student_Management.Views
                     Title = user.Name,
                     Description = user.Type.ToString(),
                     RightTitle = user.ID,
-                    Size = new System.Drawing.Size(463, 72)
+                    Size = new System.Drawing.Size(375, 72)
                 };
 
-                Panel.Controls.Add(item);
+                UserPanel.Controls.Add(item);
 
             });
         }

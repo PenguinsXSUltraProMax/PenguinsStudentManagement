@@ -9,6 +9,6 @@ namespace Penguins_Student_Management.JsonDatabase.Entity.Document
         public string Category { get; set; }
         public string Owner { get; set; }
         public List<string> Users { get; set; }
-        public Dictionary<string, string> Sections { get; set; }
+        public List<Section> Sections { get; set; }
     }
 }

@@ -31,10 +31,12 @@ namespace Penguins_Student_Management.Views
         {
             this.CourseNameLabel = new Guna.UI.WinForms.GunaLabel();
             this.CategoryLabel = new Guna.UI.WinForms.GunaLabel();
-            this.Panel = new System.Windows.Forms.FlowLayoutPanel();
+            this.MainPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.editGradientButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.deleteGradientButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.UserPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // CourseNameLabel
@@ -59,15 +61,17 @@ namespace Penguins_Student_Management.Views
             this.CategoryLabel.TabIndex = 31;
             this.CategoryLabel.Text = "Placeholder";
             // 
-            // Panel
+            // MainPanel
             // 
-            this.Panel.AutoScroll = true;
-            this.Panel.Location = new System.Drawing.Point(0, 127);
-            this.Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.Panel.Name = "Panel";
-            this.Panel.Padding = new System.Windows.Forms.Padding(27, 3, 24, 0);
-            this.Panel.Size = new System.Drawing.Size(516, 427);
-            this.Panel.TabIndex = 32;
+            this.MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MainPanel.AutoScroll = true;
+            this.MainPanel.Location = new System.Drawing.Point(0, 127);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Padding = new System.Windows.Forms.Padding(27, 3, 24, 0);
+            this.MainPanel.Size = new System.Drawing.Size(613, 427);
+            this.MainPanel.TabIndex = 32;
             // 
             // gunaLabel1
             // 
@@ -76,12 +80,13 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel1.Location = new System.Drawing.Point(25, 108);
             this.gunaLabel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 48);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(120, 14);
+            this.gunaLabel1.Size = new System.Drawing.Size(108, 14);
             this.gunaLabel1.TabIndex = 33;
-            this.gunaLabel1.Text = "Danh sách người dùng";
+            this.gunaLabel1.Text = "Danh sách bài giảng";
             // 
             // editGradientButton
             // 
+            this.editGradientButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.editGradientButton.BorderRadius = 3;
             this.editGradientButton.CheckedState.Parent = this.editGradientButton;
             this.editGradientButton.CustomImages.Parent = this.editGradientButton;
@@ -91,7 +96,7 @@ namespace Penguins_Student_Management.Views
             this.editGradientButton.ForeColor = System.Drawing.Color.White;
             this.editGradientButton.HoverState.Parent = this.editGradientButton;
             this.editGradientButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_edit_48;
-            this.editGradientButton.Location = new System.Drawing.Point(406, 39);
+            this.editGradientButton.Location = new System.Drawing.Point(923, 39);
             this.editGradientButton.Name = "editGradientButton";
             this.editGradientButton.ShadowDecoration.Parent = this.editGradientButton;
             this.editGradientButton.Size = new System.Drawing.Size(36, 32);
@@ -100,6 +105,7 @@ namespace Penguins_Student_Management.Views
             // 
             // deleteGradientButton
             // 
+            this.deleteGradientButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteGradientButton.BorderRadius = 3;
             this.deleteGradientButton.CheckedState.Parent = this.deleteGradientButton;
             this.deleteGradientButton.CustomImages.Parent = this.deleteGradientButton;
@@ -109,21 +115,46 @@ namespace Penguins_Student_Management.Views
             this.deleteGradientButton.ForeColor = System.Drawing.Color.White;
             this.deleteGradientButton.HoverState.Parent = this.deleteGradientButton;
             this.deleteGradientButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_trash_48;
-            this.deleteGradientButton.Location = new System.Drawing.Point(454, 39);
+            this.deleteGradientButton.Location = new System.Drawing.Point(971, 39);
             this.deleteGradientButton.Name = "deleteGradientButton";
             this.deleteGradientButton.ShadowDecoration.Parent = this.deleteGradientButton;
             this.deleteGradientButton.Size = new System.Drawing.Size(36, 32);
             this.deleteGradientButton.TabIndex = 26;
             this.deleteGradientButton.Click += new System.EventHandler(this.deleteGradientButton_Click);
             // 
+            // UserPanel
+            // 
+            this.UserPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.UserPanel.AutoScroll = true;
+            this.UserPanel.Location = new System.Drawing.Point(633, 127);
+            this.UserPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.UserPanel.Name = "UserPanel";
+            this.UserPanel.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.UserPanel.Size = new System.Drawing.Size(400, 427);
+            this.UserPanel.TabIndex = 33;
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Location = new System.Drawing.Point(630, 108);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 48);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(120, 14);
+            this.gunaLabel2.TabIndex = 35;
+            this.gunaLabel2.Text = "Danh sách người dùng";
+            // 
             // CourseDetailView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(517, 553);
+            this.ClientSize = new System.Drawing.Size(1034, 553);
+            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.UserPanel);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.Panel);
+            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.CategoryLabel);
             this.Controls.Add(this.deleteGradientButton);
             this.Controls.Add(this.CourseNameLabel);
@@ -146,8 +177,10 @@ namespace Penguins_Student_Management.Views
         private Guna.UI.WinForms.GunaLabel CourseNameLabel;
         private Guna.UI2.WinForms.Guna2GradientButton deleteGradientButton;
         private Guna.UI.WinForms.GunaLabel CategoryLabel;
-        private System.Windows.Forms.FlowLayoutPanel Panel;
+        private System.Windows.Forms.FlowLayoutPanel MainPanel;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI2.WinForms.Guna2GradientButton editGradientButton;
+        private System.Windows.Forms.FlowLayoutPanel UserPanel;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
     }
 }

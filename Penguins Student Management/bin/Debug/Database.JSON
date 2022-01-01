@@ -119,7 +119,13 @@
                 "Category": "n9Cg-NEDmh7rfpl",
                 "Owner": "GVADMIN",
                 "Users": ["119000001", "119000003", "119000004", "119000005"],
-                "Sections": {}
+                "Sections": [
+                    {
+                        "ID": "RANDOMID",
+                        "Name": "Bài 1",
+                        "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel placerat tellus. Aliquam rutrum, odio in tincidunt cursus, enim ligula facilisis diam, eget tincidunt erat odio sed tortor. Integer tempus ut neque eget viverra. Nunc ac condimentum dui, nec blandit urna. Curabitur imperdiet est vel sodales maximus. Morbi vel nunc et tellus eleifend tincidunt vel et sem. Integer quis convallis lacus. Donec ac accumsan erat, ultricies ultricies mauris. Aenean vel enim eget libero viverra volutpat. Aliquam vehicula dolor ac dolor sodales pulvinar. Curabitur a lectus nec arcu consequat elementum. Morbi dictum sem id ex placerat facilisis."
+                    }
+                ]
             },
             "RwAI3zy80nsX-Vb": {
                 "ID": "RwAI3zy80nsX-Vb",
@@ -127,7 +133,13 @@
                 "Category": "n9Cg-NEDmh7rfpl",
                 "Owner": "GVADMIN",
                 "Users": ["119000002", "119000003", "119000004", "119000005"],
-                "Sections": {}
+                "Sections": [
+                    {
+                        "ID": "RANDOMID2",
+                        "Name": "Bài 1",
+                        "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel placerat tellus. Aliquam rutrum, odio in tincidunt cursus, enim ligula facilisis diam, eget tincidunt erat odio sed tortor. Integer tempus ut neque eget viverra. Nunc ac condimentum dui, nec blandit urna. Curabitur imperdiet est vel sodales maximus. Morbi vel nunc et tellus eleifend tincidunt vel et sem. Integer quis convallis lacus. Donec ac accumsan erat, ultricies ultricies mauris. Aenean vel enim eget libero viverra volutpat. Aliquam vehicula dolor ac dolor sodales pulvinar. Curabitur a lectus nec arcu consequat elementum. Morbi dictum sem id ex placerat facilisis."
+                    }
+                ]
             }
         },
         "CourseCategory": {
