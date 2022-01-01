@@ -16,7 +16,7 @@ namespace Penguins_Student_Management.Controllers.CourseController
 
             Global.Database.Collections.Courses.Values.ToList().ForEach(course =>
             {
-                Course clone = new Course
+                Course clone = new Course()
                 {
                     ID = course.ID,
                     Name = course.Name,
