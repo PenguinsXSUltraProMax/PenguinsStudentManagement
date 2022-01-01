@@ -96,15 +96,15 @@
         "Type": 2
       },
       "GV000001": {
-        "Birthday": "13/7/2021",
-        "Ethnic": "king",
+        "Birthday": "26/12/2021",
+        "Ethnic": "sdgdf",
         "Gender": "Nam",
-        "Hometown": "asd",
+        "Hometown": "dfgdf",
         "ID": "GV000001",
-        "Name": "Lee sPRING Vinh",
-        "Nationality": "asfd",
-        "Password": "123",
-        "Class": "2",
+        "Name": "sdgdfg",
+        "Nationality": "fdg",
+        "Password": "dfg",
+        "Class": "1",
         "Courses": [],
         "Type": 1
       }
@@ -120,16 +120,15 @@
           "119000002",
           "119000003",
           "119000004",
-          "119000005"
+          "119000005",
+          "GV000001"
         ]
       },
       "2": {
         "ID": "2",
         "Name": "19CT112",
         "Faculty": "Công nghệ thông tin",
-        "Users": [
-          "GV000001"
-        ]
+        "Users": []
       }
     },
     "Courses": {
