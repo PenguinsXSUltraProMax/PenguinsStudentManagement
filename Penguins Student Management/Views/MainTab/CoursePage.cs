@@ -45,15 +45,33 @@ namespace Penguins_Student_Management.Views.MainTab
                     PrefixIcon = Properties.Resources.icons8_read_48,
                     Title = course.Name,
                     Description = "#" + course.Category,
-                    RightTitle = course.Owner,
                     Size = new Size(855, 72)
                 };
 
-                //item.Click += ListItemClickHandle;
+                item.Click += ListItemClickHandle;
 
                 Panel.Controls.Add(item);
 
             });
+        }
+
+        private void ListItemClickHandle(object sender, EventArgs e)
+        {
+            string id = ((ListItem)sender).ID;
+
+            CourseDetailView view = new CourseDetailView(id);
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
+            view.ShowDialog();
+
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            CreateCourseView view = new CreateCourseView();
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
+            view.ShowDialog();
         }
     }
 }

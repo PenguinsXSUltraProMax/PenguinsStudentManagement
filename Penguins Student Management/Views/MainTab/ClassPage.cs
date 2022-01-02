@@ -1,16 +1,9 @@
 ﻿using Penguins_Student_Management.Controllers.ClassController;
 using Penguins_Student_Management.CustomUserControls;
-using Penguins_Student_Management.JsonDatabase.Entity.Document;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Penguins_Student_Management.Views.MainTab
@@ -21,9 +14,15 @@ namespace Penguins_Student_Management.Views.MainTab
         public ClassPage()
         {
             InitializeComponent();
+            this.FormClosing += ClassPage_FormClosing;
             this.TopLevel = false;
             this.Dock = DockStyle.Fill;
             this.Visible = true;
+        }
+
+        private void ClassPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            River.DisposeObservable(this);
         }
 
         public void SetState(TheRiver value)
@@ -71,5 +70,6 @@ namespace Penguins_Student_Management.Views.MainTab
             River.CreateObservable(view);
             view.ShowDialog();
         }
+
     }
 }

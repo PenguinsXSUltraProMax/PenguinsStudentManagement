@@ -13,7 +13,12 @@ namespace Penguins_Student_Management.CustomUserControls
     public partial class ListItem : UserControl
     {
 
+        private Color white = Color.White;
+        private Color lightCyan = Color.LightCyan;
+
         #region Properties
+
+        private bool selected = false;
 
         public string ID { get; set; }
         public Image PrefixIcon { get => prefixIcon.Image; set => prefixIcon.Image = value; }
@@ -21,6 +26,15 @@ namespace Penguins_Student_Management.CustomUserControls
         public string Title { get => title.Text; set => title.Text = value; }
         public string Description { get => description.Text; set => description.Text = value; }
         public string RightTitle { get => rightText.Text; set => rightText.Text = value; }
+        
+        public bool Selected {
+            get => selected;
+            set {
+                selected = value;
+                GradientPanel.FillColor = selected ? lightCyan : white;
+                GradientPanel.FillColor2 = selected ? lightCyan : white;
+            }
+        }
 
         #endregion
 

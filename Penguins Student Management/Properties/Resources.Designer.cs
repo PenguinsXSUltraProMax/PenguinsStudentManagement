@@ -83,6 +83,16 @@ namespace Penguins_Student_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_check_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-check-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_class_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-class-48", resourceCulture);
@@ -136,6 +146,16 @@ namespace Penguins_Student_Management.Properties {
         internal static System.Drawing.Bitmap icons8_dashboard_layout_481 {
             get {
                 object obj = ResourceManager.GetObject("icons8-dashboard-layout-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_documents_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-documents-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

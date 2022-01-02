@@ -80,6 +80,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.addButton.Size = new System.Drawing.Size(110, 29);
             this.addButton.TabIndex = 19;
             this.addButton.Text = "Thêm";
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // CoursePage
             // 

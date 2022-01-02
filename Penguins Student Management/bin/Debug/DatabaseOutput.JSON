@@ -12,9 +12,7 @@
         "Nationality": "Việt Nam",
         "Password": "123",
         "Class": "1",
-        "Courses": [
-          "wcbX-pDPxfS6KxC"
-        ],
+        "Courses": [],
         "Type": 0
       },
       "119000002": {
@@ -27,9 +25,7 @@
         "Nationality": "Việt Nam",
         "Password": "123",
         "Class": "1",
-        "Courses": [
-          "RwAI3zy80nsX-Vb"
-        ],
+        "Courses": [],
         "Type": 0
       },
       "119000003": {
@@ -42,10 +38,7 @@
         "Nationality": "Việt Nam",
         "Password": "123",
         "Class": "1",
-        "Courses": [
-          "wcbX-pDPxfS6KxC",
-          "RwAI3zy80nsX-Vb"
-        ],
+        "Courses": [],
         "Type": 0
       },
       "119000004": {
@@ -58,10 +51,7 @@
         "Nationality": "Việt Nam",
         "Password": "123",
         "Class": "1",
-        "Courses": [
-          "wcbX-pDPxfS6KxC",
-          "RwAI3zy80nsX-Vb"
-        ],
+        "Courses": [],
         "Type": 0
       },
       "119000005": {
@@ -74,10 +64,7 @@
         "Nationality": "Việt Nam",
         "Password": "123",
         "Class": "1",
-        "Courses": [
-          "wcbX-pDPxfS6KxC",
-          "RwAI3zy80nsX-Vb"
-        ],
+        "Courses": [],
         "Type": 0
       },
       "GVADMIN": {
@@ -116,49 +103,19 @@
         "Name": "19CT112",
         "Faculty": "Công nghệ thông tin",
         "Users": []
-      },
-      "3": {
-        "ID": "3",
-        "Name": "19CT111",
-        "Faculty": "Công nghệ thông tin",
-        "Users": []
       }
     },
-    "Courses": {
-      "wcbX-pDPxfS6KxC": {
-        "ID": "wcbX-pDPxfS6KxC",
-        "Name": "Triết học Mác - Lênin",
-        "Category": null,
-        "Owner": "GVADMIN",
-        "Users": {
-          "Student": [
-            "119000004"
-          ],
-          "Teacher": []
-        },
-        "CourseSections": {}
-      },
-      "RwAI3zy80nsX-Vb": {
-        "ID": "RwAI3zy80nsX-Vb",
-        "Name": "English 1",
-        "Category": "n9Cg-NEDmh7rfpl",
-        "Owner": "GVADMIN",
-        "Users": {
-          "Student": [
-            "119000004"
-          ],
-          "Teacher": []
-        },
-        "CourseSections": {}
-      }
-    },
+    "Courses": {},
     "CourseCategory": {
       "n9Cg-NEDmh7rfpl": {
         "ID": "n9Cg-NEDmh7rfpl",
         "Name": "Khác",
-        "Courses": [
-          "wcbX-pDPxfS6KxC"
-        ]
+        "Courses": []
+      },
+      "N7wjfJjnKDioxh": {
+        "ID": "N7wjfJjnKDioxh",
+        "Name": "Công nghệ thông tin",
+        "Courses": []
       }
     }
   }

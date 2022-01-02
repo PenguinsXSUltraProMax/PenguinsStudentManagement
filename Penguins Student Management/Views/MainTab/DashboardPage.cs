@@ -51,15 +51,29 @@ namespace Penguins_Student_Management.Views.MainTab
             {
                 ListItem item = new ListItem
                 {
+                    ID = course.ID,
                     PrefixIcon = Properties.Resources.icons8_read_48,
                     IconRadius = 0,
                     Title = course.Name,
                     Size = new Size(572, 72)
                 };
 
+                item.Click += ListItemClickHandle;
+
                 Panel.Controls.Add(item);
 
             });
+        }
+
+        private void ListItemClickHandle(object sender, EventArgs e)
+        {
+            string id = ((ListItem)sender).ID;
+
+            CourseDetailView view = new CourseDetailView(id);
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
+            view.ShowDialog();
+
         }
 
         private void sideMenuItemChangePassword_Click(object sender, EventArgs e)
