@@ -126,6 +126,12 @@
     <Compile Include="Views\ChangePasswordView.designer.cs">
       <DependentUpon>ChangePasswordView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\EditCourseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EditCourseView.Designer.cs">
+      <DependentUpon>EditCourseView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CourseDetailView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +252,9 @@
     </Compile>
     <EmbeddedResource Include="Views\ChangePasswordView.resx">
       <DependentUpon>ChangePasswordView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EditCourseView.resx">
+      <DependentUpon>EditCourseView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CourseDetailView.resx">
       <DependentUpon>CourseDetailView.cs</DependentUpon>
@@ -410,6 +419,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-documents-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check-201.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

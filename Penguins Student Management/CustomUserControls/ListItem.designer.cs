@@ -29,37 +29,37 @@ namespace Penguins_Student_Management.CustomUserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.GradientPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.title = new Guna.UI.WinForms.GunaLabel();
             this.description = new Guna.UI.WinForms.GunaLabel();
             this.rightText = new Guna.UI.WinForms.GunaLabel();
             this.prefixIcon = new Guna.UI.WinForms.GunaPictureBox();
-            this.guna2GradientPanel8.SuspendLayout();
+            this.GradientPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prefixIcon)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2GradientPanel8
+            // GradientPanel
             // 
-            this.guna2GradientPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.GradientPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientPanel8.BorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2GradientPanel8.BorderRadius = 3;
-            this.guna2GradientPanel8.BorderThickness = 1;
-            this.guna2GradientPanel8.Controls.Add(this.flowLayoutPanel1);
-            this.guna2GradientPanel8.Controls.Add(this.rightText);
-            this.guna2GradientPanel8.Controls.Add(this.prefixIcon);
-            this.guna2GradientPanel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2GradientPanel8.FillColor = System.Drawing.Color.White;
-            this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel8.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.guna2GradientPanel8.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.guna2GradientPanel8.Name = "guna2GradientPanel8";
-            this.guna2GradientPanel8.ShadowDecoration.Parent = this.guna2GradientPanel8;
-            this.guna2GradientPanel8.Size = new System.Drawing.Size(375, 60);
-            this.guna2GradientPanel8.TabIndex = 9;
+            this.GradientPanel.BorderColor = System.Drawing.Color.Gainsboro;
+            this.GradientPanel.BorderRadius = 3;
+            this.GradientPanel.BorderThickness = 1;
+            this.GradientPanel.Controls.Add(this.flowLayoutPanel1);
+            this.GradientPanel.Controls.Add(this.rightText);
+            this.GradientPanel.Controls.Add(this.prefixIcon);
+            this.GradientPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GradientPanel.FillColor = System.Drawing.Color.White;
+            this.GradientPanel.FillColor2 = System.Drawing.Color.White;
+            this.GradientPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.GradientPanel.Location = new System.Drawing.Point(0, 0);
+            this.GradientPanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.GradientPanel.Name = "GradientPanel";
+            this.GradientPanel.ShadowDecoration.Parent = this.GradientPanel;
+            this.GradientPanel.Size = new System.Drawing.Size(375, 60);
+            this.GradientPanel.TabIndex = 9;
             // 
             // flowLayoutPanel1
             // 
@@ -126,12 +126,12 @@ namespace Penguins_Student_Management.CustomUserControls
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.guna2GradientPanel8);
+            this.Controls.Add(this.GradientPanel);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "ListItem";
             this.Size = new System.Drawing.Size(375, 72);
-            this.guna2GradientPanel8.ResumeLayout(false);
+            this.GradientPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prefixIcon)).EndInit();
@@ -141,7 +141,7 @@ namespace Penguins_Student_Management.CustomUserControls
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
+        private Guna.UI2.WinForms.Guna2GradientPanel GradientPanel;
         private Guna.UI.WinForms.GunaLabel title;
         private Guna.UI.WinForms.GunaPictureBox prefixIcon;
         private Guna.UI.WinForms.GunaLabel rightText;

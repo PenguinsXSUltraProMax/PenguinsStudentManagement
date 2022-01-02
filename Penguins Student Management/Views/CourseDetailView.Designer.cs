@@ -96,7 +96,7 @@ namespace Penguins_Student_Management.Views
             this.editGradientButton.ForeColor = System.Drawing.Color.White;
             this.editGradientButton.HoverState.Parent = this.editGradientButton;
             this.editGradientButton.Image = global::Penguins_Student_Management.Properties.Resources.icons8_edit_48;
-            this.editGradientButton.Location = new System.Drawing.Point(923, 39);
+            this.editGradientButton.Location = new System.Drawing.Point(925, 39);
             this.editGradientButton.Name = "editGradientButton";
             this.editGradientButton.ShadowDecoration.Parent = this.editGradientButton;
             this.editGradientButton.Size = new System.Drawing.Size(36, 32);
