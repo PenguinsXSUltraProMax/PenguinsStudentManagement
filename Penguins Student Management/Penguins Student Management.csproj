@@ -75,8 +75,9 @@
     <Compile Include="Controllers\ClassController\GetAllClasses.cs" />
     <Compile Include="Controllers\ClassController\GetClassByID.cs" />
     <Compile Include="Controllers\ClassController\ClassController.cs" />
+    <Compile Include="Controllers\CourseController\RemoveSections.cs" />
     <Compile Include="Controllers\CourseController\UpdateCourse.cs" />
-    <Compile Include="Controllers\CourseController\RemoveUser.cs" />
+    <Compile Include="Controllers\CourseController\RemoveUsers.cs" />
     <Compile Include="Controllers\CourseController\GetAllCourseCategory.cs" />
     <Compile Include="Controllers\CourseController\GetAllUserOfCourse.cs" />
     <Compile Include="Controllers\CourseController\GetCourseByID.cs" />

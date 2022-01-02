@@ -109,6 +109,7 @@ namespace Penguins_Student_Management.Views
                 sectionIDs.Remove(item.ID);
             }
         }
+
         private void UserListItemSelectedHandle(object sender, EventArgs e)
         {
             ListItem item = (ListItem)sender;
@@ -122,6 +123,7 @@ namespace Penguins_Student_Management.Views
                 userIDs.Remove(item.ID);
             }
         }
+
         private void DeleteUserGradientButton_Click(object sender, EventArgs e)
         {
             if(userIDs.Count == 0)
@@ -135,30 +137,30 @@ namespace Penguins_Student_Management.Views
             if (result == DialogResult.Yes)
             {
                 courseController.RemoveUsers(userIDs, course.ID);
+                userIDs.Clear();
                 MessageBox.Show("Xóa thành công!");
 
                 River.Refesh();
             }
         }
 
-        private void editGradientButton_Click(object sender, EventArgs e)
+        private void DeleteSectionGradientButton_Click(object sender, EventArgs e)
         {
-            //EditClassView view = new EditClassView(@class);
-            //River.CreateObservable(view);
-            //view.ShowDialog();
-        }
-
-        private void deleteGradientButton_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa khóa học này không?", "", MessageBoxButtons.YesNo);
-
-            if(result == DialogResult.Yes)
+            if (sectionIDs.Count == 0)
             {
-                //if(Hook.of<ClassController>(River).DeleteClass(@class))
-                //{
-                //    this.Close();
-                //    River.Refesh();
-                //}
+                MessageBox.Show("Cần chọn ít nhất một bài giảng dùng để xóa!");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa không?", "", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                courseController.RemoveSections(sectionIDs, course.ID);
+                sectionIDs.Clear();
+                MessageBox.Show("Xóa thành công!");
+
+                River.Refesh();
             }
         }
 
@@ -180,5 +182,6 @@ namespace Penguins_Student_Management.Views
             MessageBox.Show("Cập nhật thành công!");
             River.Refesh();
         }
+
     }
 }
