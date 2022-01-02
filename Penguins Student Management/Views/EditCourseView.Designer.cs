@@ -236,6 +236,7 @@ namespace Penguins_Student_Management.Views
             this.AddUserGradientButton.ShadowDecoration.Parent = this.AddUserGradientButton;
             this.AddUserGradientButton.Size = new System.Drawing.Size(36, 32);
             this.AddUserGradientButton.TabIndex = 36;
+            this.AddUserGradientButton.Click += new System.EventHandler(this.AddUserGradientButton_Click);
             // 
             // DeleteSectionGradientButton
             // 
@@ -274,6 +275,7 @@ namespace Penguins_Student_Management.Views
             this.AddSectionGradientButton.ShadowDecoration.Parent = this.AddSectionGradientButton;
             this.AddSectionGradientButton.Size = new System.Drawing.Size(36, 32);
             this.AddSectionGradientButton.TabIndex = 44;
+            this.AddSectionGradientButton.Click += new System.EventHandler(this.AddSectionGradientButton_Click);
             // 
             // EditCourseView
             // 

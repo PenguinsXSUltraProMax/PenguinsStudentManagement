@@ -96,6 +96,7 @@ namespace Penguins_Student_Management.Views.MainTab
             this.Name = "ClassPage";
             this.Padding = new System.Windows.Forms.Padding(24, 24, 24, 0);
             this.Text = "Message";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClassPage_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

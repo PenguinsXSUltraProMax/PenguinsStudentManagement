@@ -1,4 +1,5 @@
-﻿using Penguins_Student_Management.Controllers.CourseController;
+﻿using Penguins_Student_Management.Controllers.AuthController;
+using Penguins_Student_Management.Controllers.CourseController;
 using Penguins_Student_Management.CustomUserControls;
 using Penguins_Student_Management.JsonDatabase.Entity.Document;
 using Penguins_Student_Management.StateManagement;
@@ -35,13 +36,15 @@ namespace Penguins_Student_Management.Views
         public void SetState(TheRiver value)
         {
             River = value;
+            course = Hook.of<CourseController>(River).GetCourseByID(id);
+            editGradientButton.Visible = Hook.of<AuthController>(River).GetCurrentUser.Type == User.AccountType.Admin || Hook.of<AuthController>(River).GetCurrentUser.ID == course.Owner;
+            deleteGradientButton.Visible = Hook.of<AuthController>(River).GetCurrentUser.Type == User.AccountType.Admin || Hook.of<AuthController>(River).GetCurrentUser.ID == course.Owner;
+
             InitState();
         }
 
         private void InitState()
         {
-            course = Hook.of<CourseController>(River).GetCourseByID(id);
-
             CourseNameLabel.Text = course.Name;
             CategoryLabel.Text = course.Category;
 
@@ -58,6 +61,8 @@ namespace Penguins_Student_Management.Views
                     Title = section.Name,
                     Size = new System.Drawing.Size(560, 72)
                 };
+
+                item.Click += ListItemClickHandle;
 
                 MainPanel.Controls.Add(item);
             
@@ -86,11 +91,22 @@ namespace Penguins_Student_Management.Views
             });
         }
 
+        private void ListItemClickHandle(object sender, EventArgs e)
+        {
+            string id = ((ListItem)sender).ID;
+
+            SectionDetailView view = new SectionDetailView(this.id, id);
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
+            view.ShowDialog();
+        }
+
 
         private void editGradientButton_Click(object sender, EventArgs e)
         {
-            EditCourseView view = new EditCourseView(course);
-            River.CreateObservable(view);
+            EditCourseView view = new EditCourseView(id);
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
             view.ShowDialog();
         }
 
@@ -100,11 +116,10 @@ namespace Penguins_Student_Management.Views
 
             if(result == DialogResult.Yes)
             {
-                //if(Hook.of<ClassController>(River).DeleteClass(@class))
-                //{
-                //    this.Close();
-                //    River.Refesh();
-                //}
+                Hook.of<CourseController>(River).DeleteCourse(course);
+
+                this.Close();
+                River.Refesh();
             }
         }
 

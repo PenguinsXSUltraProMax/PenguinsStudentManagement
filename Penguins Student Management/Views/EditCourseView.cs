@@ -13,16 +13,17 @@ namespace Penguins_Student_Management.Views
     {
         TheRiver River;
         CourseController courseController;
+        string id;
         Course course;
         List<User> users;
 
         List<string> userIDs = new List<string>();
         List<string> sectionIDs = new List<string>();
 
-        public EditCourseView(Course value)
+        public EditCourseView(string value)
         {
             InitializeComponent();
-            course = value;
+            id = value;
             this.FormClosing += EditCourseView_FormClosing;
         }
 
@@ -38,16 +39,18 @@ namespace Penguins_Student_Management.Views
         {
             River = value;
             courseController = Hook.of<CourseController>(River);
+            course = courseController.GetCourseByID(id);
             LoadDataToView();
         }
 
         private void LoadDataToView()
         {
+            Console.WriteLine(course.Category);
             CourseNameTextBox.Text = course.Name;
             CategoryComboBox.DataSource = courseController.GetAllCourseCategory();
             CategoryComboBox.DisplayMember = "Name";
             CategoryComboBox.ValueMember = "ID";
-            CategoryComboBox.SelectedText = course.Category;
+            CategoryComboBox.SelectedIndex = CategoryComboBox.FindString(course.Category);
 
             Global.DisposeControls(MainPanel.Controls);
             MainPanel.Controls.Clear();
@@ -181,6 +184,21 @@ namespace Penguins_Student_Management.Views
 
             MessageBox.Show("Cập nhật thành công!");
             River.Refesh();
+        }
+
+        private void AddUserGradientButton_Click(object sender, EventArgs e)
+        {
+            CourseAddUserView view = new CourseAddUserView(id);
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
+            view.ShowDialog();
+        }
+        private void AddSectionGradientButton_Click(object sender, EventArgs e)
+        {
+            CreateSectionView view = new CreateSectionView(course);
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
+            view.ShowDialog();
         }
 
     }

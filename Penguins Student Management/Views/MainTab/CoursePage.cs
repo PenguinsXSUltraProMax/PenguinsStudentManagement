@@ -60,9 +60,18 @@ namespace Penguins_Student_Management.Views.MainTab
             string id = ((ListItem)sender).ID;
 
             CourseDetailView view = new CourseDetailView(id);
-            River.CreateObservable(view);
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
             view.ShowDialog();
 
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            CreateCourseView view = new CreateCourseView();
+            River.CreateObservableWithoutNotify(view);
+            view.SetState(River);
+            view.ShowDialog();
         }
     }
 }

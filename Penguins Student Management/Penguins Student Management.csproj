@@ -75,6 +75,12 @@
     <Compile Include="Controllers\ClassController\GetAllClasses.cs" />
     <Compile Include="Controllers\ClassController\GetClassByID.cs" />
     <Compile Include="Controllers\ClassController\ClassController.cs" />
+    <Compile Include="Controllers\CourseController\DeleteCourse.cs" />
+    <Compile Include="Controllers\CourseController\CreateCourse.cs" />
+    <Compile Include="Controllers\CourseController\GetSectionByID.cs" />
+    <Compile Include="Controllers\CourseController\CreateSection.cs" />
+    <Compile Include="Controllers\CourseController\AddUsers.cs" />
+    <Compile Include="Controllers\CourseController\GetUsersNotInTheCourse.cs" />
     <Compile Include="Controllers\CourseController\RemoveSections.cs" />
     <Compile Include="Controllers\CourseController\UpdateCourse.cs" />
     <Compile Include="Controllers\CourseController\RemoveUsers.cs" />
@@ -129,6 +135,24 @@
     </Compile>
     <Compile Include="Views\ChangePasswordView.designer.cs">
       <DependentUpon>ChangePasswordView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CourseAddUserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CourseAddUserView.Designer.cs">
+      <DependentUpon>CourseAddUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateCourseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CreateCourseView.Designer.cs">
+      <DependentUpon>CreateCourseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateSectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CreateSectionView.Designer.cs">
+      <DependentUpon>CreateSectionView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\EditCourseView.cs">
       <SubType>Form</SubType>
@@ -232,6 +256,12 @@
     <Compile Include="Views\LoginDetailView.Designer.cs">
       <DependentUpon>LoginDetailView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\SectionDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SectionDetailView.Designer.cs">
+      <DependentUpon>SectionDetailView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserDetailView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +286,15 @@
     </Compile>
     <EmbeddedResource Include="Views\ChangePasswordView.resx">
       <DependentUpon>ChangePasswordView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CourseAddUserView.resx">
+      <DependentUpon>CourseAddUserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CreateCourseView.resx">
+      <DependentUpon>CreateCourseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CreateSectionView.resx">
+      <DependentUpon>CreateSectionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EditCourseView.resx">
       <DependentUpon>EditCourseView.cs</DependentUpon>
@@ -307,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginDetailView.resx">
       <DependentUpon>LoginDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SectionDetailView.resx">
+      <DependentUpon>SectionDetailView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserDetailView.resx">
       <DependentUpon>UserDetailView.cs</DependentUpon>
