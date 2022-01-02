@@ -12,9 +12,7 @@
         "Nationality": "Việt Nam",
         "Password": "123",
         "Class": "1",
-        "Courses": [
-          "wcbX-pDPxfS6KxC"
-        ],
+        "Courses": [],
         "Type": 0
       },
       "119000002": {
@@ -116,40 +114,45 @@
         "Name": "19CT112",
         "Faculty": "Công nghệ thông tin",
         "Users": []
-      },
-      "3": {
-        "ID": "3",
-        "Name": "19CT111",
-        "Faculty": "Công nghệ thông tin",
-        "Users": []
       }
     },
     "Courses": {
       "wcbX-pDPxfS6KxC": {
         "ID": "wcbX-pDPxfS6KxC",
         "Name": "Triết học Mác - Lênin",
-        "Category": null,
+        "Category": "n9Cg-NEDmh7rfpl",
         "Owner": "GVADMIN",
-        "Users": {
-          "Student": [
-            "119000004"
-          ],
-          "Teacher": []
-        },
-        "CourseSections": {}
+        "Users": [
+          "119000003",
+          "119000004",
+          "119000005"
+        ],
+        "Sections": [
+          {
+            "ID": "RANDOMID",
+            "Name": "Bài 1",
+            "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel placerat tellus. Aliquam rutrum, odio in tincidunt cursus, enim ligula facilisis diam, eget tincidunt erat odio sed tortor. Integer tempus ut neque eget viverra. Nunc ac condimentum dui, nec blandit urna. Curabitur imperdiet est vel sodales maximus. Morbi vel nunc et tellus eleifend tincidunt vel et sem. Integer quis convallis lacus. Donec ac accumsan erat, ultricies ultricies mauris. Aenean vel enim eget libero viverra volutpat. Aliquam vehicula dolor ac dolor sodales pulvinar. Curabitur a lectus nec arcu consequat elementum. Morbi dictum sem id ex placerat facilisis."
+          }
+        ]
       },
       "RwAI3zy80nsX-Vb": {
         "ID": "RwAI3zy80nsX-Vb",
         "Name": "English 1",
         "Category": "n9Cg-NEDmh7rfpl",
         "Owner": "GVADMIN",
-        "Users": {
-          "Student": [
-            "119000004"
-          ],
-          "Teacher": []
-        },
-        "CourseSections": {}
+        "Users": [
+          "119000002",
+          "119000003",
+          "119000004",
+          "119000005"
+        ],
+        "Sections": [
+          {
+            "ID": "RANDOMID2",
+            "Name": "Bài 1",
+            "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel placerat tellus. Aliquam rutrum, odio in tincidunt cursus, enim ligula facilisis diam, eget tincidunt erat odio sed tortor. Integer tempus ut neque eget viverra. Nunc ac condimentum dui, nec blandit urna. Curabitur imperdiet est vel sodales maximus. Morbi vel nunc et tellus eleifend tincidunt vel et sem. Integer quis convallis lacus. Donec ac accumsan erat, ultricies ultricies mauris. Aenean vel enim eget libero viverra volutpat. Aliquam vehicula dolor ac dolor sodales pulvinar. Curabitur a lectus nec arcu consequat elementum. Morbi dictum sem id ex placerat facilisis."
+          }
+        ]
       }
     },
     "CourseCategory": {
@@ -157,7 +160,8 @@
         "ID": "n9Cg-NEDmh7rfpl",
         "Name": "Khác",
         "Courses": [
-          "wcbX-pDPxfS6KxC"
+          "wcbX-pDPxfS6KxC",
+          "RwAI3zy80nsX-Vb"
         ]
       }
     }

@@ -18,6 +18,8 @@ namespace Penguins_Student_Management.CustomUserControls
 
         #region Properties
 
+        private bool selected = false;
+
         public string ID { get; set; }
         public Image PrefixIcon { get => prefixIcon.Image; set => prefixIcon.Image = value; }
         public int IconRadius { get => prefixIcon.Radius; set => prefixIcon.Radius = value; }
@@ -25,13 +27,12 @@ namespace Penguins_Student_Management.CustomUserControls
         public string Description { get => description.Text; set => description.Text = value; }
         public string RightTitle { get => rightText.Text; set => rightText.Text = value; }
         
-        [DefaultValue(false)]
         public bool Selected {
-            get => Selected;
+            get => selected;
             set {
-                Selected = value;
-                GradientPanel.FillColor = Selected ? lightCyan : white;
-                GradientPanel.FillColor2 = Selected ? lightCyan : white;
+                selected = value;
+                GradientPanel.FillColor = selected ? lightCyan : white;
+                GradientPanel.FillColor2 = selected ? lightCyan : white;
             }
         }
 

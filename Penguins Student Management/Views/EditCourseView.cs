@@ -12,9 +12,12 @@ namespace Penguins_Student_Management.Views
     public partial class EditCourseView : Form, IObserver
     {
         TheRiver River;
+        CourseController courseController;
         Course course;
-
         List<User> users;
+
+        List<string> userIDs = new List<string>();
+        List<string> sectionIDs = new List<string>();
 
         public EditCourseView(Course value)
         {
@@ -34,13 +37,17 @@ namespace Penguins_Student_Management.Views
         public void SetState(TheRiver value)
         {
             River = value;
+            courseController = Hook.of<CourseController>(River);
             LoadDataToView();
         }
 
         private void LoadDataToView()
         {
             CourseNameTextBox.Text = course.Name;
-            CategoryComboBox.Text = course.Category;
+            CategoryComboBox.DataSource = courseController.GetAllCourseCategory();
+            CategoryComboBox.DisplayMember = "Name";
+            CategoryComboBox.ValueMember = "ID";
+            CategoryComboBox.SelectedText = course.Category;
 
             Global.DisposeControls(MainPanel.Controls);
             MainPanel.Controls.Clear();
@@ -56,6 +63,8 @@ namespace Penguins_Student_Management.Views
                     Title = section.Name,
                     Size = new System.Drawing.Size(560, 72)
                 };
+
+                item.Click += SectionListItemSelectedHandle;
 
                 MainPanel.Controls.Add(item);
 
@@ -79,60 +88,58 @@ namespace Penguins_Student_Management.Views
                     Size = new System.Drawing.Size(375, 72)
                 };
 
+                item.Click += UserListItemSelectedHandle;
+
                 UserPanel.Controls.Add(item);
 
             });
         }
-
-        private void InitState()
+        
+        private void SectionListItemSelectedHandle(object sender, EventArgs e)
         {
-            //course = Hook.of<CourseController>(River).GetCourseByID(id);
+            ListItem item = (ListItem)sender;
+            item.Selected = !item.Selected;
 
-            //FormLabel.Text = course.Name;
-            //CategoryLabel.Text = course.Category;
-
-            //Global.DisposeControls(MainPanel.Controls);
-            //MainPanel.Controls.Clear();
-
-            //course.Sections.ForEach(section =>
-            //{
-
-            //    ListItem item = new ListItem
-            //    {
-
-            //        ID = section.ID,
-            //        PrefixIcon = Properties.Resources.icons8_documents_48,
-            //        Title = section.Name,
-            //        Size = new System.Drawing.Size(560, 72)
-            //    };
-
-            //    MainPanel.Controls.Add(item);
-
-            //});
-
-            //Global.DisposeControls(UserPanel.Controls);
-            //UserPanel.Controls.Clear();
-
-            //users = Hook.of<CourseController>(River).GetAllUserOfCourse(course.Users);
-
-            //users.ForEach(user =>
-            //{
-
-            //    ListItem item = new ListItem
-            //    {
-            //        ID = user.ID,
-            //        PrefixIcon = user.Type == User.AccountType.Student ? Properties.Resources.icons8_student_male_48 : user.Type == User.AccountType.Teacher ? Properties.Resources.icons8_school_director_48 : Properties.Resources.icons8_user_shield_48,
-            //        Title = user.Name,
-            //        Description = user.Type.ToString(),
-            //        RightTitle = user.ID,
-            //        Size = new System.Drawing.Size(375, 72)
-            //    };
-
-            //    UserPanel.Controls.Add(item);
-
-            //});
+            if (item.Selected)
+            {
+                sectionIDs.Add(item.ID);
+            }
+            else
+            {
+                sectionIDs.Remove(item.ID);
+            }
         }
+        private void UserListItemSelectedHandle(object sender, EventArgs e)
+        {
+            ListItem item = (ListItem)sender;
+            item.Selected = !item.Selected;
 
+            if(item.Selected)
+            {
+                userIDs.Add(item.ID);
+            } else
+            {
+                userIDs.Remove(item.ID);
+            }
+        }
+        private void DeleteUserGradientButton_Click(object sender, EventArgs e)
+        {
+            if(userIDs.Count == 0)
+            {
+                MessageBox.Show("Cần chọn ít nhất một người dùng để xóa!");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa không?", "", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                courseController.RemoveUsers(userIDs, course.ID);
+                MessageBox.Show("Xóa thành công!");
+
+                River.Refesh();
+            }
+        }
 
         private void editGradientButton_Click(object sender, EventArgs e)
         {

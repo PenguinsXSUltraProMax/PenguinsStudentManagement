@@ -171,6 +171,7 @@ namespace Penguins_Student_Management.Views
             this.DeleteUserGradientButton.ShadowDecoration.Parent = this.DeleteUserGradientButton;
             this.DeleteUserGradientButton.Size = new System.Drawing.Size(36, 32);
             this.DeleteUserGradientButton.TabIndex = 35;
+            this.DeleteUserGradientButton.Click += new System.EventHandler(this.DeleteUserGradientButton_Click);
             // 
             // DoneGradientButton
             // 
