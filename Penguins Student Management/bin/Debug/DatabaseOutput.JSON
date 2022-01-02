@@ -12,7 +12,9 @@
         "Nationality": "Việt Nam",
         "Password": "123",
         "Class": "1",
-        "Courses": [],
+        "Courses": [
+          "wcbX-pDPxfS6KxC"
+        ],
         "Type": 0
       },
       "119000002": {
@@ -119,10 +121,11 @@
     "Courses": {
       "wcbX-pDPxfS6KxC": {
         "ID": "wcbX-pDPxfS6KxC",
-        "Name": "Triết học Mác - Lênin",
+        "Name": "Triết học Mác - Lênin 2",
         "Category": "n9Cg-NEDmh7rfpl",
         "Owner": "GVADMIN",
         "Users": [
+          "119000001",
           "119000003",
           "119000004",
           "119000005"

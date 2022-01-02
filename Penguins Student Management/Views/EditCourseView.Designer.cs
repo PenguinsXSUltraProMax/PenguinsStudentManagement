@@ -193,6 +193,7 @@ namespace Penguins_Student_Management.Views
             this.DoneGradientButton.Size = new System.Drawing.Size(94, 32);
             this.DoneGradientButton.TabIndex = 26;
             this.DoneGradientButton.Text = "Xong";
+            this.DoneGradientButton.Click += new System.EventHandler(this.DoneGradientButton_Click);
             // 
             // CategoryComboBox
             // 

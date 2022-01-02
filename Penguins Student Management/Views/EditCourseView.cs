@@ -162,5 +162,23 @@ namespace Penguins_Student_Management.Views
             }
         }
 
+        private void DoneGradientButton_Click(object sender, EventArgs e)
+        {
+            string Name = CourseNameTextBox.Text;
+
+            if(string.IsNullOrEmpty(Name))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!");
+                return;
+            }
+
+            course.Name = Name;
+            course.Category = CategoryComboBox.SelectedValue.ToString();
+
+            courseController.UpdateCourse(course);
+
+            MessageBox.Show("Cập nhật thành công!");
+            River.Refesh();
+        }
     }
 }
