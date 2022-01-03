@@ -16,7 +16,7 @@ namespace Penguins_Student_Management.Controllers.SearchController
 
             Global.Database.Collections.Classes.Values.ToList().ForEach(@class => {
 
-                if(@class.Name.Contains(SearchQuery) || @class.Faculty.Contains(SearchQuery))
+                if(@class.Name.ToLower().Contains(SearchQuery) || @class.Faculty.ToLower().Contains(SearchQuery))
                 {
                     classes.Add(@class);
                 }

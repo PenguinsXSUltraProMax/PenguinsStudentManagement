@@ -16,7 +16,7 @@ namespace Penguins_Student_Management.Controllers.SearchController
 
             Global.Database.Collections.Users.Values.ToList().ForEach(user => {
 
-                if (user.Type == Type && (user.ID.Contains(SearchQuery) || user.Name.Contains(SearchQuery) || user.Gender.Contains(SearchQuery) || user.Hometown.Contains(SearchQuery) || user.Nationality.Contains(SearchQuery)))
+                if (user.Type == Type && (user.ID.ToLower().Contains(SearchQuery) || user.Name.ToLower().Contains(SearchQuery) || user.Gender.ToLower().Contains(SearchQuery) || user.Hometown.ToLower().Contains(SearchQuery) || user.Nationality.ToLower().Contains(SearchQuery)))
                 {
                     User clone = new User()
                     {
