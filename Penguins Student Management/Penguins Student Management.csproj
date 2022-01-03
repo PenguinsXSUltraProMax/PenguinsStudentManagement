@@ -90,6 +90,7 @@
     <Compile Include="Controllers\CourseController\GetAllCourse.cs" />
     <Compile Include="Controllers\CourseController\GetCourseOfUser.cs" />
     <Compile Include="Controllers\CourseController\CourseController.cs" />
+    <Compile Include="Controllers\SearchController\SearchCourses.cs" />
     <Compile Include="Controllers\SearchController\SearchClasses.cs" />
     <Compile Include="Controllers\SearchController\SearchUsers.cs" />
     <Compile Include="Controllers\SearchController\SearchController.cs" />
