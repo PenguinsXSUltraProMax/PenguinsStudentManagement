@@ -78,6 +78,7 @@ namespace Penguins_Student_Management.Views
             sideMenuItemTeacher.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
             sideMenuItemClass.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
             sideMenuItemCourse.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
+            searchTextBox.Enabled = !(authController.GetCurrentUser.Type == User.AccountType.Student);
         }
 
 
@@ -104,13 +105,15 @@ namespace Penguins_Student_Management.Views
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
-            if(searchTextBox.Text.Length != 0)
+            if(searchTextBox.Text.Length > 2)
             {
                 tabControl.SelectedIndex = 5;
                 searchTextBox.Focus();
+                ((SearchPage)TabPages[5]).BindingSearchQuery(searchTextBox.Text.ToLower());
             } else
             {
                 tabControl.SelectedIndex = 0;
+                searchTextBox.Focus();
             }
         }
     }

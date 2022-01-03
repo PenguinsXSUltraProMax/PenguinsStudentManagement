@@ -1,6 +1,7 @@
 ﻿using Penguins_Student_Management.Controllers.AuthController;
 using Penguins_Student_Management.Controllers.ClassController;
 using Penguins_Student_Management.Controllers.CourseController;
+using Penguins_Student_Management.Controllers.SearchController;
 using Penguins_Student_Management.Controllers.UserController;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
@@ -17,13 +18,19 @@ namespace Penguins_Student_Management.Views
             TheRiver.CreateSubject(new AuthController()),
             TheRiver.CreateSubject(new CourseController()),
             TheRiver.CreateSubject(new UserController()),
-            TheRiver.CreateSubject(new ClassController())
+            TheRiver.CreateSubject(new ClassController()),
+            TheRiver.CreateSubject(new SearchController())
         });
 
         public SplashView()
         {
             InitializeComponent();
             Global.Database.Initialize("Database.JSON");
+            Filter.All = false;
+            Filter.Teacher = false;
+            Filter.Student = true;
+            Filter.Class = false;
+            Filter.Course = false;
         }
 
         private void Timer_Tick(object sender, EventArgs e)
