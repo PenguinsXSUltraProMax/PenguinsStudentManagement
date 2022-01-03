@@ -8,18 +8,5 @@ using System.Threading.Tasks;
 
 namespace Penguins_Student_Management.Controllers.SearchController
 {
-    partial class SearchController : IRiverSubject {
-
-        public List<User> Users;
-        public List<Class> Classes;
-        public List<Course> Courses;
-
-        public SearchController()
-        {
-            Users = new List<User>();
-            Classes = new List<Class>();
-            Courses = new List<Course>();
-        }
-    
-    }
+    partial class SearchController : IRiverSubject { }
 }
