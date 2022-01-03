@@ -8,7 +8,7 @@ namespace Penguins_Student_Management.JsonDatabase
         public void ExportToJson()
         {
             string serializeObject = JsonConvert.SerializeObject(Root, Formatting.Indented);
-            File.WriteAllText("DatabaseOutput.JSON", serializeObject);
+            File.WriteAllText("Database.JSON", serializeObject);
         }
     }
 }
