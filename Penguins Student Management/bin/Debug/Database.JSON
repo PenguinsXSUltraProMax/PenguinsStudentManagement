@@ -10,7 +10,7 @@
         "Name": "Lê Xuân Visual Studio",
         "Nationality": "Việt Nam",
         "Password": "123",
-        "Class": "6hGvwJ28Fn3NFqT",
+        "Class": "odTXz748v61mTOi",
         "Courses": [
           "wcbX-pDPxfS6KxC"
         ],
@@ -88,7 +88,7 @@
         "Name": "Nguyễn Văn C#",
         "Nationality": "Việt Nam",
         "Password": "123",
-        "Class": "io9JhvGmskqoWSx",
+        "Class": "6hGvwJ28Fn3NFqT",
         "Courses": [
           "wcbX-pDPxfS6KxC",
           "RwAI3zy80nsX-Vb"
@@ -101,9 +101,7 @@
         "ID": "io9JhvGmskqoWSx",
         "Name": "Chưa xếp lớp",
         "Faculty": "Khác",
-        "Users": [
-          "GVADMIN"
-        ]
+        "Users": []
       },
       "odTXz748v61mTOi": {
         "ID": "odTXz748v61mTOi",
@@ -113,7 +111,8 @@
           "119000002",
           "119000003",
           "119000004",
-          "119000005"
+          "119000005",
+          "119000001"
         ]
       },
       "6hGvwJ28Fn3NFqT": {
@@ -121,7 +120,7 @@
         "Name": "19CT112",
         "Faculty": "Công nghệ thông tin",
         "Users": [
-          "119000001"
+          "GVADMIN"
         ]
       }
     },
@@ -168,11 +167,11 @@
     "CourseCategory": {
       "n9Cg-NEDmh7rfpl": {
         "ID": "n9Cg-NEDmh7rfpl",
-        "Name": "Khác",
+        "Name": "Khác"
       },
       "N7wjfJjnKDioxh": {
         "ID": "N7wjfJjnKDioxh",
-        "Name": "Công nghệ thông tin",
+        "Name": "Công nghệ thông tin"
       }
     }
   }

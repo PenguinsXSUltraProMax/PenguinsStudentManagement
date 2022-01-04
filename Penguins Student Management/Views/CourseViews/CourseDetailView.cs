@@ -4,6 +4,7 @@ using Penguins_Student_Management.CustomUserControls;
 using Penguins_Student_Management.JsonDatabase.Entity.Document;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
+using Penguins_Student_Management.Views.UserViews;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -19,6 +20,7 @@ namespace Penguins_Student_Management.Views.CourseViews
         Course course;
         List<User> users;
         string CourseID;
+        bool IsAdminOrOwner;
 
         public CourseDetailView(string value)
         {
@@ -39,8 +41,9 @@ namespace Penguins_Student_Management.Views.CourseViews
             CourseController = Hook.of<CourseController>(River);
 
             course = CourseController.GetCourseByID(CourseID);
-            ButtonEdit.Visible = Auth.GetCurrentUser.Type == User.AccountType.Admin || Auth.GetCurrentUser.ID == course.Owner;
-            ButtonDelete.Visible = Auth.GetCurrentUser.Type == User.AccountType.Admin || Auth.GetCurrentUser.ID == course.Owner;
+            IsAdminOrOwner = Auth.GetCurrentUser.Type == User.AccountType.Admin || Auth.GetCurrentUser.ID == course.Owner;
+            ButtonEdit.Visible = IsAdminOrOwner;
+            ButtonDelete.Visible = IsAdminOrOwner;
 
             InitState();
         }
@@ -64,7 +67,7 @@ namespace Penguins_Student_Management.Views.CourseViews
                     Size = new System.Drawing.Size(560, 72)
                 };
 
-                item.Click += ListItemClickHandle;
+                item.Click += SectionListItemClickHandle;
 
                 SectionPanel.Controls.Add(item);
             
@@ -88,12 +91,14 @@ namespace Penguins_Student_Management.Views.CourseViews
                     Size = new System.Drawing.Size(375, 72)
                 };
 
+                if(IsAdminOrOwner) item.Click += UserListItemClickHandle;
+
                 UserPanel.Controls.Add(item);
 
             });
         }
 
-        private void ListItemClickHandle(object sender, EventArgs e)
+        private void SectionListItemClickHandle(object sender, EventArgs e)
         {
             string SectionID = ((ListItem)sender).ID;
 
@@ -102,6 +107,14 @@ namespace Penguins_Student_Management.Views.CourseViews
             view.ShowDialog();
         }
 
+        private void UserListItemClickHandle(object sender, EventArgs e)
+        {
+            string UserID = ((ListItem)sender).ID;
+
+            UserDetailView view = new UserDetailView(UserID);
+            River.CreateObservableWithoutNotify(view);
+            view.ShowDialog();
+        }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {

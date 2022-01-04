@@ -3,6 +3,7 @@ using Penguins_Student_Management.CustomUserControls;
 using Penguins_Student_Management.JsonDatabase.Entity.Document;
 using Penguins_Student_Management.StateManagement;
 using Penguins_Student_Management.StateManagement.Entity;
+using Penguins_Student_Management.Views.UserViews;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -60,11 +61,21 @@ namespace Penguins_Student_Management.Views.ClassViews
                     Size = new System.Drawing.Size(463, 72)
                 };
 
+                item.Click += ListItemClickHandle;
+
                 Panel.Controls.Add(item);
 
             });
         }
 
+        private void ListItemClickHandle(object sender, EventArgs e)
+        {
+            string UserID = ((ListItem)sender).ID;
+
+            UserDetailView view = new UserDetailView(UserID);
+            River.CreateObservableWithoutNotify(view);
+            view.ShowDialog();
+        }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
