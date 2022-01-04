@@ -1,161 +1,179 @@
 {
-    "LastClassID": 2,
-    "Collections": {
-        "Users": {
-            "119000001": {
-                "Birthday": "13/1/2001",
-                "Ethnic": "King",
-                "Gender": "Nam",
-                "Hometown": "Đồng Nai",
-                "ID": "119000001",
-                "Name": "Lê Xuân Visual Studio",
-                "Nationality": "Việt Nam",
-                "Password": "123",
-                "Type": 0,
-                "Class": "1",
-                "Courses": [
-                    "wcbX-pDPxfS6KxC"
-                ]
-            },
-            "119000002": {
-                "Birthday": "28/01/2001",
-                "Ethnic": "King",
-                "Gender": "Nam",
-                "Hometown": "Đồng Nai",
-                "ID": "119000002",
-                "Name": "Đoàn Nguyên HTML",
-                "Nationality": "Việt Nam",
-                "Password": "123",
-                "Type": 0,
-                "Class": "1",
-                "Courses": [
-                    "RwAI3zy80nsX-Vb"
-                ]
-            },
-            "119000003": {
-                "Birthday": "22/05/2001",
-                "Ethnic": "Kinh",
-                "Gender": "Nam",
-                "Hometown": "Đồng Nai",
-                "ID": "119000003",
-                "Name": "Nguyễn Ngọc MongoDB",
-                "Nationality": "Việt Nam",
-                "Password": "123",
-                "Type": 0,
-                "Class": "1",
-                "Courses": [
-                    "wcbX-pDPxfS6KxC",
-                    "RwAI3zy80nsX-Vb"
-                ]
-            },
-            "119000004": {
-                "Birthday": "2/09/2001",
-                "Ethnic": "Kinh",
-                "Gender": "Nam",
-                "Hometown": "Đồng Nai",
-                "ID": "119000004",
-                "Name": "Nguyễn Thanh HTTP",
-                "Nationality": "Việt Nam",
-                "Password": "123",
-                "Type": 0,
-                "Class": "1",
-                "Courses": [
-                    "wcbX-pDPxfS6KxC",
-                    "RwAI3zy80nsX-Vb"
-                ]
-            },
-            "119000005": {
-                "Birthday": "19/03/2001",
-                "Ethnic": "Kinh",
-                "Gender": "Nam",
-                "Hometown": "Đồng Nai",
-                "ID": "119000005",
-                "Name": "Nguyễn Trọng NativeScript",
-                "Nationality": "Việt Nam",
-                "Password": "123",
-                "Type": 0,
-                "Class": "1",
-                "Courses": [
-                    "wcbX-pDPxfS6KxC",
-                    "RwAI3zy80nsX-Vb"
-                ]
-            },
-            "GVADMIN": {
-                "Birthday": "26/7/1976",
-                "Ethnic": "Kinh",
-                "Gender": "Nam",
-                "Hometown": "Đồng Nai",
-                "ID": "GVADMIN",
-                "Name": "Nguyễn Văn C#",
-                "Nationality": "Việt Nam",
-                "Password": "123",
-                "Type": 2,
-                "Class": "1",
-                "Courses": [
-                    "wcbX-pDPxfS6KxC",
-                    "RwAI3zy80nsX-Vb"
-                ]
-            }
-        },
-        "Classes": {
-            "1": {
-                "ID": "1",
-                "Name": "19CT113",
-                "Faculty": "Công nghệ thông tin",
-                "Users": ["GVADMIN", "119000001", "119000002", "119000003", "119000004", "119000005"]
-            },
-            "2": {
-                "ID": "2",
-                "Name": "19CT112",
-                "Faculty": "Công nghệ thông tin",
-                "Users": [
-                ]
-            }
-        },
-        "Courses": {
-            "wcbX-pDPxfS6KxC": {
-                "ID": "wcbX-pDPxfS6KxC",
-                "Name": "Triết học Mác - Lênin",
-                "Category": "n9Cg-NEDmh7rfpl",
-                "Owner": "GVADMIN",
-                "Users": ["119000001", "119000003", "119000004", "119000005"],
-                "Sections": [
-                    {
-                        "ID": "1cmly0H8dUwufg3",
-                        "Name": "Bài 1",
-                        "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel placerat tellus. Aliquam rutrum, odio in tincidunt cursus, enim ligula facilisis diam, eget tincidunt erat odio sed tortor. Integer tempus ut neque eget viverra. Nunc ac condimentum dui, nec blandit urna. Curabitur imperdiet est vel sodales maximus. Morbi vel nunc et tellus eleifend tincidunt vel et sem. Integer quis convallis lacus. Donec ac accumsan erat, ultricies ultricies mauris. Aenean vel enim eget libero viverra volutpat. Aliquam vehicula dolor ac dolor sodales pulvinar. Curabitur a lectus nec arcu consequat elementum. Morbi dictum sem id ex placerat facilisis."
-                    }
-                ]
-            },
-            "RwAI3zy80nsX-Vb": {
-                "ID": "RwAI3zy80nsX-Vb",
-                "Name": "English 1",
-                "Category": "n9Cg-NEDmh7rfpl",
-                "Owner": "GVADMIN",
-                "Users": ["119000002", "119000003", "119000004", "119000005"],
-                "Sections": [
-                    {
-                        "ID": "bfas70H8dUwufg3",
-                        "Name": "Bài 1",
-                        "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel placerat tellus. Aliquam rutrum, odio in tincidunt cursus, enim ligula facilisis diam, eget tincidunt erat odio sed tortor. Integer tempus ut neque eget viverra. Nunc ac condimentum dui, nec blandit urna. Curabitur imperdiet est vel sodales maximus. Morbi vel nunc et tellus eleifend tincidunt vel et sem. Integer quis convallis lacus. Donec ac accumsan erat, ultricies ultricies mauris. Aenean vel enim eget libero viverra volutpat. Aliquam vehicula dolor ac dolor sodales pulvinar. Curabitur a lectus nec arcu consequat elementum. Morbi dictum sem id ex placerat facilisis."
-                    }
-                ]
-            }
-        },
-        "CourseCategory": {
-            "n9Cg-NEDmh7rfpl": {
-                "ID": "n9Cg-NEDmh7rfpl",
-                "Name": "Khác",
-                "Courses": [
-                    
-                ]
-            },
-            "N7wjfJjnKDioxh": {
-                "ID": "N7wjfJjnKDioxh",
-                "Name": "Công nghệ thông tin",
-                "Courses": [
-                ]
-            }
-        }
+  "Collections": {
+    "Users": {
+      "119000001": {
+        "Birthday": "13/1/2001",
+        "Ethnic": "King",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "119000001",
+        "Name": "Lê Xuân Visual Studio",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Class": "6hGvwJ28Fn3NFqT",
+        "Courses": [
+          "wcbX-pDPxfS6KxC"
+        ],
+        "Type": 0
+      },
+      "119000002": {
+        "Birthday": "28/01/2001",
+        "Ethnic": "King",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "119000002",
+        "Name": "Đoàn Nguyên HTML",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Class": "odTXz748v61mTOi",
+        "Courses": [
+          "RwAI3zy80nsX-Vb"
+        ],
+        "Type": 0
+      },
+      "119000003": {
+        "Birthday": "22/05/2001",
+        "Ethnic": "Kinh",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "119000003",
+        "Name": "Nguyễn Ngọc MongoDB",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Class": "odTXz748v61mTOi",
+        "Courses": [
+          "wcbX-pDPxfS6KxC",
+          "RwAI3zy80nsX-Vb"
+        ],
+        "Type": 0
+      },
+      "119000004": {
+        "Birthday": "2/09/2001",
+        "Ethnic": "Kinh",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "119000004",
+        "Name": "Nguyễn Thanh HTTP",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Class": "odTXz748v61mTOi",
+        "Courses": [
+          "wcbX-pDPxfS6KxC",
+          "RwAI3zy80nsX-Vb"
+        ],
+        "Type": 0
+      },
+      "119000005": {
+        "Birthday": "19/03/2001",
+        "Ethnic": "Kinh",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "119000005",
+        "Name": "Nguyễn Trọng NativeScript",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Class": "odTXz748v61mTOi",
+        "Courses": [
+          "wcbX-pDPxfS6KxC",
+          "RwAI3zy80nsX-Vb"
+        ],
+        "Type": 0
+      },
+      "GVADMIN": {
+        "Birthday": "26/7/1976",
+        "Ethnic": "Kinh",
+        "Gender": "Nam",
+        "Hometown": "Đồng Nai",
+        "ID": "GVADMIN",
+        "Name": "Nguyễn Văn C#",
+        "Nationality": "Việt Nam",
+        "Password": "123",
+        "Class": "io9JhvGmskqoWSx",
+        "Courses": [
+          "wcbX-pDPxfS6KxC",
+          "RwAI3zy80nsX-Vb"
+        ],
+        "Type": 2
+      }
+    },
+    "Classes": {
+      "io9JhvGmskqoWSx": {
+        "ID": "io9JhvGmskqoWSx",
+        "Name": "Chưa xếp lớp",
+        "Faculty": "Khác",
+        "Users": [
+          "GVADMIN"
+        ]
+      },
+      "odTXz748v61mTOi": {
+        "ID": "odTXz748v61mTOi",
+        "Name": "19CT113",
+        "Faculty": "Công nghệ thông tin",
+        "Users": [
+          "119000002",
+          "119000003",
+          "119000004",
+          "119000005"
+        ]
+      },
+      "6hGvwJ28Fn3NFqT": {
+        "ID": "6hGvwJ28Fn3NFqT",
+        "Name": "19CT112",
+        "Faculty": "Công nghệ thông tin",
+        "Users": [
+          "119000001"
+        ]
+      }
+    },
+    "Courses": {
+      "wcbX-pDPxfS6KxC": {
+        "ID": "wcbX-pDPxfS6KxC",
+        "Name": "Triết học Mác - Lênin",
+        "Category": "n9Cg-NEDmh7rfpl",
+        "Owner": "GVADMIN",
+        "Users": [
+          "119000001",
+          "119000003",
+          "119000004",
+          "119000005"
+        ],
+        "Sections": [
+          {
+            "ID": "1cmly0H8dUwufg3",
+            "Name": "Bài 1",
+            "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel placerat tellus. Aliquam rutrum, odio in tincidunt cursus, enim ligula facilisis diam, eget tincidunt erat odio sed tortor. Integer tempus ut neque eget viverra. Nunc ac condimentum dui, nec blandit urna. Curabitur imperdiet est vel sodales maximus. Morbi vel nunc et tellus eleifend tincidunt vel et sem. Integer quis convallis lacus. Donec ac accumsan erat, ultricies ultricies mauris. Aenean vel enim eget libero viverra volutpat. Aliquam vehicula dolor ac dolor sodales pulvinar. Curabitur a lectus nec arcu consequat elementum. Morbi dictum sem id ex placerat facilisis."
+          }
+        ]
+      },
+      "RwAI3zy80nsX-Vb": {
+        "ID": "RwAI3zy80nsX-Vb",
+        "Name": "English 1",
+        "Category": "n9Cg-NEDmh7rfpl",
+        "Owner": "GVADMIN",
+        "Users": [
+          "119000002",
+          "119000003",
+          "119000004",
+          "119000005"
+        ],
+        "Sections": [
+          {
+            "ID": "bfas70H8dUwufg3",
+            "Name": "Bài 1",
+            "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel placerat tellus. Aliquam rutrum, odio in tincidunt cursus, enim ligula facilisis diam, eget tincidunt erat odio sed tortor. Integer tempus ut neque eget viverra. Nunc ac condimentum dui, nec blandit urna. Curabitur imperdiet est vel sodales maximus. Morbi vel nunc et tellus eleifend tincidunt vel et sem. Integer quis convallis lacus. Donec ac accumsan erat, ultricies ultricies mauris. Aenean vel enim eget libero viverra volutpat. Aliquam vehicula dolor ac dolor sodales pulvinar. Curabitur a lectus nec arcu consequat elementum. Morbi dictum sem id ex placerat facilisis."
+          }
+        ]
+      }
+    },
+    "CourseCategory": {
+      "n9Cg-NEDmh7rfpl": {
+        "ID": "n9Cg-NEDmh7rfpl",
+        "Name": "Khác",
+      },
+      "N7wjfJjnKDioxh": {
+        "ID": "N7wjfJjnKDioxh",
+        "Name": "Công nghệ thông tin",
+      }
     }
+  }
 }

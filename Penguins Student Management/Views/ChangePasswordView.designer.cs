@@ -30,13 +30,13 @@ namespace Penguins_Student_Management.Views
         private void InitializeComponent()
         {
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.oldPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxOldPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.newPasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxNewPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.reTypeTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TextBoxRetype = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.confirmButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.ButtonConfirm = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // gunaLabel1
@@ -50,33 +50,33 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Đổi mật khẩu";
             // 
-            // oldPasswordTextBox
+            // TextBoxOldPassword
             // 
-            this.oldPasswordTextBox.BorderRadius = 3;
-            this.oldPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.oldPasswordTextBox.DefaultText = "";
-            this.oldPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.oldPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.oldPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.oldPasswordTextBox.DisabledState.Parent = this.oldPasswordTextBox;
-            this.oldPasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.oldPasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.oldPasswordTextBox.FocusedState.Parent = this.oldPasswordTextBox;
-            this.oldPasswordTextBox.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.oldPasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.oldPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.oldPasswordTextBox.HoverState.Parent = this.oldPasswordTextBox;
-            this.oldPasswordTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
-            this.oldPasswordTextBox.Location = new System.Drawing.Point(28, 128);
-            this.oldPasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 24);
-            this.oldPasswordTextBox.Name = "oldPasswordTextBox";
-            this.oldPasswordTextBox.PasswordChar = '•';
-            this.oldPasswordTextBox.PlaceholderText = "";
-            this.oldPasswordTextBox.SelectedText = "";
-            this.oldPasswordTextBox.ShadowDecoration.Parent = this.oldPasswordTextBox;
-            this.oldPasswordTextBox.Size = new System.Drawing.Size(278, 42);
-            this.oldPasswordTextBox.TabIndex = 6;
-            this.oldPasswordTextBox.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBoxOldPassword.BorderRadius = 3;
+            this.TextBoxOldPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxOldPassword.DefaultText = "";
+            this.TextBoxOldPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxOldPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxOldPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxOldPassword.DisabledState.Parent = this.TextBoxOldPassword;
+            this.TextBoxOldPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxOldPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxOldPassword.FocusedState.Parent = this.TextBoxOldPassword;
+            this.TextBoxOldPassword.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxOldPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
+            this.TextBoxOldPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxOldPassword.HoverState.Parent = this.TextBoxOldPassword;
+            this.TextBoxOldPassword.IconLeftOffset = new System.Drawing.Point(8, 0);
+            this.TextBoxOldPassword.Location = new System.Drawing.Point(28, 128);
+            this.TextBoxOldPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 24);
+            this.TextBoxOldPassword.Name = "TextBoxOldPassword";
+            this.TextBoxOldPassword.PasswordChar = '•';
+            this.TextBoxOldPassword.PlaceholderText = "";
+            this.TextBoxOldPassword.SelectedText = "";
+            this.TextBoxOldPassword.ShadowDecoration.Parent = this.TextBoxOldPassword;
+            this.TextBoxOldPassword.Size = new System.Drawing.Size(278, 42);
+            this.TextBoxOldPassword.TabIndex = 6;
+            this.TextBoxOldPassword.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // gunaLabel3
             // 
@@ -90,33 +90,33 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel3.TabIndex = 5;
             this.gunaLabel3.Text = "Mật khẩu cũ";
             // 
-            // newPasswordTextBox
+            // TextBoxNewPassword
             // 
-            this.newPasswordTextBox.BorderRadius = 3;
-            this.newPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.newPasswordTextBox.DefaultText = "";
-            this.newPasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.newPasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.newPasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.newPasswordTextBox.DisabledState.Parent = this.newPasswordTextBox;
-            this.newPasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.newPasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.newPasswordTextBox.FocusedState.Parent = this.newPasswordTextBox;
-            this.newPasswordTextBox.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newPasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.newPasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.newPasswordTextBox.HoverState.Parent = this.newPasswordTextBox;
-            this.newPasswordTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
-            this.newPasswordTextBox.Location = new System.Drawing.Point(28, 214);
-            this.newPasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 24);
-            this.newPasswordTextBox.Name = "newPasswordTextBox";
-            this.newPasswordTextBox.PasswordChar = '•';
-            this.newPasswordTextBox.PlaceholderText = "";
-            this.newPasswordTextBox.SelectedText = "";
-            this.newPasswordTextBox.ShadowDecoration.Parent = this.newPasswordTextBox;
-            this.newPasswordTextBox.Size = new System.Drawing.Size(278, 42);
-            this.newPasswordTextBox.TabIndex = 8;
-            this.newPasswordTextBox.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBoxNewPassword.BorderRadius = 3;
+            this.TextBoxNewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxNewPassword.DefaultText = "";
+            this.TextBoxNewPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxNewPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxNewPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxNewPassword.DisabledState.Parent = this.TextBoxNewPassword;
+            this.TextBoxNewPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxNewPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxNewPassword.FocusedState.Parent = this.TextBoxNewPassword;
+            this.TextBoxNewPassword.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxNewPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
+            this.TextBoxNewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxNewPassword.HoverState.Parent = this.TextBoxNewPassword;
+            this.TextBoxNewPassword.IconLeftOffset = new System.Drawing.Point(8, 0);
+            this.TextBoxNewPassword.Location = new System.Drawing.Point(28, 214);
+            this.TextBoxNewPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 24);
+            this.TextBoxNewPassword.Name = "TextBoxNewPassword";
+            this.TextBoxNewPassword.PasswordChar = '•';
+            this.TextBoxNewPassword.PlaceholderText = "";
+            this.TextBoxNewPassword.SelectedText = "";
+            this.TextBoxNewPassword.ShadowDecoration.Parent = this.TextBoxNewPassword;
+            this.TextBoxNewPassword.Size = new System.Drawing.Size(278, 42);
+            this.TextBoxNewPassword.TabIndex = 8;
+            this.TextBoxNewPassword.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // gunaLabel2
             // 
@@ -130,33 +130,33 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel2.TabIndex = 7;
             this.gunaLabel2.Text = "Mật khẩu mới";
             // 
-            // reTypeTextBox
+            // TextBoxRetype
             // 
-            this.reTypeTextBox.BorderRadius = 3;
-            this.reTypeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.reTypeTextBox.DefaultText = "";
-            this.reTypeTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.reTypeTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.reTypeTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.reTypeTextBox.DisabledState.Parent = this.reTypeTextBox;
-            this.reTypeTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.reTypeTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.reTypeTextBox.FocusedState.Parent = this.reTypeTextBox;
-            this.reTypeTextBox.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reTypeTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
-            this.reTypeTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.reTypeTextBox.HoverState.Parent = this.reTypeTextBox;
-            this.reTypeTextBox.IconLeftOffset = new System.Drawing.Point(8, 0);
-            this.reTypeTextBox.Location = new System.Drawing.Point(28, 300);
-            this.reTypeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 24);
-            this.reTypeTextBox.Name = "reTypeTextBox";
-            this.reTypeTextBox.PasswordChar = '•';
-            this.reTypeTextBox.PlaceholderText = "";
-            this.reTypeTextBox.SelectedText = "";
-            this.reTypeTextBox.ShadowDecoration.Parent = this.reTypeTextBox;
-            this.reTypeTextBox.Size = new System.Drawing.Size(278, 42);
-            this.reTypeTextBox.TabIndex = 10;
-            this.reTypeTextBox.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBoxRetype.BorderRadius = 3;
+            this.TextBoxRetype.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxRetype.DefaultText = "";
+            this.TextBoxRetype.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxRetype.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxRetype.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxRetype.DisabledState.Parent = this.TextBoxRetype;
+            this.TextBoxRetype.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxRetype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxRetype.FocusedState.Parent = this.TextBoxRetype;
+            this.TextBoxRetype.Font = new System.Drawing.Font("Google Sans", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxRetype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
+            this.TextBoxRetype.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxRetype.HoverState.Parent = this.TextBoxRetype;
+            this.TextBoxRetype.IconLeftOffset = new System.Drawing.Point(8, 0);
+            this.TextBoxRetype.Location = new System.Drawing.Point(28, 300);
+            this.TextBoxRetype.Margin = new System.Windows.Forms.Padding(4, 4, 4, 24);
+            this.TextBoxRetype.Name = "TextBoxRetype";
+            this.TextBoxRetype.PasswordChar = '•';
+            this.TextBoxRetype.PlaceholderText = "";
+            this.TextBoxRetype.SelectedText = "";
+            this.TextBoxRetype.ShadowDecoration.Parent = this.TextBoxRetype;
+            this.TextBoxRetype.Size = new System.Drawing.Size(278, 42);
+            this.TextBoxRetype.TabIndex = 10;
+            this.TextBoxRetype.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // gunaLabel4
             // 
@@ -170,24 +170,24 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel4.TabIndex = 9;
             this.gunaLabel4.Text = "Nhập lại mật khẩu mới";
             // 
-            // confirmButton
+            // ButtonConfirm
             // 
-            this.confirmButton.Animated = true;
-            this.confirmButton.BorderRadius = 3;
-            this.confirmButton.CheckedState.Parent = this.confirmButton;
-            this.confirmButton.CustomImages.Parent = this.confirmButton;
-            this.confirmButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(106)))), ((int)(((byte)(252)))));
-            this.confirmButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(72)))), ((int)(((byte)(255)))));
-            this.confirmButton.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmButton.ForeColor = System.Drawing.Color.White;
-            this.confirmButton.HoverState.Parent = this.confirmButton;
-            this.confirmButton.Location = new System.Drawing.Point(27, 369);
-            this.confirmButton.Name = "confirmButton";
-            this.confirmButton.ShadowDecoration.Parent = this.confirmButton;
-            this.confirmButton.Size = new System.Drawing.Size(280, 42);
-            this.confirmButton.TabIndex = 11;
-            this.confirmButton.Text = "XÁC NHẬN";
-            this.confirmButton.Click += new System.EventHandler(this.confirmButton_Click);
+            this.ButtonConfirm.Animated = true;
+            this.ButtonConfirm.BorderRadius = 3;
+            this.ButtonConfirm.CheckedState.Parent = this.ButtonConfirm;
+            this.ButtonConfirm.CustomImages.Parent = this.ButtonConfirm;
+            this.ButtonConfirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(106)))), ((int)(((byte)(252)))));
+            this.ButtonConfirm.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(72)))), ((int)(((byte)(255)))));
+            this.ButtonConfirm.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonConfirm.ForeColor = System.Drawing.Color.White;
+            this.ButtonConfirm.HoverState.Parent = this.ButtonConfirm;
+            this.ButtonConfirm.Location = new System.Drawing.Point(27, 369);
+            this.ButtonConfirm.Name = "ButtonConfirm";
+            this.ButtonConfirm.ShadowDecoration.Parent = this.ButtonConfirm;
+            this.ButtonConfirm.Size = new System.Drawing.Size(280, 42);
+            this.ButtonConfirm.TabIndex = 11;
+            this.ButtonConfirm.Text = "XÁC NHẬN";
+            this.ButtonConfirm.Click += new System.EventHandler(this.ButtonConfirm_Click);
             // 
             // ChangePasswordView
             // 
@@ -195,12 +195,12 @@ namespace Penguins_Student_Management.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(334, 451);
-            this.Controls.Add(this.confirmButton);
-            this.Controls.Add(this.reTypeTextBox);
+            this.Controls.Add(this.ButtonConfirm);
+            this.Controls.Add(this.TextBoxRetype);
             this.Controls.Add(this.gunaLabel4);
-            this.Controls.Add(this.newPasswordTextBox);
+            this.Controls.Add(this.TextBoxNewPassword);
             this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.oldPasswordTextBox);
+            this.Controls.Add(this.TextBoxOldPassword);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -210,7 +210,6 @@ namespace Penguins_Student_Management.Views
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đổi mật khẩu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChangePasswordView_FormClosing);
-            this.Load += new System.EventHandler(this.ChangePasswordView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,12 +218,12 @@ namespace Penguins_Student_Management.Views
         #endregion
 
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox oldPasswordTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxOldPassword;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI2.WinForms.Guna2TextBox newPasswordTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxNewPassword;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox reTypeTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxRetype;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI2.WinForms.Guna2GradientButton confirmButton;
+        private Guna.UI2.WinForms.Guna2GradientButton ButtonConfirm;
     }
 }

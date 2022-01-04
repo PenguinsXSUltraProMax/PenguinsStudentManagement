@@ -39,7 +39,7 @@ namespace Penguins_Student_Management.Views
 
             this.Hide();
             LoginView loginView = new LoginView();
-            River.CreateObservable(loginView);
+            River.CreateObservableWithoutNotify(loginView);
             loginView.ShowDialog();
             this.Close();
         }

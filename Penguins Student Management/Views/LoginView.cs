@@ -15,6 +15,12 @@ namespace Penguins_Student_Management
         public LoginView()
         {
             InitializeComponent();
+            this.FormClosing += LoginView_FormClosing;
+        }
+
+        private void LoginView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            River.DisposeObservable(this);
         }
 
         public void SetState(TheRiver value)
@@ -22,23 +28,18 @@ namespace Penguins_Student_Management
             River = value;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
-
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            string ID = userTextBox.Text;
-            string PASSWORD = passwordTextBox.Text;
+            string ID = TextBoxUsername.Text;
+            string PASSWORD = TextBoxPassword.Text;
 
             AuthState state = Hook.of<AuthController>(River).SignInWithIDAndPassword(ID, PASSWORD);
 
             if(state == AuthState.AUTHENTICATED)
             {
-                River.DisposeObservable(this);
                 this.Hide();
                 MainView mainView = new MainView();
-                River.CreateObservable(mainView);
+                River.CreateObservableWithoutNotify(mainView);
                 mainView.ShowDialog();
                 this.Close();
             }

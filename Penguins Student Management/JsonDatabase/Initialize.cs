@@ -10,7 +10,7 @@ namespace Penguins_Student_Management.JsonDatabase
         {
             Root = JsonConvert.DeserializeObject<Root>(File.ReadAllText(PATH));
             Collections = Root.Collections;
-            LastClassID = Root.LastClassID;
+            this.PATH = PATH;
         }
     }
 }
