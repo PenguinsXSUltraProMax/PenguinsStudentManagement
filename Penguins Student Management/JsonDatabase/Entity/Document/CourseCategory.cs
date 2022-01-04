@@ -6,6 +6,5 @@ namespace Penguins_Student_Management.JsonDatabase.Entity.Document
     {
         public string ID { get; set; }
         public string Name { get; set; }
-        public List<string> Courses { get; set; }
     }
 }

@@ -67,11 +67,9 @@
     <Compile Include="Controllers\AuthController\SignOut.cs" />
     <Compile Include="Controllers\ClassController\ExportUser.cs" />
     <Compile Include="Controllers\ClassController\CreateClass.cs" />
-    <Compile Include="Controllers\ClassController\GetLastClassID.cs" />
     <Compile Include="Controllers\ClassController\DeleteClass.cs" />
     <Compile Include="Controllers\ClassController\UpdateClass.cs" />
     <Compile Include="Controllers\ClassController\GetAllUserOfClass.cs" />
-    <Compile Include="Controllers\ClassController\IsClassExists.cs" />
     <Compile Include="Controllers\ClassController\GetAllClasses.cs" />
     <Compile Include="Controllers\ClassController\GetClassByID.cs" />
     <Compile Include="Controllers\ClassController\ClassController.cs" />
@@ -142,58 +140,58 @@
     <Compile Include="Views\ChangePasswordView.designer.cs">
       <DependentUpon>ChangePasswordView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CourseAddUserView.cs">
+    <Compile Include="Views\CourseViews\CourseAddUserView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CourseAddUserView.Designer.cs">
+    <Compile Include="Views\CourseViews\CourseAddUserView.Designer.cs">
       <DependentUpon>CourseAddUserView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CreateCourseView.cs">
+    <Compile Include="Views\CourseViews\CreateCourseView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CreateCourseView.Designer.cs">
+    <Compile Include="Views\CourseViews\CreateCourseView.Designer.cs">
       <DependentUpon>CreateCourseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CreateSectionView.cs">
+    <Compile Include="Views\CourseViews\CreateSectionView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CreateSectionView.Designer.cs">
+    <Compile Include="Views\CourseViews\CreateSectionView.Designer.cs">
       <DependentUpon>CreateSectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\EditCourseView.cs">
+    <Compile Include="Views\CourseViews\EditCourseView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\EditCourseView.Designer.cs">
+    <Compile Include="Views\CourseViews\EditCourseView.Designer.cs">
       <DependentUpon>EditCourseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CourseDetailView.cs">
+    <Compile Include="Views\CourseViews\CourseDetailView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CourseDetailView.Designer.cs">
+    <Compile Include="Views\CourseViews\CourseDetailView.Designer.cs">
       <DependentUpon>CourseDetailView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CreateUserView.cs">
+    <Compile Include="Views\UserViews\CreateUserView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CreateUserView.Designer.cs">
+    <Compile Include="Views\UserViews\CreateUserView.Designer.cs">
       <DependentUpon>CreateUserView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CreateClassView.cs">
+    <Compile Include="Views\ClassViews\CreateClassView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CreateClassView.Designer.cs">
+    <Compile Include="Views\ClassViews\CreateClassView.Designer.cs">
       <DependentUpon>CreateClassView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\EditClassView.cs">
+    <Compile Include="Views\ClassViews\EditClassView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\EditClassView.Designer.cs">
+    <Compile Include="Views\ClassViews\EditClassView.Designer.cs">
       <DependentUpon>EditClassView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\EditUserView.cs">
+    <Compile Include="Views\UserViews\EditUserView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\EditUserView.Designer.cs">
+    <Compile Include="Views\UserViews\EditUserView.Designer.cs">
       <DependentUpon>EditUserView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginView.cs">
@@ -202,40 +200,40 @@
     <Compile Include="Views\LoginView.designer.cs">
       <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\SearchPage.cs">
+    <Compile Include="Views\MainPages\SearchPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\SearchPage.Designer.cs">
+    <Compile Include="Views\MainPages\SearchPage.Designer.cs">
       <DependentUpon>SearchPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\DashboardPage.cs">
+    <Compile Include="Views\MainPages\DashboardPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\DashboardPage.Designer.cs">
+    <Compile Include="Views\MainPages\DashboardPage.Designer.cs">
       <DependentUpon>DashboardPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\ClassPage.cs">
+    <Compile Include="Views\MainPages\ClassPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\ClassPage.Designer.cs">
+    <Compile Include="Views\MainPages\ClassPage.Designer.cs">
       <DependentUpon>ClassPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\CoursePage.cs">
+    <Compile Include="Views\MainPages\CoursePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\CoursePage.Designer.cs">
+    <Compile Include="Views\MainPages\CoursePage.Designer.cs">
       <DependentUpon>CoursePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\TeacherPage.cs">
+    <Compile Include="Views\MainPages\TeacherPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\TeacherPage.Designer.cs">
+    <Compile Include="Views\MainPages\TeacherPage.Designer.cs">
       <DependentUpon>TeacherPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MainTab\StudentPage.cs">
+    <Compile Include="Views\MainPages\StudentPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MainTab\StudentPage.Designer.cs">
+    <Compile Include="Views\MainPages\StudentPage.Designer.cs">
       <DependentUpon>StudentPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MainView.cs">
@@ -250,10 +248,10 @@
     <Compile Include="Views\SplashView.Designer.cs">
       <DependentUpon>SplashView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ClassDetailView.cs">
+    <Compile Include="Views\ClassViews\ClassDetailView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\ClassDetailView.Designer.cs">
+    <Compile Include="Views\ClassViews\ClassDetailView.Designer.cs">
       <DependentUpon>ClassDetailView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginDetailView.cs">
@@ -262,16 +260,16 @@
     <Compile Include="Views\LoginDetailView.Designer.cs">
       <DependentUpon>LoginDetailView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\SectionDetailView.cs">
+    <Compile Include="Views\CourseViews\SectionDetailView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\SectionDetailView.Designer.cs">
+    <Compile Include="Views\CourseViews\SectionDetailView.Designer.cs">
       <DependentUpon>SectionDetailView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserDetailView.cs">
+    <Compile Include="Views\UserViews\UserDetailView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\UserDetailView.Designer.cs">
+    <Compile Include="Views\UserViews\UserDetailView.Designer.cs">
       <DependentUpon>UserDetailView.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CustomUserControls\ListItem.resx">
@@ -293,52 +291,52 @@
     <EmbeddedResource Include="Views\ChangePasswordView.resx">
       <DependentUpon>ChangePasswordView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CourseAddUserView.resx">
+    <EmbeddedResource Include="Views\CourseViews\CourseAddUserView.resx">
       <DependentUpon>CourseAddUserView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CreateCourseView.resx">
+    <EmbeddedResource Include="Views\CourseViews\CreateCourseView.resx">
       <DependentUpon>CreateCourseView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CreateSectionView.resx">
+    <EmbeddedResource Include="Views\CourseViews\CreateSectionView.resx">
       <DependentUpon>CreateSectionView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\EditCourseView.resx">
+    <EmbeddedResource Include="Views\CourseViews\EditCourseView.resx">
       <DependentUpon>EditCourseView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CourseDetailView.resx">
+    <EmbeddedResource Include="Views\CourseViews\CourseDetailView.resx">
       <DependentUpon>CourseDetailView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CreateUserView.resx">
+    <EmbeddedResource Include="Views\UserViews\CreateUserView.resx">
       <DependentUpon>CreateUserView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CreateClassView.resx">
+    <EmbeddedResource Include="Views\ClassViews\CreateClassView.resx">
       <DependentUpon>CreateClassView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\EditClassView.resx">
+    <EmbeddedResource Include="Views\ClassViews\EditClassView.resx">
       <DependentUpon>EditClassView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\EditUserView.resx">
+    <EmbeddedResource Include="Views\UserViews\EditUserView.resx">
       <DependentUpon>EditUserView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\SearchPage.resx">
+    <EmbeddedResource Include="Views\MainPages\SearchPage.resx">
       <DependentUpon>SearchPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\DashboardPage.resx">
+    <EmbeddedResource Include="Views\MainPages\DashboardPage.resx">
       <DependentUpon>DashboardPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\ClassPage.resx">
+    <EmbeddedResource Include="Views\MainPages\ClassPage.resx">
       <DependentUpon>ClassPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\CoursePage.resx">
+    <EmbeddedResource Include="Views\MainPages\CoursePage.resx">
       <DependentUpon>CoursePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\TeacherPage.resx">
+    <EmbeddedResource Include="Views\MainPages\TeacherPage.resx">
       <DependentUpon>TeacherPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MainTab\StudentPage.resx">
+    <EmbeddedResource Include="Views\MainPages\StudentPage.resx">
       <DependentUpon>StudentPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainView.resx">
@@ -347,16 +345,16 @@
     <EmbeddedResource Include="Views\SplashView.resx">
       <DependentUpon>SplashView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ClassDetailView.resx">
+    <EmbeddedResource Include="Views\ClassViews\ClassDetailView.resx">
       <DependentUpon>ClassDetailView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginDetailView.resx">
       <DependentUpon>LoginDetailView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\SectionDetailView.resx">
+    <EmbeddedResource Include="Views\CourseViews\SectionDetailView.resx">
       <DependentUpon>SectionDetailView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\UserDetailView.resx">
+    <EmbeddedResource Include="Views\UserViews\UserDetailView.resx">
       <DependentUpon>UserDetailView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

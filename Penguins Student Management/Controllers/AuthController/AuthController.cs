@@ -15,7 +15,7 @@ namespace Penguins_Student_Management.Controllers.AuthController
         private User user;
         private AuthState state = AuthState.NONE;
 
-        public AuthState State { get => state; set => state = value; }
         public User GetCurrentUser { get => user; set => user = value; }
+        public AuthState State { get => state; set => state = value; }
     }
 }

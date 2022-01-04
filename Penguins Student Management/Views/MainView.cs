@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using Penguins_Student_Management.Views.MainTab;
+using Penguins_Student_Management.Views.MainPages;
 
 namespace Penguins_Student_Management.Views
 {
@@ -15,7 +15,7 @@ namespace Penguins_Student_Management.Views
     {
 
         TheRiver River;
-        AuthController authController;
+        AuthController Auth;
 
         // TabControl
         public List<Form> TabPages = new List<Form>() {
@@ -32,31 +32,9 @@ namespace Penguins_Student_Management.Views
             InitializeComponent();
             this.FormClosing += MainView_FormClosing;
 
-            tabControl.Appearance = TabAppearance.FlatButtons;
-            tabControl.ItemSize = new Size(0, 1);
-            tabControl.SizeMode = TabSizeMode.Fixed;
-        }
-
-        private void MainView_Load(object sender, EventArgs e)
-        {
-            ((DashboardPage)TabPages[0]).OwnerForm = this;
-            River.CreateObservable((IObserver)TabPages[0]);
-            dashboardTab.Controls.Add(TabPages[0]);
-
-            River.CreateObservable((IObserver)TabPages[1]);
-            studentTab.Controls.Add(TabPages[1]);
-
-            River.CreateObservable((IObserver)TabPages[2]);
-            teacherTab.Controls.Add(TabPages[2]);
-
-            River.CreateObservable((IObserver)TabPages[3]);
-            classTab.Controls.Add(TabPages[3]);
-
-            River.CreateObservable((IObserver)TabPages[4]);
-            courseTab.Controls.Add(TabPages[4]);
-
-            River.CreateObservable((IObserver)TabPages[5]);
-            searchTab.Controls.Add(TabPages[5]);
+            TabControl.Appearance = TabAppearance.FlatButtons;
+            TabControl.ItemSize = new Size(0, 1);
+            TabControl.SizeMode = TabSizeMode.Fixed;
         }
 
         private void MainView_FormClosing(object sender, FormClosingEventArgs e)
@@ -64,37 +42,62 @@ namespace Penguins_Student_Management.Views
             River.DisposeObservable(this);
         }
 
+        private void MainView_Load(object sender, EventArgs e)
+        {
+            ((DashboardPage)TabPages[0]).OwnerForm = this;
+            River.CreateObservableWithoutNotify((IObserver)TabPages[0]);
+            TabPageDashboard.Controls.Add(TabPages[0]);
+
+            River.CreateObservableWithoutNotify((IObserver)TabPages[1]);
+            TabPageStudent.Controls.Add(TabPages[1]);
+
+            River.CreateObservableWithoutNotify((IObserver)TabPages[2]);
+            TabPageTeacher.Controls.Add(TabPages[2]);
+
+            River.CreateObservableWithoutNotify((IObserver)TabPages[3]);
+            TabPageClass.Controls.Add(TabPages[3]);
+
+            River.CreateObservableWithoutNotify((IObserver)TabPages[4]);
+            TabPageCourse.Controls.Add(TabPages[4]);
+
+            River.CreateObservableWithoutNotify((IObserver)TabPages[5]);
+            TabPageSearch.Controls.Add(TabPages[5]);
+        }
+
+
         public void SetState(TheRiver value)
         {
             River = value;
-            authController = Hook.of<AuthController>(River);
+            Auth = Hook.of<AuthController>(River);
 
             ShowHideMenuItem();
         }
 
         private void ShowHideMenuItem()
         {
-            sideMenuItemStudent.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
-            sideMenuItemTeacher.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
-            sideMenuItemClass.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
-            sideMenuItemCourse.Visible = !(authController.GetCurrentUser.Type == User.AccountType.Student);
-            searchTextBox.Enabled = !(authController.GetCurrentUser.Type == User.AccountType.Student);
+            bool IsStudent = Auth.GetCurrentUser.Type == User.AccountType.Student;
+
+            SideMenuItemStudent.Visible = !IsStudent;
+            SideMenuItemTeacher.Visible = !IsStudent;
+            SideMenuItemClass.Visible = !IsStudent;
+            SideMenuItemCourse.Visible = !IsStudent;
+            TextBoxSearch.Enabled = !IsStudent;
         }
 
 
         private void SideMenuItemClickHandle(object sender, EventArgs e) {
-            tabControl.SelectedIndex = ((SideMenuItem)sender).Index;
+            TabControl.SelectedIndex = ((SideMenuItem)sender).Index;
         }
 
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SideMenuItemActiveHandle(tabControl.SelectedIndex);
+            SideMenuItemActiveHandle(TabControl.SelectedIndex);
         }
 
         private void SideMenuItemActiveHandle(int index)
         {
             List<SideMenuItem> sideMenuItems = new List<SideMenuItem>() {
-                sideMenuItemDashboard, sideMenuItemStudent, sideMenuItemTeacher, sideMenuItemClass, sideMenuItemCourse
+                SideMenuItemDashboard, SideMenuItemStudent, SideMenuItemTeacher, SideMenuItemClass, SideMenuItemCourse
             };
 
             for(int i = 0; i < sideMenuItems.Count; i++)
@@ -103,17 +106,17 @@ namespace Penguins_Student_Management.Views
             }
         }
 
-        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        private void TextBoxSearch_TextChanged(object sender, EventArgs e)
         {
-            if(searchTextBox.Text.Length > 2)
+            if(TextBoxSearch.Text.Length > 2)
             {
-                tabControl.SelectedIndex = 5;
-                searchTextBox.Focus();
-                ((SearchPage)TabPages[5]).BindingSearchQuery(searchTextBox.Text.ToLower());
+                TabControl.SelectedIndex = 5;
+                TextBoxSearch.Focus();
+                ((SearchPage)TabPages[5]).BindingSearchQuery(TextBoxSearch.Text.ToLower());
             } else
             {
-                tabControl.SelectedIndex = 0;
-                searchTextBox.Focus();
+                TabControl.SelectedIndex = 0;
+                TextBoxSearch.Focus();
             }
         }
     }

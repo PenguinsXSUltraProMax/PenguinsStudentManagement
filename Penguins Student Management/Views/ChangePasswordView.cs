@@ -25,26 +25,23 @@ namespace Penguins_Student_Management.Views
             this.FormClosing += ChangePasswordView_FormClosing;
         }
 
+        private void ChangePasswordView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            River.DisposeObservable(this);
+        }
+
         public void SetState(TheRiver value)
         {
             River = value;
             Auth = Hook.of<AuthController>(River);
         }
 
-        private void ChangePasswordView_Load(object sender, EventArgs e)
-        {
-        }
 
-        private void ChangePasswordView_FormClosing(object sender, FormClosingEventArgs e)
+        private void ButtonConfirm_Click(object sender, EventArgs e)
         {
-            River.DisposeObservable(this);
-        }
-
-        private void confirmButton_Click(object sender, EventArgs e)
-        {
-            string OLD_PASSWORD = oldPasswordTextBox.Text;
-            string NEW_PASSWORD = newPasswordTextBox.Text;
-            string RETYPE_PASSWORD = reTypeTextBox.Text;
+            string OLD_PASSWORD = TextBoxOldPassword.Text;
+            string NEW_PASSWORD = TextBoxNewPassword.Text;
+            string RETYPE_PASSWORD = TextBoxRetype.Text;
 
             Auth.ChangePassword(OLD_PASSWORD, NEW_PASSWORD, RETYPE_PASSWORD);
         }

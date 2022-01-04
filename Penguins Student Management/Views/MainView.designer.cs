@@ -35,36 +35,36 @@ namespace Penguins_Student_Management.Views
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.searchTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.sideMenuItemDashboard = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemStudent = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemTeacher = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemClass = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.sideMenuItemCourse = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.dashboardTab = new System.Windows.Forms.TabPage();
-            this.studentTab = new System.Windows.Forms.TabPage();
-            this.teacherTab = new System.Windows.Forms.TabPage();
-            this.classTab = new System.Windows.Forms.TabPage();
-            this.courseTab = new System.Windows.Forms.TabPage();
-            this.searchTab = new System.Windows.Forms.TabPage();
+            this.TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SideMenuItemDashboard = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.SideMenuItemStudent = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.SideMenuItemTeacher = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.SideMenuItemClass = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.SideMenuItemCourse = new Penguins_Student_Management.CustomUserControls.SideMenuItem();
+            this.TabControl = new System.Windows.Forms.TabControl();
+            this.TabPageDashboard = new System.Windows.Forms.TabPage();
+            this.TabPageStudent = new System.Windows.Forms.TabPage();
+            this.TabPageTeacher = new System.Windows.Forms.TabPage();
+            this.TabPageClass = new System.Windows.Forms.TabPage();
+            this.TabPageCourse = new System.Windows.Forms.TabPage();
+            this.TabPageSearch = new System.Windows.Forms.TabPage();
             this.sideMenuPanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.penguinsButton)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
-            this.tabControl.SuspendLayout();
+            this.TabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // sideMenuPanel
             // 
             this.sideMenuPanel.BackColor = System.Drawing.Color.Transparent;
             this.sideMenuPanel.Controls.Add(this.flowLayoutPanel1);
-            this.sideMenuPanel.Controls.Add(this.searchTextBox);
-            this.sideMenuPanel.Controls.Add(this.sideMenuItemDashboard);
-            this.sideMenuPanel.Controls.Add(this.sideMenuItemStudent);
-            this.sideMenuPanel.Controls.Add(this.sideMenuItemTeacher);
-            this.sideMenuPanel.Controls.Add(this.sideMenuItemClass);
-            this.sideMenuPanel.Controls.Add(this.sideMenuItemCourse);
+            this.sideMenuPanel.Controls.Add(this.TextBoxSearch);
+            this.sideMenuPanel.Controls.Add(this.SideMenuItemDashboard);
+            this.sideMenuPanel.Controls.Add(this.SideMenuItemStudent);
+            this.sideMenuPanel.Controls.Add(this.SideMenuItemTeacher);
+            this.sideMenuPanel.Controls.Add(this.SideMenuItemClass);
+            this.sideMenuPanel.Controls.Add(this.SideMenuItemCourse);
             this.sideMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideMenuPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.sideMenuPanel.Location = new System.Drawing.Point(0, 0);
@@ -134,180 +134,180 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel2.TabIndex = 4;
             this.gunaLabel2.Text = "STUDENT MANAGEMENT";
             // 
-            // searchTextBox
+            // TextBoxSearch
             // 
-            this.searchTextBox.Animated = true;
-            this.searchTextBox.BorderRadius = 3;
-            this.searchTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.searchTextBox.DefaultText = "";
-            this.searchTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.searchTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.searchTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.searchTextBox.DisabledState.Parent = this.searchTextBox;
-            this.searchTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.searchTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextBox.FocusedState.Parent = this.searchTextBox;
-            this.searchTextBox.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTextBox.ForeColor = System.Drawing.Color.Black;
-            this.searchTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextBox.HoverState.Parent = this.searchTextBox;
-            this.searchTextBox.Location = new System.Drawing.Point(18, 98);
-            this.searchTextBox.Margin = new System.Windows.Forms.Padding(0, 0, 0, 19);
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.PasswordChar = '\0';
-            this.searchTextBox.PlaceholderText = "Tìm kiếm";
-            this.searchTextBox.SelectedText = "";
-            this.searchTextBox.ShadowDecoration.Parent = this.searchTextBox;
-            this.searchTextBox.Size = new System.Drawing.Size(240, 34);
-            this.searchTextBox.TabIndex = 9;
-            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
+            this.TextBoxSearch.Animated = true;
+            this.TextBoxSearch.BorderRadius = 3;
+            this.TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxSearch.DefaultText = "";
+            this.TextBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxSearch.DisabledState.Parent = this.TextBoxSearch;
+            this.TextBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxSearch.FocusedState.Parent = this.TextBoxSearch;
+            this.TextBoxSearch.Font = new System.Drawing.Font("Google Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxSearch.ForeColor = System.Drawing.Color.Black;
+            this.TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxSearch.HoverState.Parent = this.TextBoxSearch;
+            this.TextBoxSearch.Location = new System.Drawing.Point(18, 98);
+            this.TextBoxSearch.Margin = new System.Windows.Forms.Padding(0, 0, 0, 19);
+            this.TextBoxSearch.Name = "TextBoxSearch";
+            this.TextBoxSearch.PasswordChar = '\0';
+            this.TextBoxSearch.PlaceholderText = "Tìm kiếm";
+            this.TextBoxSearch.SelectedText = "";
+            this.TextBoxSearch.ShadowDecoration.Parent = this.TextBoxSearch;
+            this.TextBoxSearch.Size = new System.Drawing.Size(240, 34);
+            this.TextBoxSearch.TabIndex = 9;
+            this.TextBoxSearch.TextChanged += new System.EventHandler(this.TextBoxSearch_TextChanged);
             // 
-            // sideMenuItemDashboard
+            // SideMenuItemDashboard
             // 
-            this.sideMenuItemDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemDashboard.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_dashboard_layout_48;
-            this.sideMenuItemDashboard.Index = 0;
-            this.sideMenuItemDashboard.IsActive = true;
-            this.sideMenuItemDashboard.Label = "Dashboard";
-            this.sideMenuItemDashboard.Location = new System.Drawing.Point(18, 151);
-            this.sideMenuItemDashboard.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemDashboard.Name = "sideMenuItemDashboard";
-            this.sideMenuItemDashboard.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemDashboard.TabIndex = 3;
-            this.sideMenuItemDashboard.Click += new System.EventHandler(this.SideMenuItemClickHandle);
+            this.SideMenuItemDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SideMenuItemDashboard.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_dashboard_layout_48;
+            this.SideMenuItemDashboard.Index = 0;
+            this.SideMenuItemDashboard.IsActive = true;
+            this.SideMenuItemDashboard.Label = "Dashboard";
+            this.SideMenuItemDashboard.Location = new System.Drawing.Point(18, 151);
+            this.SideMenuItemDashboard.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.SideMenuItemDashboard.Name = "SideMenuItemDashboard";
+            this.SideMenuItemDashboard.Size = new System.Drawing.Size(240, 36);
+            this.SideMenuItemDashboard.TabIndex = 3;
+            this.SideMenuItemDashboard.Click += new System.EventHandler(this.SideMenuItemClickHandle);
             // 
-            // sideMenuItemStudent
+            // SideMenuItemStudent
             // 
-            this.sideMenuItemStudent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemStudent.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_student_male_48;
-            this.sideMenuItemStudent.Index = 1;
-            this.sideMenuItemStudent.IsActive = false;
-            this.sideMenuItemStudent.Label = "Quản lý sinh viên";
-            this.sideMenuItemStudent.Location = new System.Drawing.Point(18, 199);
-            this.sideMenuItemStudent.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemStudent.Name = "sideMenuItemStudent";
-            this.sideMenuItemStudent.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemStudent.TabIndex = 6;
-            this.sideMenuItemStudent.Click += new System.EventHandler(this.SideMenuItemClickHandle);
+            this.SideMenuItemStudent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SideMenuItemStudent.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_student_male_48;
+            this.SideMenuItemStudent.Index = 1;
+            this.SideMenuItemStudent.IsActive = false;
+            this.SideMenuItemStudent.Label = "Quản lý sinh viên";
+            this.SideMenuItemStudent.Location = new System.Drawing.Point(18, 199);
+            this.SideMenuItemStudent.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.SideMenuItemStudent.Name = "SideMenuItemStudent";
+            this.SideMenuItemStudent.Size = new System.Drawing.Size(240, 36);
+            this.SideMenuItemStudent.TabIndex = 6;
+            this.SideMenuItemStudent.Click += new System.EventHandler(this.SideMenuItemClickHandle);
             // 
-            // sideMenuItemTeacher
+            // SideMenuItemTeacher
             // 
-            this.sideMenuItemTeacher.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemTeacher.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_school_director_48;
-            this.sideMenuItemTeacher.Index = 2;
-            this.sideMenuItemTeacher.IsActive = false;
-            this.sideMenuItemTeacher.Label = "Quản lý giáo viên";
-            this.sideMenuItemTeacher.Location = new System.Drawing.Point(18, 247);
-            this.sideMenuItemTeacher.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemTeacher.Name = "sideMenuItemTeacher";
-            this.sideMenuItemTeacher.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemTeacher.TabIndex = 7;
-            this.sideMenuItemTeacher.Click += new System.EventHandler(this.SideMenuItemClickHandle);
+            this.SideMenuItemTeacher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SideMenuItemTeacher.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_school_director_48;
+            this.SideMenuItemTeacher.Index = 2;
+            this.SideMenuItemTeacher.IsActive = false;
+            this.SideMenuItemTeacher.Label = "Quản lý giáo viên";
+            this.SideMenuItemTeacher.Location = new System.Drawing.Point(18, 247);
+            this.SideMenuItemTeacher.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.SideMenuItemTeacher.Name = "SideMenuItemTeacher";
+            this.SideMenuItemTeacher.Size = new System.Drawing.Size(240, 36);
+            this.SideMenuItemTeacher.TabIndex = 7;
+            this.SideMenuItemTeacher.Click += new System.EventHandler(this.SideMenuItemClickHandle);
             // 
-            // sideMenuItemClass
+            // SideMenuItemClass
             // 
-            this.sideMenuItemClass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemClass.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_class_48;
-            this.sideMenuItemClass.Index = 3;
-            this.sideMenuItemClass.IsActive = false;
-            this.sideMenuItemClass.Label = "Quản lý lớp học";
-            this.sideMenuItemClass.Location = new System.Drawing.Point(18, 295);
-            this.sideMenuItemClass.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemClass.Name = "sideMenuItemClass";
-            this.sideMenuItemClass.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemClass.TabIndex = 12;
-            this.sideMenuItemClass.Click += new System.EventHandler(this.SideMenuItemClickHandle);
+            this.SideMenuItemClass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SideMenuItemClass.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_class_48;
+            this.SideMenuItemClass.Index = 3;
+            this.SideMenuItemClass.IsActive = false;
+            this.SideMenuItemClass.Label = "Quản lý lớp học";
+            this.SideMenuItemClass.Location = new System.Drawing.Point(18, 295);
+            this.SideMenuItemClass.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.SideMenuItemClass.Name = "SideMenuItemClass";
+            this.SideMenuItemClass.Size = new System.Drawing.Size(240, 36);
+            this.SideMenuItemClass.TabIndex = 12;
+            this.SideMenuItemClass.Click += new System.EventHandler(this.SideMenuItemClickHandle);
             // 
-            // sideMenuItemCourse
+            // SideMenuItemCourse
             // 
-            this.sideMenuItemCourse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sideMenuItemCourse.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_read_48;
-            this.sideMenuItemCourse.Index = 4;
-            this.sideMenuItemCourse.IsActive = false;
-            this.sideMenuItemCourse.Label = "Quản lý khóa học";
-            this.sideMenuItemCourse.Location = new System.Drawing.Point(18, 343);
-            this.sideMenuItemCourse.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.sideMenuItemCourse.Name = "sideMenuItemCourse";
-            this.sideMenuItemCourse.Size = new System.Drawing.Size(240, 36);
-            this.sideMenuItemCourse.TabIndex = 10;
-            this.sideMenuItemCourse.Click += new System.EventHandler(this.SideMenuItemClickHandle);
+            this.SideMenuItemCourse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SideMenuItemCourse.IconImage = global::Penguins_Student_Management.Properties.Resources.icons8_read_48;
+            this.SideMenuItemCourse.Index = 4;
+            this.SideMenuItemCourse.IsActive = false;
+            this.SideMenuItemCourse.Label = "Quản lý khóa học";
+            this.SideMenuItemCourse.Location = new System.Drawing.Point(18, 343);
+            this.SideMenuItemCourse.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
+            this.SideMenuItemCourse.Name = "SideMenuItemCourse";
+            this.SideMenuItemCourse.Size = new System.Drawing.Size(240, 36);
+            this.SideMenuItemCourse.TabIndex = 10;
+            this.SideMenuItemCourse.Click += new System.EventHandler(this.SideMenuItemClickHandle);
             // 
-            // tabControl
+            // TabControl
             // 
-            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl.Controls.Add(this.dashboardTab);
-            this.tabControl.Controls.Add(this.studentTab);
-            this.tabControl.Controls.Add(this.teacherTab);
-            this.tabControl.Controls.Add(this.classTab);
-            this.tabControl.Controls.Add(this.courseTab);
-            this.tabControl.Controls.Add(this.searchTab);
-            this.tabControl.Location = new System.Drawing.Point(274, -9);
-            this.tabControl.Margin = new System.Windows.Forms.Padding(0);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.Padding = new System.Drawing.Point(0, 0);
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(914, 629);
-            this.tabControl.TabIndex = 2;
-            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
+            this.TabControl.Controls.Add(this.TabPageDashboard);
+            this.TabControl.Controls.Add(this.TabPageStudent);
+            this.TabControl.Controls.Add(this.TabPageTeacher);
+            this.TabControl.Controls.Add(this.TabPageClass);
+            this.TabControl.Controls.Add(this.TabPageCourse);
+            this.TabControl.Controls.Add(this.TabPageSearch);
+            this.TabControl.Location = new System.Drawing.Point(274, -9);
+            this.TabControl.Margin = new System.Windows.Forms.Padding(0);
+            this.TabControl.Name = "TabControl";
+            this.TabControl.Padding = new System.Drawing.Point(0, 0);
+            this.TabControl.SelectedIndex = 0;
+            this.TabControl.Size = new System.Drawing.Size(914, 629);
+            this.TabControl.TabIndex = 2;
+            this.TabControl.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
             // 
-            // dashboardTab
+            // TabPageDashboard
             // 
-            this.dashboardTab.BackColor = System.Drawing.Color.Transparent;
-            this.dashboardTab.Location = new System.Drawing.Point(4, 22);
-            this.dashboardTab.Margin = new System.Windows.Forms.Padding(0);
-            this.dashboardTab.Name = "dashboardTab";
-            this.dashboardTab.Size = new System.Drawing.Size(906, 603);
-            this.dashboardTab.TabIndex = 0;
-            this.dashboardTab.Text = "Dashboard";
+            this.TabPageDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.TabPageDashboard.Location = new System.Drawing.Point(4, 22);
+            this.TabPageDashboard.Margin = new System.Windows.Forms.Padding(0);
+            this.TabPageDashboard.Name = "TabPageDashboard";
+            this.TabPageDashboard.Size = new System.Drawing.Size(906, 603);
+            this.TabPageDashboard.TabIndex = 0;
+            this.TabPageDashboard.Text = "Dashboard";
             // 
-            // studentTab
+            // TabPageStudent
             // 
-            this.studentTab.BackColor = System.Drawing.Color.Transparent;
-            this.studentTab.Location = new System.Drawing.Point(4, 22);
-            this.studentTab.Margin = new System.Windows.Forms.Padding(0);
-            this.studentTab.Name = "studentTab";
-            this.studentTab.Size = new System.Drawing.Size(906, 603);
-            this.studentTab.TabIndex = 1;
-            this.studentTab.Text = "Quản lý sinh viên";
+            this.TabPageStudent.BackColor = System.Drawing.Color.Transparent;
+            this.TabPageStudent.Location = new System.Drawing.Point(4, 22);
+            this.TabPageStudent.Margin = new System.Windows.Forms.Padding(0);
+            this.TabPageStudent.Name = "TabPageStudent";
+            this.TabPageStudent.Size = new System.Drawing.Size(906, 603);
+            this.TabPageStudent.TabIndex = 1;
+            this.TabPageStudent.Text = "Quản lý sinh viên";
             // 
-            // teacherTab
+            // TabPageTeacher
             // 
-            this.teacherTab.Location = new System.Drawing.Point(4, 22);
-            this.teacherTab.Name = "teacherTab";
-            this.teacherTab.Size = new System.Drawing.Size(906, 603);
-            this.teacherTab.TabIndex = 3;
-            this.teacherTab.Text = "Quản lý giáo viên";
-            this.teacherTab.UseVisualStyleBackColor = true;
+            this.TabPageTeacher.Location = new System.Drawing.Point(4, 22);
+            this.TabPageTeacher.Name = "TabPageTeacher";
+            this.TabPageTeacher.Size = new System.Drawing.Size(906, 603);
+            this.TabPageTeacher.TabIndex = 3;
+            this.TabPageTeacher.Text = "Quản lý giáo viên";
+            this.TabPageTeacher.UseVisualStyleBackColor = true;
             // 
-            // classTab
+            // TabPageClass
             // 
-            this.classTab.Location = new System.Drawing.Point(4, 22);
-            this.classTab.Margin = new System.Windows.Forms.Padding(0);
-            this.classTab.Name = "classTab";
-            this.classTab.Size = new System.Drawing.Size(906, 603);
-            this.classTab.TabIndex = 5;
-            this.classTab.Text = "Quản lý lớp học ";
-            this.classTab.UseVisualStyleBackColor = true;
+            this.TabPageClass.Location = new System.Drawing.Point(4, 22);
+            this.TabPageClass.Margin = new System.Windows.Forms.Padding(0);
+            this.TabPageClass.Name = "TabPageClass";
+            this.TabPageClass.Size = new System.Drawing.Size(906, 603);
+            this.TabPageClass.TabIndex = 5;
+            this.TabPageClass.Text = "Quản lý lớp học ";
+            this.TabPageClass.UseVisualStyleBackColor = true;
             // 
-            // courseTab
+            // TabPageCourse
             // 
-            this.courseTab.Location = new System.Drawing.Point(4, 22);
-            this.courseTab.Name = "courseTab";
-            this.courseTab.Size = new System.Drawing.Size(906, 603);
-            this.courseTab.TabIndex = 4;
-            this.courseTab.Text = "Quản lý khóa học";
-            this.courseTab.UseVisualStyleBackColor = true;
+            this.TabPageCourse.Location = new System.Drawing.Point(4, 22);
+            this.TabPageCourse.Name = "TabPageCourse";
+            this.TabPageCourse.Size = new System.Drawing.Size(906, 603);
+            this.TabPageCourse.TabIndex = 4;
+            this.TabPageCourse.Text = "Quản lý khóa học";
+            this.TabPageCourse.UseVisualStyleBackColor = true;
             // 
-            // searchTab
+            // TabPageSearch
             // 
-            this.searchTab.Location = new System.Drawing.Point(4, 22);
-            this.searchTab.Name = "searchTab";
-            this.searchTab.Size = new System.Drawing.Size(906, 603);
-            this.searchTab.TabIndex = 6;
-            this.searchTab.Text = "Tìm kiếm";
-            this.searchTab.UseVisualStyleBackColor = true;
+            this.TabPageSearch.Location = new System.Drawing.Point(4, 22);
+            this.TabPageSearch.Name = "TabPageSearch";
+            this.TabPageSearch.Size = new System.Drawing.Size(906, 603);
+            this.TabPageSearch.TabIndex = 6;
+            this.TabPageSearch.Text = "Tìm kiếm";
+            this.TabPageSearch.UseVisualStyleBackColor = true;
             // 
             // MainView
             // 
@@ -317,7 +317,7 @@ namespace Penguins_Student_Management.Views
             this.BackgroundImage = global::Penguins_Student_Management.Properties.Resources.image;
             this.ClientSize = new System.Drawing.Size(1184, 611);
             this.Controls.Add(this.sideMenuPanel);
-            this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.TabControl);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(37)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -331,7 +331,7 @@ namespace Penguins_Student_Management.Views
             ((System.ComponentModel.ISupportInitialize)(this.penguinsButton)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
-            this.tabControl.ResumeLayout(false);
+            this.TabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -344,18 +344,18 @@ namespace Penguins_Student_Management.Views
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private CustomUserControls.SideMenuItem sideMenuItemDashboard;
-        private CustomUserControls.SideMenuItem sideMenuItemStudent;
-        private CustomUserControls.SideMenuItem sideMenuItemTeacher;
-        private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.TabPage dashboardTab;
-        private System.Windows.Forms.TabPage studentTab;
-        private Guna.UI2.WinForms.Guna2TextBox searchTextBox;
-        private CustomUserControls.SideMenuItem sideMenuItemCourse;
-        private CustomUserControls.SideMenuItem sideMenuItemClass;
-        private System.Windows.Forms.TabPage teacherTab;
-        private System.Windows.Forms.TabPage classTab;
-        private System.Windows.Forms.TabPage courseTab;
-        private System.Windows.Forms.TabPage searchTab;
+        private CustomUserControls.SideMenuItem SideMenuItemDashboard;
+        private CustomUserControls.SideMenuItem SideMenuItemStudent;
+        private CustomUserControls.SideMenuItem SideMenuItemTeacher;
+        private System.Windows.Forms.TabControl TabControl;
+        private System.Windows.Forms.TabPage TabPageDashboard;
+        private System.Windows.Forms.TabPage TabPageStudent;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxSearch;
+        private CustomUserControls.SideMenuItem SideMenuItemCourse;
+        private CustomUserControls.SideMenuItem SideMenuItemClass;
+        private System.Windows.Forms.TabPage TabPageTeacher;
+        private System.Windows.Forms.TabPage TabPageClass;
+        private System.Windows.Forms.TabPage TabPageCourse;
+        private System.Windows.Forms.TabPage TabPageSearch;
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using Penguins_Student_Management.StateManagement.Entity;
 
 namespace Penguins_Student_Management.StateManagement
@@ -21,20 +20,16 @@ namespace Penguins_Student_Management.StateManagement
             return subject;
         }
 
-        public void Refesh()
-        {
-            NotifyListeners(this);
-        }
-
         public void CreateObservable(IObserver observer)
         {
             Observers.Add(observer);
-            NotifyListeners(this);
+            Notify();
         }
 
         public void CreateObservableWithoutNotify(IObserver observer)
         {
             Observers.Add(observer);
+            observer.SetState(this);
         }
 
         public void DisposeObservable(IObserver observer)
@@ -42,9 +37,9 @@ namespace Penguins_Student_Management.StateManagement
             Observers.Remove(observer);
         }
 
-        public void NotifyListeners(TheRiver value)
+        public void Notify()
         {
-            Observers.ForEach(observer => observer.SetState(value));
+            Observers.ForEach(observer => observer.SetState(this));
         }
     }
 }

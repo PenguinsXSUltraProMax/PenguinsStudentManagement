@@ -31,24 +31,24 @@ namespace Penguins_Student_Management.Views
         {
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.nameLabel = new Guna.UI.WinForms.GunaLabel();
-            this.genderLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelName = new Guna.UI.WinForms.GunaLabel();
+            this.LabelGender = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.ethnicLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelEthnic = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.birthdayLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelBirthday = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
-            this.classLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelClass = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
-            this.hometownLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelHometown = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
-            this.typeLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelType = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel15 = new Guna.UI.WinForms.GunaLabel();
-            this.nationalityLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelNationality = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel17 = new Guna.UI.WinForms.GunaLabel();
-            this.idLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelID = new Guna.UI.WinForms.GunaLabel();
             this.CSCHSD = new Guna.UI.WinForms.GunaLabel();
-            this.passwordLabel = new Guna.UI.WinForms.GunaLabel();
+            this.LabelPassword = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
@@ -75,29 +75,29 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel3.TabIndex = 8;
             this.gunaLabel3.Text = "Họ và tên";
             // 
-            // nameLabel
+            // LabelName
             // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.nameLabel.Location = new System.Drawing.Point(257, 148);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(96, 21);
-            this.nameLabel.TabIndex = 9;
-            this.nameLabel.Text = "Placeholder";
+            this.LabelName.AutoSize = true;
+            this.LabelName.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelName.Location = new System.Drawing.Point(257, 148);
+            this.LabelName.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelName.Name = "LabelName";
+            this.LabelName.Size = new System.Drawing.Size(96, 21);
+            this.LabelName.TabIndex = 9;
+            this.LabelName.Text = "Placeholder";
             // 
-            // genderLabel
+            // LabelGender
             // 
-            this.genderLabel.AutoSize = true;
-            this.genderLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.genderLabel.Location = new System.Drawing.Point(257, 215);
-            this.genderLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(96, 21);
-            this.genderLabel.TabIndex = 11;
-            this.genderLabel.Text = "Placeholder";
+            this.LabelGender.AutoSize = true;
+            this.LabelGender.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelGender.Location = new System.Drawing.Point(257, 215);
+            this.LabelGender.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelGender.Name = "LabelGender";
+            this.LabelGender.Size = new System.Drawing.Size(96, 21);
+            this.LabelGender.TabIndex = 11;
+            this.LabelGender.Text = "Placeholder";
             // 
             // gunaLabel5
             // 
@@ -111,17 +111,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel5.TabIndex = 10;
             this.gunaLabel5.Text = "Giới tính";
             // 
-            // ethnicLabel
+            // LabelEthnic
             // 
-            this.ethnicLabel.AutoSize = true;
-            this.ethnicLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ethnicLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ethnicLabel.Location = new System.Drawing.Point(24, 282);
-            this.ethnicLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.ethnicLabel.Name = "ethnicLabel";
-            this.ethnicLabel.Size = new System.Drawing.Size(80, 21);
-            this.ethnicLabel.TabIndex = 15;
-            this.ethnicLabel.Text = "Họ và tên";
+            this.LabelEthnic.AutoSize = true;
+            this.LabelEthnic.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelEthnic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelEthnic.Location = new System.Drawing.Point(24, 282);
+            this.LabelEthnic.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelEthnic.Name = "LabelEthnic";
+            this.LabelEthnic.Size = new System.Drawing.Size(80, 21);
+            this.LabelEthnic.TabIndex = 15;
+            this.LabelEthnic.Text = "Họ và tên";
             // 
             // gunaLabel7
             // 
@@ -135,17 +135,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel7.TabIndex = 14;
             this.gunaLabel7.Text = "Dân tộc";
             // 
-            // birthdayLabel
+            // LabelBirthday
             // 
-            this.birthdayLabel.AutoSize = true;
-            this.birthdayLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birthdayLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.birthdayLabel.Location = new System.Drawing.Point(24, 215);
-            this.birthdayLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.birthdayLabel.Name = "birthdayLabel";
-            this.birthdayLabel.Size = new System.Drawing.Size(96, 21);
-            this.birthdayLabel.TabIndex = 13;
-            this.birthdayLabel.Text = "Placeholder";
+            this.LabelBirthday.AutoSize = true;
+            this.LabelBirthday.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelBirthday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelBirthday.Location = new System.Drawing.Point(24, 215);
+            this.LabelBirthday.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelBirthday.Name = "LabelBirthday";
+            this.LabelBirthday.Size = new System.Drawing.Size(96, 21);
+            this.LabelBirthday.TabIndex = 13;
+            this.LabelBirthday.Text = "Placeholder";
             // 
             // gunaLabel9
             // 
@@ -159,17 +159,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel9.TabIndex = 12;
             this.gunaLabel9.Text = "Ngày sinh";
             // 
-            // classLabel
+            // LabelClass
             // 
-            this.classLabel.AutoSize = true;
-            this.classLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.classLabel.Location = new System.Drawing.Point(257, 349);
-            this.classLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.classLabel.Name = "classLabel";
-            this.classLabel.Size = new System.Drawing.Size(96, 21);
-            this.classLabel.TabIndex = 19;
-            this.classLabel.Text = "Placeholder";
+            this.LabelClass.AutoSize = true;
+            this.LabelClass.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelClass.Location = new System.Drawing.Point(257, 349);
+            this.LabelClass.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelClass.Name = "LabelClass";
+            this.LabelClass.Size = new System.Drawing.Size(96, 21);
+            this.LabelClass.TabIndex = 19;
+            this.LabelClass.Text = "Placeholder";
             // 
             // gunaLabel11
             // 
@@ -183,17 +183,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel11.TabIndex = 18;
             this.gunaLabel11.Text = "Lớp";
             // 
-            // hometownLabel
+            // LabelHometown
             // 
-            this.hometownLabel.AutoSize = true;
-            this.hometownLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hometownLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.hometownLabel.Location = new System.Drawing.Point(257, 282);
-            this.hometownLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.hometownLabel.Name = "hometownLabel";
-            this.hometownLabel.Size = new System.Drawing.Size(96, 21);
-            this.hometownLabel.TabIndex = 17;
-            this.hometownLabel.Text = "Placeholder";
+            this.LabelHometown.AutoSize = true;
+            this.LabelHometown.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelHometown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelHometown.Location = new System.Drawing.Point(257, 282);
+            this.LabelHometown.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelHometown.Name = "LabelHometown";
+            this.LabelHometown.Size = new System.Drawing.Size(96, 21);
+            this.LabelHometown.TabIndex = 17;
+            this.LabelHometown.Text = "Placeholder";
             // 
             // gunaLabel13
             // 
@@ -207,17 +207,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel13.TabIndex = 16;
             this.gunaLabel13.Text = "Quê quán";
             // 
-            // typeLabel
+            // LabelType
             // 
-            this.typeLabel.AutoSize = true;
-            this.typeLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.typeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.typeLabel.Location = new System.Drawing.Point(24, 416);
-            this.typeLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.typeLabel.Name = "typeLabel";
-            this.typeLabel.Size = new System.Drawing.Size(96, 21);
-            this.typeLabel.TabIndex = 23;
-            this.typeLabel.Text = "Placeholder";
+            this.LabelType.AutoSize = true;
+            this.LabelType.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelType.Location = new System.Drawing.Point(24, 416);
+            this.LabelType.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelType.Name = "LabelType";
+            this.LabelType.Size = new System.Drawing.Size(96, 21);
+            this.LabelType.TabIndex = 23;
+            this.LabelType.Text = "Placeholder";
             // 
             // gunaLabel15
             // 
@@ -231,17 +231,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel15.TabIndex = 22;
             this.gunaLabel15.Text = "Loại tài khoản";
             // 
-            // nationalityLabel
+            // LabelNationality
             // 
-            this.nationalityLabel.AutoSize = true;
-            this.nationalityLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nationalityLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.nationalityLabel.Location = new System.Drawing.Point(24, 349);
-            this.nationalityLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.nationalityLabel.Name = "nationalityLabel";
-            this.nationalityLabel.Size = new System.Drawing.Size(96, 21);
-            this.nationalityLabel.TabIndex = 21;
-            this.nationalityLabel.Text = "Placeholder";
+            this.LabelNationality.AutoSize = true;
+            this.LabelNationality.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelNationality.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelNationality.Location = new System.Drawing.Point(24, 349);
+            this.LabelNationality.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelNationality.Name = "LabelNationality";
+            this.LabelNationality.Size = new System.Drawing.Size(96, 21);
+            this.LabelNationality.TabIndex = 21;
+            this.LabelNationality.Text = "Placeholder";
             // 
             // gunaLabel17
             // 
@@ -255,17 +255,17 @@ namespace Penguins_Student_Management.Views
             this.gunaLabel17.TabIndex = 20;
             this.gunaLabel17.Text = "Quốc tịch";
             // 
-            // idLabel
+            // LabelID
             // 
-            this.idLabel.AutoSize = true;
-            this.idLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.idLabel.Location = new System.Drawing.Point(24, 148);
-            this.idLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(96, 21);
-            this.idLabel.TabIndex = 28;
-            this.idLabel.Text = "Placeholder";
+            this.LabelID.AutoSize = true;
+            this.LabelID.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelID.Location = new System.Drawing.Point(24, 148);
+            this.LabelID.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelID.Name = "LabelID";
+            this.LabelID.Size = new System.Drawing.Size(96, 21);
+            this.LabelID.TabIndex = 28;
+            this.LabelID.Text = "Placeholder";
             // 
             // CSCHSD
             // 
@@ -279,17 +279,17 @@ namespace Penguins_Student_Management.Views
             this.CSCHSD.TabIndex = 27;
             this.CSCHSD.Text = "ID";
             // 
-            // passwordLabel
+            // LabelPassword
             // 
-            this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.passwordLabel.Location = new System.Drawing.Point(257, 416);
-            this.passwordLabel.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(96, 21);
-            this.passwordLabel.TabIndex = 30;
-            this.passwordLabel.Text = "Placeholder";
+            this.LabelPassword.AutoSize = true;
+            this.LabelPassword.Font = new System.Drawing.Font("Google Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LabelPassword.Location = new System.Drawing.Point(257, 416);
+            this.LabelPassword.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
+            this.LabelPassword.Name = "LabelPassword";
+            this.LabelPassword.Size = new System.Drawing.Size(96, 21);
+            this.LabelPassword.TabIndex = 30;
+            this.LabelPassword.Text = "Placeholder";
             // 
             // gunaLabel4
             // 
@@ -309,25 +309,25 @@ namespace Penguins_Student_Management.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(517, 553);
-            this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.LabelPassword);
             this.Controls.Add(this.gunaLabel4);
-            this.Controls.Add(this.idLabel);
+            this.Controls.Add(this.LabelID);
             this.Controls.Add(this.CSCHSD);
-            this.Controls.Add(this.typeLabel);
+            this.Controls.Add(this.LabelType);
             this.Controls.Add(this.gunaLabel15);
-            this.Controls.Add(this.nationalityLabel);
+            this.Controls.Add(this.LabelNationality);
             this.Controls.Add(this.gunaLabel17);
-            this.Controls.Add(this.classLabel);
+            this.Controls.Add(this.LabelClass);
             this.Controls.Add(this.gunaLabel11);
-            this.Controls.Add(this.hometownLabel);
+            this.Controls.Add(this.LabelHometown);
             this.Controls.Add(this.gunaLabel13);
-            this.Controls.Add(this.ethnicLabel);
+            this.Controls.Add(this.LabelEthnic);
             this.Controls.Add(this.gunaLabel7);
-            this.Controls.Add(this.birthdayLabel);
+            this.Controls.Add(this.LabelBirthday);
             this.Controls.Add(this.gunaLabel9);
-            this.Controls.Add(this.genderLabel);
+            this.Controls.Add(this.LabelGender);
             this.Controls.Add(this.gunaLabel5);
-            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.LabelName);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -337,7 +337,6 @@ namespace Penguins_Student_Management.Views
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin người dùng";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserDetailView_FormClosing);
-            this.Load += new System.EventHandler(this.UserDetailView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,24 +346,24 @@ namespace Penguins_Student_Management.Views
 
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel nameLabel;
-        private Guna.UI.WinForms.GunaLabel genderLabel;
+        private Guna.UI.WinForms.GunaLabel LabelName;
+        private Guna.UI.WinForms.GunaLabel LabelGender;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private Guna.UI.WinForms.GunaLabel ethnicLabel;
+        private Guna.UI.WinForms.GunaLabel LabelEthnic;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI.WinForms.GunaLabel birthdayLabel;
+        private Guna.UI.WinForms.GunaLabel LabelBirthday;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
-        private Guna.UI.WinForms.GunaLabel classLabel;
+        private Guna.UI.WinForms.GunaLabel LabelClass;
         private Guna.UI.WinForms.GunaLabel gunaLabel11;
-        private Guna.UI.WinForms.GunaLabel hometownLabel;
+        private Guna.UI.WinForms.GunaLabel LabelHometown;
         private Guna.UI.WinForms.GunaLabel gunaLabel13;
-        private Guna.UI.WinForms.GunaLabel typeLabel;
+        private Guna.UI.WinForms.GunaLabel LabelType;
         private Guna.UI.WinForms.GunaLabel gunaLabel15;
-        private Guna.UI.WinForms.GunaLabel nationalityLabel;
+        private Guna.UI.WinForms.GunaLabel LabelNationality;
         private Guna.UI.WinForms.GunaLabel gunaLabel17;
-        private Guna.UI.WinForms.GunaLabel idLabel;
+        private Guna.UI.WinForms.GunaLabel LabelID;
         private Guna.UI.WinForms.GunaLabel CSCHSD;
-        private Guna.UI.WinForms.GunaLabel passwordLabel;
+        private Guna.UI.WinForms.GunaLabel LabelPassword;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
     }
 }
