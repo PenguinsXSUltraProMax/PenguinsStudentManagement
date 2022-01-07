@@ -2,7 +2,7 @@
   "Collections": {
     "Users": {
       "119000001": {
-        "Birthday": "13/1/2001",
+        "Birthday": "12/1/2001",
         "Ethnic": "King",
         "Gender": "Nam",
         "Hometown": "Đồng Nai",
@@ -17,7 +17,7 @@
         "Type": 0
       },
       "119000002": {
-        "Birthday": "28/01/2001",
+        "Birthday": "4/1/2001",
         "Ethnic": "King",
         "Gender": "Nam",
         "Hometown": "Đồng Nai",
@@ -88,7 +88,7 @@
         "Name": "Nguyễn Văn C#",
         "Nationality": "Việt Nam",
         "Password": "123",
-        "Class": "6hGvwJ28Fn3NFqT",
+        "Class": "io9JhvGmskqoWSx",
         "Courses": [
           "wcbX-pDPxfS6KxC",
           "RwAI3zy80nsX-Vb"
@@ -101,17 +101,19 @@
         "ID": "io9JhvGmskqoWSx",
         "Name": "Chưa xếp lớp",
         "Faculty": "Khác",
-        "Users": []
+        "Users": [
+          "GVADMIN"
+        ]
       },
       "odTXz748v61mTOi": {
         "ID": "odTXz748v61mTOi",
         "Name": "19CT113",
         "Faculty": "Công nghệ thông tin",
         "Users": [
-          "119000002",
           "119000003",
           "119000004",
           "119000005",
+          "119000002",
           "119000001"
         ]
       },
@@ -119,9 +121,7 @@
         "ID": "6hGvwJ28Fn3NFqT",
         "Name": "19CT112",
         "Faculty": "Công nghệ thông tin",
-        "Users": [
-          "GVADMIN"
-        ]
+        "Users": []
       }
     },
     "Courses": {

@@ -35,7 +35,7 @@ namespace Penguins_Student_Management.Views.UserViews
         private void LoadUserData()
         {
             TextBoxName.Text = @User.Name;
-            DateTimePicker.Value = DateTime.Parse(@User.Birthday);
+            DateTimePicker.Value = DateTime.ParseExact(@User.Birthday, "d/M/yyyy", null);
             ComboBoxGender.SelectedIndex = @User.Gender == "Nam" ? 0 : @User.Gender == "Nữ" ? 1 : 2;
             TextBoxEthnic.Text = @User.Ethnic;
             TextBoxHometown.Text = @User.Hometown;
