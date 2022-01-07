@@ -80,6 +80,7 @@
     <Compile Include="Controllers\CourseController\AddUsers.cs" />
     <Compile Include="Controllers\CourseController\GetUsersNotInTheCourse.cs" />
     <Compile Include="Controllers\CourseController\RemoveSections.cs" />
+    <Compile Include="Controllers\CourseController\UpdateSection.cs" />
     <Compile Include="Controllers\CourseController\UpdateCourse.cs" />
     <Compile Include="Controllers\CourseController\RemoveUsers.cs" />
     <Compile Include="Controllers\CourseController\GetAllCourseCategory.cs" />
@@ -151,6 +152,12 @@
     </Compile>
     <Compile Include="Views\CourseViews\CreateCourseView.Designer.cs">
       <DependentUpon>CreateCourseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CourseViews\EditSectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CourseViews\EditSectionView.Designer.cs">
+      <DependentUpon>EditSectionView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CourseViews\CreateSectionView.cs">
       <SubType>Form</SubType>
@@ -296,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CourseViews\CreateCourseView.resx">
       <DependentUpon>CreateCourseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CourseViews\EditSectionView.resx">
+      <DependentUpon>EditSectionView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CourseViews\CreateSectionView.resx">
       <DependentUpon>CreateSectionView.cs</DependentUpon>

@@ -52,7 +52,9 @@ namespace Penguins_Student_Management.Views.CourseViews
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
-
+            EditSectionView view = new EditSectionView(CourseID, SectionID);
+            River.CreateObservableWithoutNotify(view);
+            view.ShowDialog();
         }
     }
 }

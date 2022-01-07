@@ -83,6 +83,8 @@ namespace Penguins_Student_Management.Views.UserViews
             
             River.Notify();
 
+            this.Close();
+
         }
     }
 }
